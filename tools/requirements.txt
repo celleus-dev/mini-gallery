@@ -2,3 +2,4 @@ numpy
 scipy
 scikit-image
 Pillow
+opencv-python-headless  # optional: --background grabcut

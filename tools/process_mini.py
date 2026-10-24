@@ -18,7 +18,9 @@ Paints file (JSON list), one object per paint, in the order to display them:
       {"name": "Nuln Oil", "brand": "Citadel", "role": "Wash",
        "hex": "#14100e", "highlight": false}
     ]
-Optional per paint: "highlight": false (list it, but don't map it on the
+Optional per paint: "samples": [[x, y], ...] spots on the (cropped) photo
+known to be that paint, so its shadow/recess tones match too;
+"highlight": false (list it, but don't map it on the
 photo -- useful for washes/glazes that only tint other colours) and
 "threshold" (how loosely to match that paint; default from --threshold).
 
@@ -65,9 +67,11 @@ def hex_to_rgb(h):
     return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
 
 
-def load_photo(path):
+def load_photo(path, crop=None):
     img = Image.open(path)
     img = ImageOps.exif_transpose(img).convert("RGB")
+    if crop:
+        img = img.crop(crop)
     w, h = img.size
     scale = min(1.0, MAX_SIDE / max(w, h))
     if scale < 1.0:
@@ -94,6 +98,17 @@ def foreground(img, lab_img, mode, bg_threshold):
         fg = np.array(cut)[:, :, 3] > 128
     elif mode == "none":
         return np.ones(lab_img.shape[:2], bool)
+    elif mode == "grabcut":
+        # For busy backgrounds: crop tightly around the mini first (--crop), then
+        # OpenCV's GrabCut separates the mini from whatever surrounds it.
+        import cv2  # optional dependency (opencv-python-headless)
+        bgr = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
+        h, w = bgr.shape[:2]
+        mx, my = max(2, w // 50), max(2, h // 50)
+        gc = np.zeros((h, w), np.uint8)
+        bgd, fgd = np.zeros((1, 65), np.float64), np.zeros((1, 65), np.float64)
+        cv2.grabCut(bgr, gc, (mx, my, w - 2 * mx, h - 2 * my), bgd, fgd, 8, cv2.GC_INIT_WITH_RECT)
+        fg = (gc == cv2.GC_FGD) | (gc == cv2.GC_PR_FGD)
     else:
         # "border": assume the photo's edges are background (plain backdrop).
         border = np.concatenate([
@@ -135,12 +150,18 @@ def match_paints(lab_img, fg, paints, default_thr, kL):
     mapped = [p for p in paints if p.get("highlight", True)]
     if not mapped:
         return {}, np.zeros((h, w), bool)
+    def reference_colours(p):
+        # The paint's published colour, plus any "samples": [x, y] spots on this
+        # photo known to be that paint (e.g. how it looks in shadow or pooled in
+        # recesses). Coordinates are in the cropped photo.
+        refs = [color.rgb2lab(np.array(hex_to_rgb(p["hex"]), float)[None, None, :] / 255.0)[0, 0]]
+        for x, y in p.get("samples", []):
+            patch = lab_img[max(0, y - 2):y + 3, max(0, x - 2):x + 3].reshape(-1, 3)
+            refs.append(np.median(patch, axis=0))
+        return refs
+
     dists = np.stack([
-        color.deltaE_ciede2000(
-            lab_img,
-            color.rgb2lab(np.array(hex_to_rgb(p["hex"]), float)[None, None, :] / 255.0),
-            kL=kL,
-        )
+        np.min([color.deltaE_ciede2000(lab_img, r[None, None, :], kL=kL) for r in reference_colours(p)], axis=0)
         for p in mapped
     ])
     best = np.argmin(dists, axis=0)
@@ -205,7 +226,11 @@ def main():
                     help="max colour difference to count as a paint (higher = looser)")
     ap.add_argument("--kL", type=float, default=2.2,
                     help="brightness tolerance; higher ignores shading more")
-    ap.add_argument("--background", choices=["border", "rembg", "none"], default="border")
+    ap.add_argument("--background", choices=["border", "grabcut", "rembg", "none"], default="border",
+                    help="border: plain backdrop; grabcut: busy backdrop (use with --crop)")
+    ap.add_argument("--crop", help="left,top,right,bottom in photo pixels: crop to the mini first")
+    ap.add_argument("--fg-mask", help="optional image the same size as the (cropped) photo; "
+                                      "white = mini, black = background. Overrides --background.")
     ap.add_argument("--bg-threshold", type=float, default=12.0)
     ap.add_argument("--preview", help="where to write the review image")
     args = ap.parse_args()
@@ -215,11 +240,16 @@ def main():
         hex_to_rgb(p["hex"])  # validate early
     mini_id = args.id or slug(f"{args.game} {args.name}")
 
-    img = load_photo(args.photo)
+    crop = tuple(int(v) for v in args.crop.split(",")) if args.crop else None
+    img = load_photo(args.photo, crop)
     rgb = np.array(img).astype(float) / 255.0
     lab_img = color.rgb2lab(ndi.gaussian_filter(rgb, sigma=(1, 1, 0)))
 
-    fg = foreground(img, lab_img, args.background, args.bg_threshold)
+    if args.fg_mask:
+        fgm = Image.open(args.fg_mask).convert("L").resize(img.size, Image.NEAREST)
+        fg = np.array(fgm) > 127
+    else:
+        fg = foreground(img, lab_img, args.background, args.bg_threshold)
     masks, unmatched = match_paints(lab_img, fg, paints, args.threshold, args.kL)
 
     out_dir = ROOT / "minis" / mini_id
