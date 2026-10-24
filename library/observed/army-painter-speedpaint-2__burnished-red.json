@@ -1,0 +1,51 @@
+{
+ "key": "army-painter-speedpaint-2/burnished-red",
+ "name": "Burnished Red",
+ "brand": "Army Painter Speedpaint",
+ "hex": "#633b33",
+ "in_reference_library": true,
+ "minis": [
+  {
+   "mini": "crisis-protocol-bishop",
+   "pixels": 2083,
+   "clusters": [
+    {
+     "lab": [
+      40.93,
+      34.17,
+      16.44
+     ],
+     "hex": "#994747",
+     "weight": 0.335
+    },
+    {
+     "lab": [
+      57.39,
+      35.67,
+      16.71
+     ],
+     "hex": "#cb706e",
+     "weight": 0.298
+    },
+    {
+     "lab": [
+      27.56,
+      27.52,
+      14.0
+     ],
+     "hex": "#6c2e2d",
+     "weight": 0.271
+    },
+    {
+     "lab": [
+      13.32,
+      16.5,
+      6.12
+     ],
+     "hex": "#39181a",
+     "weight": 0.096
+    }
+   ]
+  }
+ ]
+}

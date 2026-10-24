@@ -1,0 +1,51 @@
+{
+ "key": "army-painter-speedpaint-2/familiar-pink",
+ "name": "Familiar Pink",
+ "brand": "Army Painter Speedpaint",
+ "hex": "#d62f7f",
+ "in_reference_library": true,
+ "minis": [
+  {
+   "mini": "crisis-protocol-bishop",
+   "pixels": 8835,
+   "clusters": [
+    {
+     "lab": [
+      30.58,
+      35.86,
+      -3.46
+     ],
+     "hex": "#782e4e",
+     "weight": 0.382
+    },
+    {
+     "lab": [
+      19.69,
+      31.57,
+      3.99
+     ],
+     "hex": "#59172b",
+     "weight": 0.237
+    },
+    {
+     "lab": [
+      46.27,
+      44.93,
+      -7.4
+     ],
+     "hex": "#ad4c7b",
+     "weight": 0.218
+    },
+    {
+     "lab": [
+      62.7,
+      47.12,
+      -10.27
+     ],
+     "hex": "#de75ab",
+     "weight": 0.163
+    }
+   ]
+  }
+ ]
+}

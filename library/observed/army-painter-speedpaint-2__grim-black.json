@@ -1,0 +1,51 @@
+{
+ "key": "army-painter-speedpaint-2/grim-black",
+ "name": "Grim Black",
+ "brand": "Army Painter Speedpaint",
+ "hex": "#161511",
+ "in_reference_library": true,
+ "minis": [
+  {
+   "mini": "crisis-protocol-bishop",
+   "pixels": 5960,
+   "clusters": [
+    {
+     "lab": [
+      4.4,
+      1.43,
+      -0.92
+     ],
+     "hex": "#110e11",
+     "weight": 0.533
+    },
+    {
+     "lab": [
+      14.65,
+      2.23,
+      -0.68
+     ],
+     "hex": "#282426",
+     "weight": 0.258
+    },
+    {
+     "lab": [
+      29.26,
+      2.15,
+      -1.96
+     ],
+     "hex": "#474448",
+     "weight": 0.159
+    },
+    {
+     "lab": [
+      44.69,
+      1.15,
+      -2.46
+     ],
+     "hex": "#6a696e",
+     "weight": 0.049
+    }
+   ]
+  }
+ ]
+}

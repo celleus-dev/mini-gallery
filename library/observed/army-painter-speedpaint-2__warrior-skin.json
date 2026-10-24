@@ -1,0 +1,51 @@
+{
+ "key": "army-painter-speedpaint-2/warrior-skin",
+ "name": "Warrior Skin",
+ "brand": "Army Painter Speedpaint",
+ "hex": "#a37051",
+ "in_reference_library": true,
+ "minis": [
+  {
+   "mini": "crisis-protocol-bishop",
+   "pixels": 1592,
+   "clusters": [
+    {
+     "lab": [
+      23.11,
+      13.18,
+      9.86
+     ],
+     "hex": "#4e2f29",
+     "weight": 0.357
+    },
+    {
+     "lab": [
+      32.17,
+      13.89,
+      12.08
+     ],
+     "hex": "#664339",
+     "weight": 0.349
+    },
+    {
+     "lab": [
+      14.16,
+      12.54,
+      8.74
+     ],
+     "hex": "#371d18",
+     "weight": 0.176
+    },
+    {
+     "lab": [
+      46.26,
+      13.78,
+      15.64
+     ],
+     "hex": "#8c6554",
+     "weight": 0.118
+    }
+   ]
+  }
+ ]
+}

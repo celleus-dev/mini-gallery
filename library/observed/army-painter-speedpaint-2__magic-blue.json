@@ -1,0 +1,51 @@
+{
+ "key": "army-painter-speedpaint-2/magic-blue",
+ "name": "Magic Blue",
+ "brand": "Army Painter Speedpaint",
+ "hex": "#0b79ae",
+ "in_reference_library": true,
+ "minis": [
+  {
+   "mini": "crisis-protocol-bishop",
+   "pixels": 5972,
+   "clusters": [
+    {
+     "lab": [
+      23.67,
+      5.8,
+      -27.23
+     ],
+     "hex": "#213861",
+     "weight": 0.384
+    },
+    {
+     "lab": [
+      14.59,
+      4.67,
+      -18.7
+     ],
+     "hex": "#19243f",
+     "weight": 0.288
+    },
+    {
+     "lab": [
+      32.4,
+      2.73,
+      -23.5
+     ],
+     "hex": "#374d71",
+     "weight": 0.268
+    },
+    {
+     "lab": [
+      45.69,
+      8.84,
+      -44.55
+     ],
+     "hex": "#3d6cb7",
+     "weight": 0.06
+    }
+   ]
+  }
+ ]
+}

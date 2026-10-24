@@ -1,0 +1,51 @@
+{
+ "key": "army-painter-speedpaint-2/ashen-stone",
+ "name": "Ashen Stone",
+ "brand": "Army Painter Speedpaint",
+ "hex": "#b3b9b9",
+ "in_reference_library": true,
+ "minis": [
+  {
+   "mini": "crisis-protocol-bishop",
+   "pixels": 35293,
+   "clusters": [
+    {
+     "lab": [
+      85.69,
+      -1.3,
+      -4.33
+     ],
+     "hex": "#d0d7de",
+     "weight": 0.459
+    },
+    {
+     "lab": [
+      76.71,
+      -0.71,
+      -4.85
+     ],
+     "hex": "#b7bec6",
+     "weight": 0.296
+    },
+    {
+     "lab": [
+      63.56,
+      -0.1,
+      -4.23
+     ],
+     "hex": "#969aa1",
+     "weight": 0.173
+    },
+    {
+     "lab": [
+      44.37,
+      -0.28,
+      -3.3
+     ],
+     "hex": "#66696e",
+     "weight": 0.073
+    }
+   ]
+  }
+ ]
+}

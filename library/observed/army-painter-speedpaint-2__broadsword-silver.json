@@ -1,0 +1,51 @@
+{
+ "key": "army-painter-speedpaint-2/broadsword-silver",
+ "name": "Broadsword Silver",
+ "brand": "Army Painter Speedpaint",
+ "hex": "#595854",
+ "in_reference_library": true,
+ "minis": [
+  {
+   "mini": "crisis-protocol-bishop",
+   "pixels": 4532,
+   "clusters": [
+    {
+     "lab": [
+      17.53,
+      2.64,
+      -1.26
+     ],
+     "hex": "#2e2a2d",
+     "weight": 0.479
+    },
+    {
+     "lab": [
+      6.04,
+      2.12,
+      -1.23
+     ],
+     "hex": "#161215",
+     "weight": 0.332
+    },
+    {
+     "lab": [
+      27.89,
+      2.43,
+      -0.91
+     ],
+     "hex": "#454143",
+     "weight": 0.154
+    },
+    {
+     "lab": [
+      61.78,
+      -1.32,
+      -6.25
+     ],
+     "hex": "#8d96a0",
+     "weight": 0.035
+    }
+   ]
+  }
+ ]
+}

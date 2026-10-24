@@ -1,0 +1,51 @@
+{
+ "key": "other/army-painter-black",
+ "name": "Black",
+ "brand": "Army Painter",
+ "hex": "#1e1e1f",
+ "in_reference_library": false,
+ "minis": [
+  {
+   "mini": "crisis-protocol-bishop",
+   "pixels": 12420,
+   "clusters": [
+    {
+     "lab": [
+      10.62,
+      1.11,
+      -0.47
+     ],
+     "hex": "#1e1c1d",
+     "weight": 0.516
+    },
+    {
+     "lab": [
+      19.2,
+      0.97,
+      0.03
+     ],
+     "hex": "#302e2f",
+     "weight": 0.249
+    },
+    {
+     "lab": [
+      30.8,
+      0.53,
+      -0.21
+     ],
+     "hex": "#494849",
+     "weight": 0.165
+    },
+    {
+     "lab": [
+      44.91,
+      0.55,
+      -1.42
+     ],
+     "hex": "#6a6a6d",
+     "weight": 0.07
+    }
+   ]
+  }
+ ]
+}
