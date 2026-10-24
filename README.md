@@ -40,6 +40,26 @@ tools/process_mini.py  turns a photo + paint list into the files above
    and game replaces the entry.
 4. Commit and push.
 
+5. After it's approved, run `python3 tools/learn.py` to add it to the paint
+   library and training dataset (below), then commit.
+
+## Paint library and training data
+
+```
+library/ranges/            published colours for whole paint ranges (Speedpaint 2.0 so far)
+library/observed/          the shades each paint has actually shown on approved minis
+library/swatches/          one image per paint: published colour + how it looked on each mini
+library/index.json         every paint used so far, and on which minis
+dataset/<mini-id>/         training data: image.jpg + labels.png (per-pixel paint labels)
+                           + labels.json (label number -> paint) + fg.png (mini outline)
+```
+
+- Paints in `library/ranges/` don't need a `hex` in the paint list; it's looked up by name.
+- Each new mini is matched using the paint's published colour **plus** the shades it
+  showed on earlier minis, so matching improves as the library grows.
+- `dataset/` is what a future automatic model trains on. Labels come from the
+  matcher after review, so they're approximate (edges, washes, metallics).
+
 ## Photo tips
 
 Plain white or grey background, even daylight-type lighting, no coloured light,

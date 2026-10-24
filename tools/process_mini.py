@@ -18,6 +18,11 @@ Paints file (JSON list), one object per paint, in the order to display them:
       {"name": "Nuln Oil", "brand": "Citadel", "role": "Wash",
        "hex": "#14100e", "highlight": false}
     ]
+"hex" can be left out for any paint in library/ranges/ (looked up by name and
+brand). Paints that have been on earlier minis also match using the shades
+they showed there (library/observed/, built by tools/learn.py); turn that off
+with --no-learned.
+
 Optional per paint: "samples": [[x, y], ...] spots on the (cropped) photo
 known to be that paint, so its shadow/recess tones match too;
 "highlight": false (list it, but don't map it on the
@@ -47,6 +52,8 @@ import numpy as np
 from PIL import Image, ImageOps
 from scipy import ndimage as ndi
 from skimage import color
+
+import paintlib
 
 ROOT = Path(__file__).resolve().parent.parent
 MAX_SIDE = 1600
@@ -158,6 +165,7 @@ def match_paints(lab_img, fg, paints, default_thr, kL):
         for x, y in p.get("samples", []):
             patch = lab_img[max(0, y - 2):y + 3, max(0, x - 2):x + 3].reshape(-1, 3)
             refs.append(np.median(patch, axis=0))
+        refs += [np.array(c, float) for c in p.get("_learned", [])]
         return refs
 
     dists = np.stack([
@@ -233,12 +241,25 @@ def main():
                                       "white = mini, black = background. Overrides --background.")
     ap.add_argument("--bg-threshold", type=float, default=12.0)
     ap.add_argument("--preview", help="where to write the review image")
+    ap.add_argument("--no-learned", action="store_true",
+                    help="match on published colours and samples only, ignoring shades learned from earlier minis")
     args = ap.parse_args()
 
     paints = json.loads(Path(args.paints).read_text())
-    for p in paints:
-        hex_to_rgb(p["hex"])  # validate early
     mini_id = args.id or slug(f"{args.game} {args.name}")
+    ranges = paintlib.load_ranges()
+    for p in paints:
+        lib = paintlib.lookup(p["name"], p.get("brand", ""), ranges)
+        if not p.get("hex"):
+            if not lib:
+                sys.exit(f"No colour for {p['name']!r}: not in library/ranges/, so give a \"hex\"")
+            p["hex"] = lib["hex"]
+        hex_to_rgb(p["hex"])  # validate early
+        if not args.no_learned:
+            obs = paintlib.load_observed(paintlib.paint_key(p, ranges))
+            if obs:  # shades seen on *other* minis (never this one, to avoid learning from itself)
+                p["_learned"] = [c["lab"] for m in obs["minis"] if m["mini"] != mini_id
+                                 for c in m["clusters"] if c["weight"] >= 0.1]
 
     crop = tuple(int(v) for v in args.crop.split(",")) if args.crop else None
     img = load_photo(args.photo, crop)
@@ -257,6 +278,10 @@ def main():
     for old in out_dir.glob("mask-*.png"):
         old.unlink()
     img.save(out_dir / "photo.jpg", quality=88, optimize=True, progressive=True)
+    # The mini's outline, kept for the training dataset (tools/learn.py)
+    ds_dir = ROOT / "dataset" / mini_id
+    ds_dir.mkdir(parents=True, exist_ok=True)
+    Image.fromarray((fg * 255).astype(np.uint8)).save(ds_dir / "fg.png")
 
     fg_px = max(1, int(fg.sum()))
     entry_paints = []

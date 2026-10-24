@@ -1,0 +1,51 @@
+{
+ "key": "army-painter-speedpaint-2/periwinkle-purple",
+ "name": "Periwinkle Purple",
+ "brand": "Army Painter Speedpaint",
+ "hex": "#585396",
+ "in_reference_library": true,
+ "minis": [
+  {
+   "mini": "crisis-protocol-bishop",
+   "pixels": 7235,
+   "clusters": [
+    {
+     "lab": [
+      35.27,
+      13.9,
+      -23.6
+     ],
+     "hex": "#554d79",
+     "weight": 0.329
+    },
+    {
+     "lab": [
+      19.22,
+      10.24,
+      -15.12
+     ],
+     "hex": "#322a45",
+     "weight": 0.297
+    },
+    {
+     "lab": [
+      56.23,
+      13.71,
+      -26.05
+     ],
+     "hex": "#8781b4",
+     "weight": 0.243
+    },
+    {
+     "lab": [
+      44.69,
+      8.47,
+      -15.19
+     ],
+     "hex": "#6b6683",
+     "weight": 0.131
+    }
+   ]
+  }
+ ]
+}

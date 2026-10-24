@@ -1,0 +1,51 @@
+{
+ "key": "army-painter-speedpaint-2/pastel-yellow",
+ "name": "Pastel Yellow",
+ "brand": "Army Painter Speedpaint",
+ "hex": "#f6e178",
+ "in_reference_library": true,
+ "minis": [
+  {
+   "mini": "crisis-protocol-bishop",
+   "pixels": 5278,
+   "clusters": [
+    {
+     "lab": [
+      51.59,
+      0.26,
+      53.51
+     ],
+     "hex": "#937912",
+     "weight": 0.469
+    },
+    {
+     "lab": [
+      63.15,
+      -2.42,
+      62.81
+     ],
+     "hex": "#b29818",
+     "weight": 0.246
+    },
+    {
+     "lab": [
+      84.27,
+      -8.38,
+      70.64
+     ],
+     "hex": "#e8d442",
+     "weight": 0.179
+    },
+    {
+     "lab": [
+      66.26,
+      -5.42,
+      36.56
+     ],
+     "hex": "#aea25e",
+     "weight": 0.106
+    }
+   ]
+  }
+ ]
+}

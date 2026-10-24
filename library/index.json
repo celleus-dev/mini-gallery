@@ -1,0 +1,101 @@
+{
+ "army-painter-speedpaint-2/ashen-stone": {
+  "key": "army-painter-speedpaint-2/ashen-stone",
+  "name": "Ashen Stone",
+  "brand": "Army Painter Speedpaint",
+  "hex": "#b3b9b9",
+  "in_reference_library": true,
+  "minis": [
+   "crisis-protocol-bishop"
+  ],
+  "swatch": "library/swatches/army-painter-speedpaint-2__ashen-stone.png"
+ },
+ "army-painter-speedpaint-2/broadsword-silver": {
+  "key": "army-painter-speedpaint-2/broadsword-silver",
+  "name": "Broadsword Silver",
+  "brand": "Army Painter Speedpaint",
+  "hex": "#595854",
+  "in_reference_library": true,
+  "minis": [
+   "crisis-protocol-bishop"
+  ],
+  "swatch": "library/swatches/army-painter-speedpaint-2__broadsword-silver.png"
+ },
+ "army-painter-speedpaint-2/burnished-red": {
+  "key": "army-painter-speedpaint-2/burnished-red",
+  "name": "Burnished Red",
+  "brand": "Army Painter Speedpaint",
+  "hex": "#633b33",
+  "in_reference_library": true,
+  "minis": [
+   "crisis-protocol-bishop"
+  ],
+  "swatch": "library/swatches/army-painter-speedpaint-2__burnished-red.png"
+ },
+ "army-painter-speedpaint-2/familiar-pink": {
+  "key": "army-painter-speedpaint-2/familiar-pink",
+  "name": "Familiar Pink",
+  "brand": "Army Painter Speedpaint",
+  "hex": "#d62f7f",
+  "in_reference_library": true,
+  "minis": [
+   "crisis-protocol-bishop"
+  ],
+  "swatch": "library/swatches/army-painter-speedpaint-2__familiar-pink.png"
+ },
+ "army-painter-speedpaint-2/grim-black": {
+  "key": "army-painter-speedpaint-2/grim-black",
+  "name": "Grim Black",
+  "brand": "Army Painter Speedpaint",
+  "hex": "#161511",
+  "in_reference_library": true,
+  "minis": [
+   "crisis-protocol-bishop"
+  ],
+  "swatch": "library/swatches/army-painter-speedpaint-2__grim-black.png"
+ },
+ "army-painter-speedpaint-2/magic-blue": {
+  "key": "army-painter-speedpaint-2/magic-blue",
+  "name": "Magic Blue",
+  "brand": "Army Painter Speedpaint",
+  "hex": "#0b79ae",
+  "in_reference_library": true,
+  "minis": [
+   "crisis-protocol-bishop"
+  ],
+  "swatch": "library/swatches/army-painter-speedpaint-2__magic-blue.png"
+ },
+ "army-painter-speedpaint-2/pastel-yellow": {
+  "key": "army-painter-speedpaint-2/pastel-yellow",
+  "name": "Pastel Yellow",
+  "brand": "Army Painter Speedpaint",
+  "hex": "#f6e178",
+  "in_reference_library": true,
+  "minis": [
+   "crisis-protocol-bishop"
+  ],
+  "swatch": "library/swatches/army-painter-speedpaint-2__pastel-yellow.png"
+ },
+ "army-painter-speedpaint-2/periwinkle-purple": {
+  "key": "army-painter-speedpaint-2/periwinkle-purple",
+  "name": "Periwinkle Purple",
+  "brand": "Army Painter Speedpaint",
+  "hex": "#585396",
+  "in_reference_library": true,
+  "minis": [
+   "crisis-protocol-bishop"
+  ],
+  "swatch": "library/swatches/army-painter-speedpaint-2__periwinkle-purple.png"
+ },
+ "army-painter-speedpaint-2/warrior-skin": {
+  "key": "army-painter-speedpaint-2/warrior-skin",
+  "name": "Warrior Skin",
+  "brand": "Army Painter Speedpaint",
+  "hex": "#a37051",
+  "in_reference_library": true,
+  "minis": [
+   "crisis-protocol-bishop"
+  ],
+  "swatch": "library/swatches/army-painter-speedpaint-2__warrior-skin.png"
+ }
+}
