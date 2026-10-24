@@ -244,7 +244,6 @@
     const paintRows = paints
       .map((p, i) => {
         const sub = [p.brand, p.role].filter(Boolean).map(esc).join(" · ");
-        const pct = p.mask && p.coverage != null ? `${p.coverage < 1 ? "<1" : Math.round(p.coverage)}%` : "";
         return `
           <li>
             <button class="paint" type="button" data-i="${i}" aria-pressed="false" ${p.mask ? "" : "disabled"}
@@ -254,7 +253,6 @@
                 <span class="paint-name">${esc(p.name)}</span><br>
                 <span class="paint-sub">${sub}${sub ? " · " : ""}<a href="./?q=${encodeURIComponent(p.name)}">other minis</a></span>
               </span>
-              <span class="paint-pct">${pct}</span>
             </button>
           </li>`;
       })
