@@ -1,4 +1,4 @@
-/* Mini Gallery — shared logic for every page.
+/* Swatchwork Minis — shared logic for every page.
  * Data lives in data/minis.json (one entry per miniature) and the optional
  * data/games.json (extra details per board game). All URLs are relative so the
  * site works at https://<user>.github.io/mini-gallery/ and on a custom domain. */
@@ -83,7 +83,7 @@
     el.className = "site-header";
     el.innerHTML = `
       <div class="wrap">
-        <a class="brand" href="./">Mini<span>·</span>Gallery</a>
+        <a class="brand" href="./">Swatchwork<span> Minis</span></a>
         <form class="search" action="./" method="get" role="search">
           <label class="visually-hidden" for="q">Search minis, games and paints</label>
           <input id="q" name="q" type="search" autocomplete="off"
@@ -146,7 +146,7 @@
 
     if (q) {
       const hits = minis.filter((m) => matches(m, q));
-      document.title = `“${q}” · Mini Gallery`;
+      document.title = `“${q}” · Swatchwork Minis`;
       main.innerHTML = `
         <div class="page-head">
           <p class="eyebrow"><a href="./">All games</a></p>
@@ -204,7 +204,7 @@
       main.innerHTML = `${emptyState("Board game not found", "It may have been renamed.")}<p><a class="back" href="./">← All games</a></p>`;
       return;
     }
-    document.title = `${g.name} · Mini Gallery`;
+    document.title = `${g.name} · Swatchwork Minis`;
 
     // Paints used across the whole game, most-used first
     const tally = {};
@@ -242,7 +242,7 @@
       main.innerHTML = `${emptyState("Mini not found", "It may have been renamed or removed.")}<p><a class="back" href="./">← All games</a></p>`;
       return;
     }
-    document.title = `${mini.name} · Mini Gallery`;
+    document.title = `${mini.name} · Swatchwork Minis`;
     const gameSlug = slug(mini.game || "Unsorted");
     const paints = mini.paints || [];
     const mapped = paints.filter((p) => p.mask);

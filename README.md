@@ -1,4 +1,6 @@
-# mini-gallery
+# Swatchwork Minis
+
+Repository: mini-gallery. Planned domain: swatchworkminis.com (not connected yet).
 
 A gallery of painted miniatures, sorted by board game. Each mini has a photo
 and its paint list; tapping a paint lights up where it was used on the mini.
