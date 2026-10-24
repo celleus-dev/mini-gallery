@@ -27,6 +27,12 @@
       .replace(/^-+|-+$/g, "");
   }
 
+  // Add the mini's "updated" stamp to its file URLs, so a re-processed mini
+  // never shows old cached images.
+  function v(url, mini) {
+    return mini && mini.updated ? `${url}?v=${encodeURIComponent(mini.updated)}` : url;
+  }
+
   function param(name) {
     return new URLSearchParams(location.search).get(name);
   }
@@ -100,7 +106,7 @@
       .join("");
     return `
       <a class="card" href="mini.html?id=${encodeURIComponent(mini.id)}">
-        <div class="card-img"><img src="${esc(mini.photo)}" alt="${esc(mini.name)}" loading="lazy"></div>
+        <div class="card-img"><img src="${esc(v(mini.photo, mini))}" alt="${esc(mini.name)}" loading="lazy"></div>
         <div class="card-body">
           <div class="card-title">${esc(mini.name)}</div>
           <div class="card-meta">${esc(mini.game || "")}</div>
@@ -274,7 +280,7 @@
         <div>
           <div class="viewer">
             <div class="viewer-stage" id="stage" style="${ratio}">
-              <img class="base" src="${esc(mini.photo)}" alt="${esc(mini.name)}">
+              <img class="base" src="${esc(v(mini.photo, mini))}" alt="${esc(mini.name)}">
             </div>
             ${mapped.length ? `
             <div class="viewer-bar">
@@ -304,7 +310,7 @@
 
     paints.forEach((p, i) => {
       if (!p.mask) return;
-      const maskCss = `url("${p.mask}")`;
+      const maskCss = `url("${v(p.mask, mini)}")`;
 
       // Spotlight layer: the full-colour photo, visible only inside this paint's region
       // (outer element carries the glow, since a filter on the masked element itself gets masked away)
@@ -313,7 +319,7 @@
       spot.style.filter = `drop-shadow(0 0 1.5px ${p.hex}) drop-shadow(0 0 1.5px ${p.hex})`;
       const inner = document.createElement("div");
       inner.className = "spot-inner";
-      inner.style.backgroundImage = `url("${mini.photo}")`;
+      inner.style.backgroundImage = `url("${v(mini.photo, mini)}")`;
       inner.style.webkitMaskImage = maskCss;
       inner.style.maskImage = maskCss;
       spot.appendChild(inner);

@@ -330,6 +330,7 @@ def main():
         "game": args.game,
         "date": args.date,
         "photo": f"minis/{mini_id}/photo.jpg",
+        "updated": dt.datetime.now(dt.timezone.utc).strftime("%Y%m%d%H%M%S"),  # cache-busting for the site
         "width": img.size[0],
         "height": img.size[1],
         "paints": entry_paints,
