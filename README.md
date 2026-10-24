@@ -40,8 +40,9 @@ tools/process_mini.py  turns a photo + paint list into the files above
    and game replaces the entry.
 4. Commit and push.
 
-5. After it's approved, run `python3 tools/learn.py` to add it to the paint
-   library and training dataset (below), then commit.
+5. Once Dan has checked the labels, run `python3 tools/learn.py --verify <mini-id>`
+   to add it to the paint library and training dataset (below), then commit.
+   Re-processing a mini clears its verified mark.
 
 ## Paint library and training data
 
@@ -57,8 +58,11 @@ dataset/<mini-id>/         training data: image.jpg + labels.png (per-pixel pain
 - Paints in `library/ranges/` don't need a `hex` in the paint list; it's looked up by name.
 - Each new mini is matched using the paint's published colour **plus** the shades it
   showed on earlier minis, so matching improves as the library grows.
-- `dataset/` is what a future automatic model trains on. Labels come from the
-  matcher after review, so they're approximate (edges, washes, metallics).
+- `dataset/` is what a future automatic model trains on. Only verified minis are
+  included, and label edges are marked 255 = ignore, since that's where labels
+  are least reliable.
+- Paint `regions` in a mini's paint list record Dan's corrections (where each
+  paint is allowed to appear); see tools/inputs/<mini-id>/paints.json.
 
 ## Photo tips
 

@@ -15,10 +15,23 @@ from data/minis.json, so it's safe to run any number of times:
 
 The dataset/ folder is the training data for a future automatic model: photo
 + per-pixel answer, for paints Dan has confirmed.
+
+Only minis marked verified are used -- being good enough for the website is
+not the same as being trustworthy enough to learn from. Mark one with:
+
+  python3 tools/learn.py --verify <mini-id>
+
+Re-processing a mini with process_mini.py clears its verified mark, so it has
+to be reviewed again. Label edges (where two paints meet, or the mini meets
+the background) are set to 255 = "ignore", since that's where labels are
+least reliable.
 """
 
+import argparse
 import json
 import shutil
+
+from scipy import ndimage as ndi
 
 import numpy as np
 from PIL import Image, ImageDraw
@@ -30,6 +43,7 @@ import paintlib as pl
 ROOT = pl.ROOT
 MAX_CLUSTERS = 4
 TILE_H = 160
+EDGE = 2  # pixels on each side of a boundary that are left out of training
 
 
 def load_mask(path):
@@ -92,14 +106,38 @@ def swatch_sheet(info, per_mini, path):
 
 
 def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--verify", metavar="MINI_ID", help="mark a mini as verified for training, then rebuild")
+    ap.add_argument("--unverify", metavar="MINI_ID", help="take a mini back out of the training data, then rebuild")
+    args = ap.parse_args()
+
     ranges = pl.load_ranges()
-    data = json.loads((ROOT / "data" / "minis.json").read_text())
+    data_path = ROOT / "data" / "minis.json"
+    data = json.loads(data_path.read_text())
     rng = np.random.default_rng(0)
+
+    for mid, value in ((args.verify, True), (args.unverify, False)):
+        if mid:
+            hit = [m for m in data["minis"] if m["id"] == mid]
+            if not hit:
+                raise SystemExit(f"no mini with id {mid!r}")
+            if value:
+                hit[0]["verified"] = True
+            else:
+                hit[0].pop("verified", None)
+            data_path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
 
     observed = {}   # key -> {"info":..., "minis": [...]}
     swatch_src = {}  # key -> [(mini_id, photo, mask, clusters)]
 
-    for mini in data.get("minis", []):
+    ds_root = ROOT / "dataset"
+    verified = [m for m in data.get("minis", []) if m.get("verified")]
+    for stale in (ds_root.iterdir() if ds_root.exists() else []):
+        if stale.is_dir() and stale.name not in {m["id"] for m in verified}:
+            for f in ("image.jpg", "labels.png", "labels.json"):
+                (stale / f).unlink(missing_ok=True)  # keep fg.png: it's an input, not output
+
+    for mini in verified:
         mid = mini["id"]
         photo = np.array(Image.open(ROOT / mini["photo"]).convert("RGB"))
         lab = color.rgb2lab(photo / 255.0)
@@ -124,19 +162,25 @@ def main():
             key = pl.paint_key(p, ranges)
             legend[str(i)] = {"key": key, "name": p["name"], "brand": p.get("brand", ""), "hex": p["hex"]}
             palette += list(int(p["hex"][j:j + 2], 16) for j in (1, 3, 5))
+        # Ignore a thin band wherever the label changes
+        size = 2 * EDGE + 1
+        edge = ndi.maximum_filter(labels, size) != ndi.minimum_filter(labels, size)
+        labels[edge] = 255
+        legend["255"] = "ignore (edge between labels)"
+        palette += [0] * (3 * 255 - len(palette)) + [255, 0, 255]
         lab_img = Image.fromarray(labels, "P")
         lab_img.putpalette(palette + [0] * (768 - len(palette)))
         lab_img.save(ds / "labels.png")
         shutil.copyfile(ROOT / mini["photo"], ds / "image.jpg")
         (ds / "labels.json").write_text(json.dumps({
             "mini": mid, "name": mini["name"], "game": mini.get("game", ""),
-            "status": "approved",  # only minis Dan has approved for the site are here
+            "status": "verified",  # Dan reviewed and confirmed these labels
             "labels": legend,
         }, indent=2) + "\n")
 
         # What each paint looked like on this mini
-        for p in mapped:
-            m = masks[p["name"]] & fg
+        for i, p in enumerate(mapped, start=2):
+            m = labels == i  # paint area with edges already trimmed
             if m.sum() < 50:
                 continue
             key = pl.paint_key(p, ranges)
@@ -166,7 +210,7 @@ def main():
                       "swatch": str(sw.relative_to(ROOT))}
     (ROOT / "library" / "index.json").write_text(json.dumps(index, indent=1) + "\n")
 
-    print(f"{len(data.get('minis', []))} minis, {len(index)} paints learned")
+    print(f"{len(verified)} of {len(data.get('minis', []))} minis verified for training, {len(index)} paints learned")
     for key, v in index.items():
         print(f"  {v['name']:20s} on {len(v['minis'])} mini(s)" + ("" if v["in_reference_library"] else "  (not in reference library)"))
 

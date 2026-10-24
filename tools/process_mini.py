@@ -27,7 +27,10 @@ Optional per paint: "samples": [[x, y], ...] spots on the (cropped) photo
 known to be that paint, so its shadow/recess tones match too;
 "highlight": false (list it, but don't map it on the
 photo -- useful for washes/glazes that only tint other colours) and
-"threshold" (how loosely to match that paint; default from --threshold).
+"threshold" (how loosely to match that paint; default from --threshold);
+"regions": [[left, top, right, bottom], ...] boxes in the saved photo's pixels
+where this paint is allowed -- used to apply Dan's corrections ("pink is only
+on the energy effect").
 
 How matching works: colours are compared in CIELAB using the CIEDE2000
 colour difference, with brightness weighted down (kL) so shadows and
@@ -168,8 +171,20 @@ def match_paints(lab_img, fg, paints, default_thr, kL):
         refs += [np.array(c, float) for c in p.get("_learned", [])]
         return refs
 
+    def allowed(p):
+        # "regions": [[left, top, right, bottom], ...] in the saved photo's pixels.
+        # The paint can only be matched inside them; no regions = anywhere.
+        if not p.get("regions"):
+            return np.ones((h, w), bool)
+        a = np.zeros((h, w), bool)
+        for x0, y0, x1, y1 in p["regions"]:
+            a[max(0, y0):y1, max(0, x0):x1] = True
+        return a
+
     dists = np.stack([
-        np.min([color.deltaE_ciede2000(lab_img, r[None, None, :], kL=kL) for r in reference_colours(p)], axis=0)
+        np.where(allowed(p),
+                 np.min([color.deltaE_ciede2000(lab_img, r[None, None, :], kL=kL) for r in reference_colours(p)], axis=0),
+                 np.inf)
         for p in mapped
     ])
     best = np.argmin(dists, axis=0)
