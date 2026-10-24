@@ -61,6 +61,8 @@ dataset/<mini-id>/         training data: image.jpg + labels.png (per-pixel pain
 - `dataset/` is what a future automatic model trains on. Only verified minis are
   included, and label edges are marked 255 = ignore, since that's where labels
   are least reliable.
+- `library/house_paints.json`: paints on every mini (Army Painter black on the base rim),
+  added automatically; limited to the bottom of the mini unless the paint list gives regions.
 - Paint `regions` in a mini's paint list record Dan's corrections (where each
   paint is allowed to appear); see tools/inputs/<mini-id>/paints.json.
 

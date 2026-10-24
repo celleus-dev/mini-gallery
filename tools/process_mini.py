@@ -256,12 +256,20 @@ def main():
                                       "white = mini, black = background. Overrides --background.")
     ap.add_argument("--bg-threshold", type=float, default=12.0)
     ap.add_argument("--preview", help="where to write the review image")
+    ap.add_argument("--no-house", action="store_true", help="don't add the standard paints in library/house_paints.json")
     ap.add_argument("--no-learned", action="store_true",
                     help="match on published colours and samples only, ignoring shades learned from earlier minis")
     args = ap.parse_args()
 
     paints = json.loads(Path(args.paints).read_text())
     mini_id = args.id or slug(f"{args.game} {args.name}")
+    # Dan's standard paints (e.g. the black base rim) are added to every mini
+    house_file = ROOT / "library" / "house_paints.json"
+    if house_file.exists() and not args.no_house:
+        listed = {(slug(p["name"]), slug(p.get("brand", ""))) for p in paints}
+        for hp in json.loads(house_file.read_text())["paints"]:
+            if (slug(hp["name"]), slug(hp.get("brand", ""))) not in listed:
+                paints.append({k: v for k, v in hp.items() if k in ("name", "brand", "role", "hex")} | {"_house": True})
     ranges = paintlib.load_ranges()
     for p in paints:
         lib = paintlib.lookup(p["name"], p.get("brand", ""), ranges)
@@ -286,6 +294,12 @@ def main():
         fg = np.array(fgm) > 127
     else:
         fg = foreground(img, lab_img, args.background, args.bg_threshold)
+    ys = np.nonzero(fg)[0]
+    if len(ys):
+        top, bottom = int(ys.min()), int(ys.max()) + 1
+        for p in paints:
+            if p.get("_house") and not p.get("regions"):
+                p["regions"] = [[0, bottom - int(0.3 * (bottom - top)), fg.shape[1], bottom]]
     masks, unmatched = match_paints(lab_img, fg, paints, args.threshold, args.kL)
 
     out_dir = ROOT / "minis" / mini_id

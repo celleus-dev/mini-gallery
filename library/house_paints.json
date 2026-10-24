@@ -1,0 +1,9 @@
+{
+  "note": "Paints Dan uses on every mini. process_mini.py adds these automatically unless the mini's paint list already has them. With no \"regions\" in the mini's paint list, they're limited to the bottom 30% of the mini (where the base rim is).",
+  "paints": [
+    {"name": "Black", "brand": "Army Painter", "role": "Base rim",
+     "hex": "#1e1e1f",
+     "hex_source": "sampled from the base rim on Bishop's photo; Dan described it as regular Army Painter black paint (not Speedpaint), no published value used",
+     "house": true}
+  ]
+}

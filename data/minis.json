@@ -63,7 +63,7 @@
           "brand": "Army Painter Speedpaint",
           "hex": "#b3b9b9",
           "mask": "minis/crisis-protocol-bishop/mask-ashen-stone.png",
-          "coverage": 34.3
+          "coverage": 33.7
         },
         {
           "name": "Grim Black",
@@ -71,6 +71,14 @@
           "hex": "#161511",
           "mask": "minis/crisis-protocol-bishop/mask-grim-black.png",
           "coverage": 7.4
+        },
+        {
+          "name": "Black",
+          "brand": "Army Painter",
+          "role": "Base rim",
+          "hex": "#1e1e1f",
+          "mask": "minis/crisis-protocol-bishop/mask-black.png",
+          "coverage": 13.1
         }
       ]
     }
