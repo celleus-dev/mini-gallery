@@ -1,0 +1,114 @@
+[
+ {
+  "name": "Orange",
+  "hex": "#f06d37",
+  "samples": [
+   [
+    600,
+    1120
+   ],
+   [
+    580,
+    900
+   ]
+  ],
+  "source": "sampled from this photo; Dan asked for basic colour names, not paint names"
+ },
+ {
+  "name": "Dark Red",
+  "hex": "#802624",
+  "samples": [
+   [
+    1000,
+    560
+   ],
+   [
+    340,
+    840
+   ],
+   [
+    340,
+    760
+   ]
+  ],
+  "source": "sampled from this photo; Dan asked for basic colour names, not paint names"
+ },
+ {
+  "name": "Salmon",
+  "hex": "#ffa082",
+  "samples": [
+   [
+    120,
+    300
+   ],
+   [
+    480,
+    340
+   ]
+  ],
+  "source": "sampled from this photo; Dan asked for basic colour names, not paint names"
+ },
+ {
+  "name": "Lavender",
+  "hex": "#d39cbb",
+  "samples": [
+   [
+    300,
+    190
+   ]
+  ],
+  "source": "sampled from this photo; Dan asked for basic colour names, not paint names"
+ },
+ {
+  "name": "Yellow",
+  "hex": "#f0cd01",
+  "samples": [
+   [
+    880,
+    860
+   ],
+   [
+    860,
+    640
+   ]
+  ],
+  "source": "sampled from this photo; Dan asked for basic colour names, not paint names"
+ },
+ {
+  "name": "White",
+  "hex": "#fffee8",
+  "samples": [
+   [
+    240,
+    560
+   ]
+  ],
+  "source": "sampled from this photo; Dan asked for basic colour names, not paint names"
+ },
+ {
+  "name": "Pink",
+  "hex": "#b9747f",
+  "samples": [
+   [
+    300,
+    1300
+   ]
+  ],
+  "source": "sampled from this photo; Dan asked for basic colour names, not paint names"
+ },
+ {
+  "name": "Brown",
+  "hex": "#4f3328",
+  "samples": [
+   [
+    800,
+    1200
+   ],
+   [
+    200,
+    1120
+   ]
+  ],
+  "source": "sampled from this photo; Dan asked for basic colour names, not paint names"
+ }
+]
