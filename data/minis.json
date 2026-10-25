@@ -90,7 +90,7 @@
       "game": "Demo",
       "date": "2026-10-25",
       "photo": "minis/demo-earth-dragon/photo.jpg",
-      "updated": "20261025215235",
+      "updated": "20261025215520",
       "width": 1240,
       "height": 1530,
       "paints": [
@@ -98,7 +98,7 @@
           "name": "Orange",
           "hex": "#f06d37",
           "mask": "minis/demo-earth-dragon/mask-orange.png",
-          "coverage": 18.4
+          "coverage": 18.1
         },
         {
           "name": "Dark Red",
@@ -110,7 +110,7 @@
           "name": "Salmon",
           "hex": "#ffa082",
           "mask": "minis/demo-earth-dragon/mask-salmon.png",
-          "coverage": 3.3
+          "coverage": 3.1
         },
         {
           "name": "Lavender",
@@ -122,11 +122,13 @@
           "name": "Yellow",
           "hex": "#f0cd01",
           "mask": "minis/demo-earth-dragon/mask-yellow.png",
-          "coverage": 2.6
+          "coverage": 2.3
         },
         {
           "name": "White",
-          "hex": "#fffee8"
+          "hex": "#fffee8",
+          "mask": "minis/demo-earth-dragon/mask-white.png",
+          "coverage": 0.4
         },
         {
           "name": "Pink",
@@ -138,7 +140,7 @@
           "name": "Brown",
           "hex": "#4f3328",
           "mask": "minis/demo-earth-dragon/mask-brown.png",
-          "coverage": 16.1
+          "coverage": 15.8
         },
         {
           "name": "Black",

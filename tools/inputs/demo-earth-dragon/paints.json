@@ -81,9 +81,22 @@
    [
     240,
     560
+   ],
+   [
+    530,
+    1256
+   ],
+   [
+    650,
+    1370
+   ],
+   [
+    230,
+    540
    ]
   ],
-  "source": "sampled from this photo; Dan asked for basic colour names, not paint names"
+  "source": "sampled from this photo; Dan asked for basic colour names, not paint names",
+  "threshold": 20
  },
  {
   "name": "Pink",
