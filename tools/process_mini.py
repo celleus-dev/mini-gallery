@@ -203,6 +203,13 @@ def match_paints(lab_img, fg, paints, default_thr, kL):
         for p in mapped
     ])
     best = np.argmin(dists, axis=0)
+    # "priority": true -- inside its regions, any pixel within this paint's
+    # threshold goes to it even if another paint is a slightly closer colour
+    # (used for the black bases, which lighting makes look grey). A number
+    # instead of true sets the order: higher priority wins where both match.
+    for i, p in sorted(enumerate(mapped), key=lambda ip: float(ip[1].get("priority") or 0)):
+        if p.get("priority"):
+            best = np.where(dists[i] <= p.get("threshold", default_thr), i, best)
     best_d = np.take_along_axis(dists, best[None], 0)[0]
     thr = np.array([p.get("threshold", default_thr) for p in mapped])[best]
     assigned = fg & (best_d <= thr)

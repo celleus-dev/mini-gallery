@@ -153,165 +153,6 @@
       ]
     },
     {
-      "id": "6-siege-recruit",
-      "name": "Recruit",
-      "game": "6 Siege",
-      "date": "2026-10-26",
-      "photo": "minis/6-siege-recruit/photo.jpg",
-      "updated": "20261026204407",
-      "width": 1600,
-      "height": 1287,
-      "paints": [
-        {
-          "name": "Cloudburst Blue",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#3c4258",
-          "mask": "minis/6-siege-recruit/mask-cloudburst-blue.png",
-          "coverage": 7.6
-        },
-        {
-          "name": "Gravelord Grey",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#44474c",
-          "mask": "minis/6-siege-recruit/mask-gravelord-grey.png",
-          "coverage": 22.5
-        },
-        {
-          "name": "Grim Black",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#161511",
-          "mask": "minis/6-siege-recruit/mask-grim-black.png",
-          "coverage": 8.8
-        },
-        {
-          "name": "Hardened Leather",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#8c501e",
-          "mask": "minis/6-siege-recruit/mask-hardened-leather.png",
-          "coverage": 1.9
-        },
-        {
-          "name": "Dark Wood",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#482d1a",
-          "mask": "minis/6-siege-recruit/mask-dark-wood.png",
-          "coverage": 2.7
-        },
-        {
-          "name": "Burnt Moss",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#4d5a50",
-          "mask": "minis/6-siege-recruit/mask-burnt-moss.png",
-          "coverage": 1.2
-        },
-        {
-          "name": "Peachy Flesh",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#eda668",
-          "mask": "minis/6-siege-recruit/mask-peachy-flesh.png",
-          "coverage": 0.7
-        },
-        {
-          "name": "Ghillie Dew",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#90ac23",
-          "mask": "minis/6-siege-recruit/mask-ghillie-dew.png",
-          "coverage": 2.9
-        },
-        {
-          "name": "Magic Blue",
-          "brand": "Vallejo Game Color",
-          "hex": "#006eb5",
-          "mask": "minis/6-siege-recruit/mask-magic-blue.png",
-          "coverage": 6.0
-        },
-        {
-          "name": "Black",
-          "brand": "Army Painter",
-          "role": "Base rim",
-          "hex": "#1e1e1f",
-          "mask": "minis/6-siege-recruit/mask-black.png",
-          "coverage": 38.1
-        }
-      ]
-    },
-    {
-      "id": "6-siege-blitz",
-      "name": "Blitz",
-      "game": "6 Siege",
-      "date": "2026-10-26",
-      "photo": "minis/6-siege-blitz/photo.jpg",
-      "updated": "20261026205703",
-      "width": 1600,
-      "height": 1200,
-      "paints": [
-        {
-          "name": "Grim Black",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#161511",
-          "mask": "minis/6-siege-blitz/mask-grim-black.png",
-          "coverage": 8.0
-        },
-        {
-          "name": "Electric Blue",
-          "brand": "Vallejo Game Color",
-          "hex": "#3495b6",
-          "mask": "minis/6-siege-blitz/mask-electric-blue.png",
-          "coverage": 1.6
-        },
-        {
-          "name": "Hardened Leather",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#8c501e",
-          "mask": "minis/6-siege-blitz/mask-hardened-leather.png",
-          "coverage": 1.3
-        },
-        {
-          "name": "Dark Wood",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#482d1a",
-          "mask": "minis/6-siege-blitz/mask-dark-wood.png",
-          "coverage": 0.4
-        },
-        {
-          "name": "Tyrian Navy",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#2a414f",
-          "mask": "minis/6-siege-blitz/mask-tyrian-navy.png",
-          "coverage": 6.0
-        },
-        {
-          "name": "Occultist Cloak",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#30323e",
-          "mask": "minis/6-siege-blitz/mask-occultist-cloak.png",
-          "coverage": 54.6
-        },
-        {
-          "name": "Broadsword Silver",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#595854",
-          "mask": "minis/6-siege-blitz/mask-broadsword-silver.png",
-          "coverage": 0.9
-        },
-        {
-          "name": "Magic Blue",
-          "brand": "Vallejo Game Color",
-          "hex": "#006eb5",
-          "mask": "minis/6-siege-blitz/mask-magic-blue.png",
-          "coverage": 1.0
-        },
-        {
-          "name": "Black",
-          "brand": "Army Painter",
-          "role": "Base rim",
-          "hex": "#1e1e1f",
-          "mask": "minis/6-siege-blitz/mask-black.png",
-          "coverage": 11.5
-        }
-      ]
-    },
-    {
       "id": "6-siege-flores",
       "name": "Flores",
       "game": "6 Siege",
@@ -405,6 +246,165 @@
           "hex": "#1e1e1f",
           "mask": "minis/6-siege-flores/mask-black.png",
           "coverage": 35.7
+        }
+      ]
+    },
+    {
+      "id": "6-siege-blitz",
+      "name": "Blitz",
+      "game": "6 Siege",
+      "date": "2026-10-26",
+      "photo": "minis/6-siege-blitz/photo.jpg",
+      "updated": "20261026220013",
+      "width": 1600,
+      "height": 1200,
+      "paints": [
+        {
+          "name": "Grim Black",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#161511",
+          "mask": "minis/6-siege-blitz/mask-grim-black.png",
+          "coverage": 7.6
+        },
+        {
+          "name": "Electric Blue",
+          "brand": "Vallejo Game Color",
+          "hex": "#3495b6",
+          "mask": "minis/6-siege-blitz/mask-electric-blue.png",
+          "coverage": 1.5
+        },
+        {
+          "name": "Hardened Leather",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#8c501e",
+          "mask": "minis/6-siege-blitz/mask-hardened-leather.png",
+          "coverage": 1.4
+        },
+        {
+          "name": "Dark Wood",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#482d1a",
+          "mask": "minis/6-siege-blitz/mask-dark-wood.png",
+          "coverage": 0.5
+        },
+        {
+          "name": "Tyrian Navy",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#2a414f",
+          "mask": "minis/6-siege-blitz/mask-tyrian-navy.png",
+          "coverage": 5.8
+        },
+        {
+          "name": "Occultist Cloak",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#30323e",
+          "mask": "minis/6-siege-blitz/mask-occultist-cloak.png",
+          "coverage": 51.4
+        },
+        {
+          "name": "Broadsword Silver",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#595854",
+          "mask": "minis/6-siege-blitz/mask-broadsword-silver.png",
+          "coverage": 0.9
+        },
+        {
+          "name": "Magic Blue",
+          "brand": "Vallejo Game Color",
+          "hex": "#006eb5",
+          "mask": "minis/6-siege-blitz/mask-magic-blue.png",
+          "coverage": 1.0
+        },
+        {
+          "name": "Black",
+          "brand": "Army Painter",
+          "role": "Base rim",
+          "hex": "#1e1e1f",
+          "mask": "minis/6-siege-blitz/mask-black.png",
+          "coverage": 16.7
+        }
+      ]
+    },
+    {
+      "id": "6-siege-recruit",
+      "name": "Recruit",
+      "game": "6 Siege",
+      "date": "2026-10-26",
+      "photo": "minis/6-siege-recruit/photo.jpg",
+      "updated": "20261026220307",
+      "width": 1600,
+      "height": 1287,
+      "paints": [
+        {
+          "name": "Cloudburst Blue",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#3c4258",
+          "mask": "minis/6-siege-recruit/mask-cloudburst-blue.png",
+          "coverage": 7.3
+        },
+        {
+          "name": "Gravelord Grey",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#44474c",
+          "mask": "minis/6-siege-recruit/mask-gravelord-grey.png",
+          "coverage": 21.2
+        },
+        {
+          "name": "Grim Black",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#161511",
+          "mask": "minis/6-siege-recruit/mask-grim-black.png",
+          "coverage": 9.1
+        },
+        {
+          "name": "Hardened Leather",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#8c501e",
+          "mask": "minis/6-siege-recruit/mask-hardened-leather.png",
+          "coverage": 1.8
+        },
+        {
+          "name": "Dark Wood",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#482d1a",
+          "mask": "minis/6-siege-recruit/mask-dark-wood.png",
+          "coverage": 3.4
+        },
+        {
+          "name": "Burnt Moss",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#4d5a50",
+          "mask": "minis/6-siege-recruit/mask-burnt-moss.png",
+          "coverage": 1.2
+        },
+        {
+          "name": "Peachy Flesh",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#eda668",
+          "mask": "minis/6-siege-recruit/mask-peachy-flesh.png",
+          "coverage": 0.8
+        },
+        {
+          "name": "Ghillie Dew",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#90ac23",
+          "mask": "minis/6-siege-recruit/mask-ghillie-dew.png",
+          "coverage": 2.8
+        },
+        {
+          "name": "Magic Blue",
+          "brand": "Vallejo Game Color",
+          "hex": "#006eb5",
+          "mask": "minis/6-siege-recruit/mask-magic-blue.png",
+          "coverage": 5.9
+        },
+        {
+          "name": "Black",
+          "brand": "Army Painter",
+          "role": "Base rim",
+          "hex": "#1e1e1f",
+          "mask": "minis/6-siege-recruit/mask-black.png",
+          "coverage": 37.8
         }
       ]
     }
