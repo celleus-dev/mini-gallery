@@ -181,30 +181,40 @@
     380,
     665
    ]
-  ]
+  ],
+  "threshold": 30,
+  "samples": [
+   [
+    450,
+    350
+   ],
+   [
+    130,
+    320
+   ],
+   [
+    470,
+    470
+   ],
+   [
+    420,
+    540
+   ],
+   [
+    140,
+    450
+   ],
+   [
+    300,
+    640
+   ]
+  ],
+  "note": "Dan: the whole jacket (lighting makes parts look lighter)"
  },
  {
   "name": "Hardened Leather",
   "brand": "Army Painter Speedpaint",
   "regions": [
-   [
-    90,
-    240,
-    250,
-    665
-   ],
-   [
-    380,
-    240,
-    510,
-    665
-   ],
-   [
-    250,
-    305,
-    380,
-    665
-   ],
    [
     110,
     635,
@@ -222,7 +232,7 @@
     690
    ]
   ],
-  "note": "jacket; Dan: the hip pouch"
+  "note": "Dan: only the hip pouch"
  },
  {
   "name": "Broadsword Silver",
