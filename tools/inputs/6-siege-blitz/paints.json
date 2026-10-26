@@ -19,15 +19,99 @@
  },
  {
   "name": "Tyrian Navy",
-  "brand": "Army Painter Speedpaint"
+  "brand": "Army Painter Speedpaint",
+  "samples": [
+   [
+    330,
+    150
+   ],
+   [
+    390,
+    240
+   ],
+   [
+    180,
+    410
+   ],
+   [
+    220,
+    420
+   ],
+   [
+    130,
+    320
+   ],
+   [
+    80,
+    850
+   ]
+  ],
+  "threshold": 26,
+  "note": "Dan: the blue-grey"
  },
  {
   "name": "Occultist Cloak",
-  "brand": "Army Painter Speedpaint"
+  "brand": "Army Painter Speedpaint",
+  "samples": [
+   [
+    650,
+    250
+   ],
+   [
+    680,
+    400
+   ],
+   [
+    700,
+    700
+   ],
+   [
+    1100,
+    500
+   ],
+   [
+    1250,
+    800
+   ],
+   [
+    1000,
+    400
+   ]
+  ],
+  "threshold": 28,
+  "note": "Dan: the grey that isn't black"
  },
  {
   "name": "Broadsword Silver",
-  "brand": "Army Painter Speedpaint"
+  "brand": "Army Painter Speedpaint",
+  "regions": [
+   [
+    320,
+    215,
+    565,
+    345
+   ]
+  ],
+  "samples": [
+   [
+    480,
+    250
+   ],
+   [
+    380,
+    300
+   ],
+   [
+    530,
+    240
+   ],
+   [
+    420,
+    280
+   ]
+  ],
+  "threshold": 30,
+  "note": "Dan: just the gun in his hand"
  },
  {
   "name": "Magic Blue",
