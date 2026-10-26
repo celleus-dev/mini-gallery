@@ -1,10 +1,319 @@
 [
- {"name": "Grim Black", "brand": "Army Painter Speedpaint"},
- {"name": "Gravelord Grey", "brand": "Army Painter Speedpaint", "note": "Dan wrote 'Graveyard Gray'; Gravelord Grey is the only matching Speedpaint 2.0 name"},
- {"name": "Peachy Flesh", "brand": "Army Painter Speedpaint"},
- {"name": "Dark Wood", "brand": "Army Painter Speedpaint"},
- {"name": "Hardened Leather", "brand": "Army Painter Speedpaint"},
- {"name": "Broadsword Silver", "brand": "Army Painter Speedpaint"},
- {"name": "Poppy Red", "brand": "Army Painter Speedpaint"},
- {"name": "Cloudburst Blue", "brand": "Army Painter Speedpaint"}
+ {
+  "name": "Grim Black",
+  "brand": "Army Painter Speedpaint",
+  "threshold": 30,
+  "samples": [
+   [
+    300,
+    470
+   ],
+   [
+    215,
+    545
+   ],
+   [
+    500,
+    70
+   ]
+  ],
+  "regions": [
+   [
+    155,
+    370,
+    370,
+    670
+   ],
+   [
+    400,
+    20,
+    585,
+    205
+   ],
+   [
+    265,
+    140,
+    390,
+    182
+   ]
+  ],
+  "note": "Dan: the guns (plus sunglasses)"
+ },
+ {
+  "name": "Gravelord Grey",
+  "brand": "Army Painter Speedpaint",
+  "regions": [
+   [
+    175,
+    180,
+    500,
+    640
+   ],
+   [
+    190,
+    690,
+    590,
+    840
+   ],
+   [
+    210,
+    850,
+    365,
+    1000
+   ],
+   [
+    445,
+    1200,
+    700,
+    1340
+   ]
+  ],
+  "note": "Dan wrote 'Graveyard Gray', confirmed as Gravelord Grey; vest, belt pouches, knee pad",
+  "threshold": 26,
+  "samples": [
+   [
+    250,
+    300
+   ],
+   [
+    300,
+    760
+   ],
+   [
+    290,
+    930
+   ],
+   [
+    230,
+    240
+   ],
+   [
+    470,
+    780
+   ]
+  ]
+ },
+ {
+  "name": "Peachy Flesh",
+  "brand": "Army Painter Speedpaint",
+  "regions": [
+   [
+    255,
+    130,
+    400,
+    290
+   ],
+   [
+    120,
+    420,
+    245,
+    545
+   ],
+   [
+    270,
+    515,
+    380,
+    610
+   ]
+  ],
+  "note": "face and hands"
+ },
+ {
+  "name": "Dark Wood",
+  "brand": "Army Painter Speedpaint",
+  "regions": [
+   [
+    115,
+    190,
+    565,
+    700
+   ],
+   [
+    145,
+    690,
+    225,
+    860
+   ],
+   [
+    245,
+    1235,
+    355,
+    1345
+   ],
+   [
+    450,
+    1160,
+    525,
+    1220
+   ]
+  ]
+ },
+ {
+  "name": "Hardened Leather",
+  "brand": "Army Painter Speedpaint",
+  "regions": [
+   [
+    115,
+    190,
+    565,
+    700
+   ],
+   [
+    145,
+    690,
+    225,
+    860
+   ],
+   [
+    245,
+    1235,
+    355,
+    1345
+   ],
+   [
+    450,
+    1160,
+    525,
+    1220
+   ]
+  ]
+ },
+ {
+  "name": "Broadsword Silver",
+  "brand": "Army Painter Speedpaint",
+  "threshold": 30,
+  "regions": [
+   [
+    20,
+    1100,
+    900,
+    1440
+   ],
+   [
+    445,
+    1200,
+    700,
+    1340
+   ]
+  ],
+  "note": "Dan: the base"
+ },
+ {
+  "name": "Poppy Red",
+  "brand": "Army Painter Speedpaint",
+  "regions": [
+   [
+    225,
+    0,
+    415,
+    165
+   ]
+  ]
+ },
+ {
+  "name": "Cloudburst Blue",
+  "brand": "Army Painter Speedpaint",
+  "threshold": 24,
+  "samples": [
+   [
+    260,
+    1050
+   ],
+   [
+    470,
+    950
+   ],
+   [
+    320,
+    1180
+   ],
+   [
+    430,
+    1080
+   ]
+  ],
+  "regions": [
+   [
+    215,
+    830,
+    545,
+    1250
+   ],
+   [
+    400,
+    690,
+    500,
+    760
+   ]
+  ],
+  "note": "Dan: the jeans"
+ },
+ {
+  "name": "Magic Blue",
+  "brand": "Vallejo Game Color",
+  "hex": "#006eb5",
+  "hex_source": "Scalemates, Vallejo Game Color 72.021 Magic Blue (https://www.scalemates.com/colors/vallejo-game-color--804/72021-magic-blue-acrylic-matt--4504)",
+  "threshold": 28,
+  "samples": [
+   [
+    560,
+    1400
+   ],
+   [
+    600,
+    1520
+   ]
+  ],
+  "regions": [
+   [
+    440,
+    1355,
+    710,
+    1600
+   ]
+  ],
+  "note": "Dan: the clip on the base edge"
+ },
+ {
+  "name": "Black",
+  "brand": "Army Painter",
+  "role": "Base rim",
+  "hex": "#1e1e1f",
+  "threshold": 30,
+  "samples": [
+   [
+    150,
+    1460
+   ],
+   [
+    780,
+    1430
+   ],
+   [
+    60,
+    1360
+   ]
+  ],
+  "regions": [
+   [
+    0,
+    1380,
+    920,
+    1600
+   ],
+   [
+    0,
+    1280,
+    120,
+    1420
+   ],
+   [
+    800,
+    1280,
+    920,
+    1420
+   ]
+  ],
+  "note": "Dan: regular Army Painter black on the base rim"
+ }
 ]
