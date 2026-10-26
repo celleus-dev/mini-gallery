@@ -324,6 +324,78 @@
           "coverage": 38.1
         }
       ]
+    },
+    {
+      "id": "6-siege-blitz",
+      "name": "Blitz",
+      "game": "6 Siege",
+      "date": "2026-10-26",
+      "photo": "minis/6-siege-blitz/photo.jpg",
+      "updated": "20261026205300",
+      "width": 1600,
+      "height": 1200,
+      "paints": [
+        {
+          "name": "Grim Black",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#161511",
+          "mask": "minis/6-siege-blitz/mask-grim-black.png",
+          "coverage": 9.9
+        },
+        {
+          "name": "Electric Blue",
+          "brand": "Vallejo Game Color",
+          "hex": "#3495b6",
+          "mask": "minis/6-siege-blitz/mask-electric-blue.png",
+          "coverage": 2.4
+        },
+        {
+          "name": "Hardened Leather",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#8c501e",
+          "mask": "minis/6-siege-blitz/mask-hardened-leather.png",
+          "coverage": 1.4
+        },
+        {
+          "name": "Dark Wood",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#482d1a",
+          "mask": "minis/6-siege-blitz/mask-dark-wood.png",
+          "coverage": 0.5
+        },
+        {
+          "name": "Tyrian Navy",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#2a414f"
+        },
+        {
+          "name": "Occultist Cloak",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#30323e"
+        },
+        {
+          "name": "Broadsword Silver",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#595854",
+          "mask": "minis/6-siege-blitz/mask-broadsword-silver.png",
+          "coverage": 50.5
+        },
+        {
+          "name": "Magic Blue",
+          "brand": "Vallejo Game Color",
+          "hex": "#006eb5",
+          "mask": "minis/6-siege-blitz/mask-magic-blue.png",
+          "coverage": 1.0
+        },
+        {
+          "name": "Black",
+          "brand": "Army Painter",
+          "role": "Base rim",
+          "hex": "#1e1e1f",
+          "mask": "minis/6-siege-blitz/mask-black.png",
+          "coverage": 15.5
+        }
+      ]
     }
   ]
 }
