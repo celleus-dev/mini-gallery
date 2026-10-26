@@ -158,79 +158,79 @@
       "game": "6 Siege",
       "date": "2026-10-26",
       "photo": "minis/6-siege-flores/photo.jpg",
-      "updated": "20261026201455",
-      "width": 920,
-      "height": 1600,
+      "updated": "20261026214846",
+      "width": 742,
+      "height": 1383,
       "paints": [
         {
           "name": "Grim Black",
           "brand": "Army Painter Speedpaint",
           "hex": "#161511",
           "mask": "minis/6-siege-flores/mask-grim-black.png",
-          "coverage": 5.9
+          "coverage": 2.2
         },
         {
           "name": "Gravelord Grey",
           "brand": "Army Painter Speedpaint",
           "hex": "#44474c",
           "mask": "minis/6-siege-flores/mask-gravelord-grey.png",
-          "coverage": 20.0
+          "coverage": 27.0
         },
         {
           "name": "Peachy Flesh",
           "brand": "Army Painter Speedpaint",
           "hex": "#eda668",
           "mask": "minis/6-siege-flores/mask-peachy-flesh.png",
-          "coverage": 1.2
+          "coverage": 3.4
         },
         {
           "name": "Dark Wood",
           "brand": "Army Painter Speedpaint",
           "hex": "#482d1a",
           "mask": "minis/6-siege-flores/mask-dark-wood.png",
-          "coverage": 5.8
+          "coverage": 2.5
         },
         {
           "name": "Hardened Leather",
           "brand": "Army Painter Speedpaint",
           "hex": "#8c501e",
           "mask": "minis/6-siege-flores/mask-hardened-leather.png",
-          "coverage": 9.2
+          "coverage": 8.8
         },
         {
           "name": "Broadsword Silver",
           "brand": "Army Painter Speedpaint",
           "hex": "#595854",
           "mask": "minis/6-siege-flores/mask-broadsword-silver.png",
-          "coverage": 15.7
+          "coverage": 20.1
         },
         {
           "name": "Poppy Red",
           "brand": "Army Painter Speedpaint",
           "hex": "#c8453b",
           "mask": "minis/6-siege-flores/mask-poppy-red.png",
-          "coverage": 2.6
+          "coverage": 3.4
         },
         {
           "name": "Cloudburst Blue",
           "brand": "Army Painter Speedpaint",
           "hex": "#3c4258",
           "mask": "minis/6-siege-flores/mask-cloudburst-blue.png",
-          "coverage": 12.5
+          "coverage": 11.3
         },
         {
           "name": "Dusk Red",
           "brand": "Army Painter Speedpaint",
           "hex": "#603e3d",
           "mask": "minis/6-siege-flores/mask-dusk-red.png",
-          "coverage": 1.7
+          "coverage": 2.3
         },
         {
           "name": "Magic Blue",
           "brand": "Vallejo Game Color",
           "hex": "#006eb5",
           "mask": "minis/6-siege-flores/mask-magic-blue.png",
-          "coverage": 6.4
+          "coverage": 5.5
         },
         {
           "name": "Black",
@@ -238,7 +238,7 @@
           "role": "Base rim",
           "hex": "#1e1e1f",
           "mask": "minis/6-siege-flores/mask-black.png",
-          "coverage": 14.6
+          "coverage": 9.4
         }
       ]
     },
