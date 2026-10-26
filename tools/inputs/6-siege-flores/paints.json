@@ -64,12 +64,6 @@
     905
    ],
    [
-    400,
-    955,
-    615,
-    1115
-   ],
-   [
     160,
     215,
     250,
@@ -237,22 +231,160 @@
  {
   "name": "Broadsword Silver",
   "brand": "Army Painter Speedpaint",
-  "threshold": 30,
+  "threshold": 40,
   "regions": [
+   {
+    "polygon": [
+     [
+      395,
+      1000
+     ],
+     [
+      430,
+      970
+     ],
+     [
+      470,
+      973
+     ],
+     [
+      490,
+      998
+     ],
+     [
+      540,
+      1008
+     ],
+     [
+      585,
+      1018
+     ],
+     [
+      602,
+      1050
+     ],
+     [
+      592,
+      1097
+     ],
+     [
+      560,
+      1118
+     ],
+     [
+      508,
+      1118
+     ],
+     [
+      488,
+      1088
+     ],
+     [
+      468,
+      1062
+     ],
+     [
+      428,
+      1057
+     ],
+     [
+      398,
+      1042
+     ]
+    ]
+   }
+  ],
+  "note": "Dan: the rocks by his foot (not the base)",
+  "exclude_regions": [
+   {
+    "polygon": [
+     [
+      470,
+      998
+     ],
+     [
+      532,
+      1001
+     ],
+     [
+      548,
+      1025
+     ],
+     [
+      522,
+      1047
+     ],
+     [
+      480,
+      1050
+     ],
+     [
+      463,
+      1025
+     ]
+    ]
+   }
+  ],
+  "samples": [
    [
-    25,
-    880,
-    705,
-    1275
+    440,
+    990
    ],
    [
-    400,
-    955,
-    615,
-    1115
+    540,
+    1080
+   ],
+   [
+    575,
+    1045
+   ]
+  ]
+ },
+ {
+  "name": "Ghillie Dew",
+  "brand": "Army Painter Speedpaint",
+  "threshold": 40,
+  "samples": [
+   [
+    500,
+    1020
+   ],
+   [
+    515,
+    1030
    ]
   ],
-  "note": "Dan: the base"
+  "regions": [
+   {
+    "polygon": [
+     [
+      470,
+      998
+     ],
+     [
+      532,
+      1001
+     ],
+     [
+      548,
+      1025
+     ],
+     [
+      522,
+      1047
+     ],
+     [
+      480,
+      1050
+     ],
+     [
+      463,
+      1025
+     ]
+    ]
+   }
+  ],
+  "note": "Dan: the greenish strip in the middle of the rocks"
  },
  {
   "name": "Poppy Red",
@@ -333,7 +465,7 @@
   "brand": "Vallejo Game Color",
   "hex": "#006eb5",
   "hex_source": "Scalemates, Vallejo Game Color 72.021 Magic Blue (https://www.scalemates.com/colors/vallejo-game-color--804/72021-magic-blue-acrylic-matt--4504)",
-  "threshold": 28,
+  "threshold": 40,
   "samples": [
    [
     560,
@@ -345,12 +477,34 @@
    ]
   ],
   "regions": [
-   [
-    490,
-    1095,
-    710,
-    1340
-   ]
+   {
+    "polygon": [
+     [
+      490,
+      1140
+     ],
+     [
+      640,
+      1098
+     ],
+     [
+      708,
+      1148
+     ],
+     [
+      710,
+      1295
+     ],
+     [
+      590,
+      1340
+     ],
+     [
+      495,
+      1290
+     ]
+    ]
+   }
   ],
   "note": "Dan: the clip on the base edge"
  },
@@ -359,7 +513,7 @@
   "brand": "Army Painter",
   "role": "Base rim",
   "hex": "#1e1e1f",
-  "threshold": 30,
+  "threshold": 40,
   "samples": [
    [
     300,
@@ -368,28 +522,124 @@
    [
     50,
     1150
+   ],
+   [
+    150,
+    1000
+   ],
+   [
+    600,
+    1000
+   ],
+   [
+    250,
+    1200
+   ],
+   [
+    650,
+    1180
    ]
   ],
   "regions": [
-   [
-    0,
-    1270,
-    742,
-    1383
-   ],
-   [
-    0,
-    1000,
-    95,
-    1285
-   ],
-   [
-    640,
-    1000,
-    742,
-    1130
-   ]
+   {
+    "ellipse": [
+     362,
+     1112,
+     348,
+     240
+    ]
+   }
   ],
-  "note": "Dan: regular Army Painter black on the base rim"
+  "note": "Dan: the whole base is regular Army Painter black (looks grey from the lighting)",
+  "exclude_regions": [
+   {
+    "polygon": [
+     [
+      395,
+      1000
+     ],
+     [
+      430,
+      970
+     ],
+     [
+      470,
+      973
+     ],
+     [
+      490,
+      998
+     ],
+     [
+      540,
+      1008
+     ],
+     [
+      585,
+      1018
+     ],
+     [
+      602,
+      1050
+     ],
+     [
+      592,
+      1097
+     ],
+     [
+      560,
+      1118
+     ],
+     [
+      508,
+      1118
+     ],
+     [
+      488,
+      1088
+     ],
+     [
+      468,
+      1062
+     ],
+     [
+      428,
+      1057
+     ],
+     [
+      398,
+      1042
+     ]
+    ]
+   },
+   {
+    "polygon": [
+     [
+      490,
+      1140
+     ],
+     [
+      640,
+      1098
+     ],
+     [
+      708,
+      1148
+     ],
+     [
+      710,
+      1295
+     ],
+     [
+      590,
+      1340
+     ],
+     [
+      495,
+      1290
+     ]
+    ]
+   }
+  ]
  }
 ]

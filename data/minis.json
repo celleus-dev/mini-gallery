@@ -317,7 +317,7 @@
       "game": "6 Siege",
       "date": "2026-10-26",
       "photo": "minis/6-siege-flores/photo.jpg",
-      "updated": "20261026215156",
+      "updated": "20261026215520",
       "width": 742,
       "height": 1383,
       "paints": [
@@ -333,7 +333,7 @@
           "brand": "Army Painter Speedpaint",
           "hex": "#44474c",
           "mask": "minis/6-siege-flores/mask-gravelord-grey.png",
-          "coverage": 24.7
+          "coverage": 17.9
         },
         {
           "name": "Peachy Flesh",
@@ -361,7 +361,14 @@
           "brand": "Army Painter Speedpaint",
           "hex": "#595854",
           "mask": "minis/6-siege-flores/mask-broadsword-silver.png",
-          "coverage": 20.1
+          "coverage": 3.1
+        },
+        {
+          "name": "Ghillie Dew",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#90ac23",
+          "mask": "minis/6-siege-flores/mask-ghillie-dew.png",
+          "coverage": 0.7
         },
         {
           "name": "Poppy Red",
@@ -375,21 +382,21 @@
           "brand": "Army Painter Speedpaint",
           "hex": "#3c4258",
           "mask": "minis/6-siege-flores/mask-cloudburst-blue.png",
-          "coverage": 11.3
+          "coverage": 7.0
         },
         {
           "name": "Dusk Red",
           "brand": "Army Painter Speedpaint",
           "hex": "#603e3d",
           "mask": "minis/6-siege-flores/mask-dusk-red.png",
-          "coverage": 2.3
+          "coverage": 1.4
         },
         {
           "name": "Magic Blue",
           "brand": "Vallejo Game Color",
           "hex": "#006eb5",
           "mask": "minis/6-siege-flores/mask-magic-blue.png",
-          "coverage": 5.5
+          "coverage": 7.8
         },
         {
           "name": "Black",
@@ -397,7 +404,7 @@
           "role": "Base rim",
           "hex": "#1e1e1f",
           "mask": "minis/6-siege-flores/mask-black.png",
-          "coverage": 9.4
+          "coverage": 35.7
         }
       ]
     }

@@ -174,11 +174,26 @@ def match_paints(lab_img, fg, paints, default_thr, kL):
     def allowed(p):
         # "regions": [[left, top, right, bottom], ...] in the saved photo's pixels.
         # The paint can only be matched inside them; no regions = anywhere.
-        if not p.get("regions"):
-            return np.ones((h, w), bool)
+        # A region can also be {"ellipse": [cx, cy, rx, ry]} (round bases) or
+        # {"polygon": [[x, y], ...]}; "exclude_regions" (same forms) carves areas out.
+        a = np.ones((h, w), bool) if not p.get("regions") else shapes_mask(p["regions"])
+        if p.get("exclude_regions"):
+            a &= ~shapes_mask(p["exclude_regions"])
+        return a
+
+    def shapes_mask(regions):
         a = np.zeros((h, w), bool)
-        for x0, y0, x1, y1 in p["regions"]:
-            a[max(0, y0):y1, max(0, x0):x1] = True
+        yy, xx = np.mgrid[0:h, 0:w]
+        for r in regions:
+            if isinstance(r, dict) and "ellipse" in r:
+                cx, cy, rx, ry = r["ellipse"]
+                a |= ((xx - cx) / rx) ** 2 + ((yy - cy) / ry) ** 2 <= 1
+            elif isinstance(r, dict) and "polygon" in r:
+                from skimage.draw import polygon2mask
+                a |= polygon2mask((h, w), [(y, x) for x, y in r["polygon"]])
+            else:
+                x0, y0, x1, y1 = r
+                a[max(0, y0):y1, max(0, x0):x1] = True
         return a
 
     dists = np.stack([
