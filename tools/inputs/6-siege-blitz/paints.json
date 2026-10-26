@@ -1,0 +1,15 @@
+[
+ {"name": "Grim Black", "brand": "Army Painter Speedpaint"},
+ {"name": "Electric Blue", "brand": "Vallejo Game Color",
+  "hex": "#3495b6",
+  "hex_source": "Scalemates, Vallejo Game Color 72.023 Electric Blue (https://www.scalemates.com/colors/vallejo-game-color--804/72023-electric-blue-acrylic-matt--4505)"},
+ {"name": "Hardened Leather", "brand": "Army Painter Speedpaint"},
+ {"name": "Dark Wood", "brand": "Army Painter Speedpaint"},
+ {"name": "Tyrian Navy", "brand": "Army Painter Speedpaint"},
+ {"name": "Occultist Cloak", "brand": "Army Painter Speedpaint"},
+ {"name": "Broadsword Silver", "brand": "Army Painter Speedpaint"},
+ {"name": "Magic Blue", "brand": "Vallejo Game Color",
+  "hex": "#006eb5",
+  "hex_source": "Scalemates, Vallejo Game Color 72.021 Magic Blue (https://www.scalemates.com/colors/vallejo-game-color--804/72021-magic-blue-acrylic-matt--4504)",
+  "note": "Dan: the clip on the base edge"}
+]
