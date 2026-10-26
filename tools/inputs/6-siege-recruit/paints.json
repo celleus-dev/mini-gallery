@@ -202,7 +202,7 @@
  {
   "name": "Dark Wood",
   "brand": "Army Painter Speedpaint",
-  "threshold": 15,
+  "threshold": 22,
   "samples": [
    [
     180,
@@ -346,25 +346,111 @@
   "note": "model 2 jacket"
  },
  {
+  "name": "Magic Blue",
+  "brand": "Vallejo Game Color",
+  "hex": "#006eb5",
+  "hex_source": "Scalemates, Vallejo Game Color 72.021 Magic Blue (https://www.scalemates.com/colors/vallejo-game-color--804/72021-magic-blue-acrylic-matt--4504)",
+  "threshold": 28,
+  "samples": [
+   [
+    650,
+    1010
+   ],
+   [
+    1340,
+    1160
+   ]
+  ],
+  "regions": [
+   [
+    570,
+    930,
+    740,
+    1120
+   ],
+   [
+    1220,
+    1050,
+    1470,
+    1260
+   ]
+  ],
+  "note": "Dan: the clips on the base edge"
+ },
+ {
   "name": "Black",
   "brand": "Army Painter",
   "role": "Base rim",
   "hex": "#1e1e1f",
-  "threshold": 20,
+  "threshold": 28,
   "regions": [
    [
-    30,
-    1040,
+    20,
+    840,
     640,
-    1200
+    1210
    ],
    [
-    840,
-    1080,
-    1560,
+    820,
+    860,
+    1280,
+    1287
+   ],
+   [
+    1280,
+    930,
+    1580,
+    1287
+   ],
+   [
+    1400,
+    860,
+    1580,
     1287
    ]
   ],
-  "note": "house paint on the base rim"
+  "note": "Dan: the bases are black (they look grey from the lighting)",
+  "samples": [
+   [
+    200,
+    1080
+   ],
+   [
+    400,
+    1000
+   ],
+   [
+    100,
+    1130
+   ],
+   [
+    300,
+    1150
+   ],
+   [
+    1000,
+    1050
+   ],
+   [
+    1100,
+    1200
+   ],
+   [
+    1450,
+    1080
+   ],
+   [
+    900,
+    1180
+   ],
+   [
+    260,
+    980
+   ],
+   [
+    1120,
+    1000
+   ]
+  ]
  }
 ]
