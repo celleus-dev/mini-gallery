@@ -241,6 +241,82 @@
           "coverage": 14.6
         }
       ]
+    },
+    {
+      "id": "6-siege-recruit",
+      "name": "Recruit",
+      "game": "6 Siege",
+      "date": "2026-10-26",
+      "photo": "minis/6-siege-recruit/photo.jpg",
+      "updated": "20261026203345",
+      "width": 1600,
+      "height": 1287,
+      "paints": [
+        {
+          "name": "Cloudburst Blue",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#3c4258",
+          "mask": "minis/6-siege-recruit/mask-cloudburst-blue.png",
+          "coverage": 8.4
+        },
+        {
+          "name": "Gravelord Grey",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#44474c",
+          "mask": "minis/6-siege-recruit/mask-gravelord-grey.png",
+          "coverage": 26.5
+        },
+        {
+          "name": "Grim Black",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#161511",
+          "mask": "minis/6-siege-recruit/mask-grim-black.png",
+          "coverage": 8.8
+        },
+        {
+          "name": "Hardened Leather",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#8c501e",
+          "mask": "minis/6-siege-recruit/mask-hardened-leather.png",
+          "coverage": 1.9
+        },
+        {
+          "name": "Dark Wood",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#482d1a",
+          "mask": "minis/6-siege-recruit/mask-dark-wood.png",
+          "coverage": 5.0
+        },
+        {
+          "name": "Burnt Moss",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#4d5a50",
+          "mask": "minis/6-siege-recruit/mask-burnt-moss.png",
+          "coverage": 1.2
+        },
+        {
+          "name": "Peachy Flesh",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#eda668",
+          "mask": "minis/6-siege-recruit/mask-peachy-flesh.png",
+          "coverage": 0.7
+        },
+        {
+          "name": "Ghillie Dew",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#90ac23",
+          "mask": "minis/6-siege-recruit/mask-ghillie-dew.png",
+          "coverage": 2.9
+        },
+        {
+          "name": "Black",
+          "brand": "Army Painter",
+          "role": "Base rim",
+          "hex": "#1e1e1f",
+          "mask": "minis/6-siege-recruit/mask-black.png",
+          "coverage": 11.1
+        }
+      ]
     }
   ]
 }
