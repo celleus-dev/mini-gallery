@@ -46,6 +46,24 @@ tools/process_mini.py  turns a photo + paint list into the files above
    to add it to the paint library and training dataset (below), then commit.
    Re-processing a mini clears its verified mark.
 
+## Fine-tuning paint areas (lasso editor)
+
+`edit.html?id=<mini-id>` (not linked from the site; bookmark it) lets Dan draw
+around areas to add them to a paint or remove them. It never changes the site:
+"Download edits" saves a small JSON file of the lasso shapes. To apply one:
+
+```
+python3 tools/apply_edits.py edits.json --preview review.png             # apply, then commit + push
+python3 tools/apply_edits.py edits.json --preview review.png --dry-run   # preview only, changes nothing
+```
+
+The edits are Dan's own corrections, so they're applied and pushed straight
+away; the review image is sent afterwards in case anything needs another pass.
+
+Applied edits are saved in `tools/inputs/<mini-id>/edits/` and re-applied
+whenever `process_mini.py` re-runs that mini. Applying edits clears the mini's
+verified-for-training mark until Dan confirms it again.
+
 ## Paint library and training data
 
 ```

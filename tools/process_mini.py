@@ -56,6 +56,7 @@ from PIL import Image, ImageOps
 from scipy import ndimage as ndi
 from skimage import color
 
+import edits
 import paintlib
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -278,6 +279,7 @@ def main():
                                       "white = mini, black = background. Overrides --background.")
     ap.add_argument("--bg-threshold", type=float, default=12.0)
     ap.add_argument("--preview", help="where to write the review image")
+    ap.add_argument("--no-edits", action="store_true", help="ignore saved lasso edits in tools/inputs/<id>/edits/")
     ap.add_argument("--no-house", action="store_true", help="don't add the standard paints in library/house_paints.json")
     ap.add_argument("--no-learned", action="store_true",
                     help="match on published colours and samples only, ignoring shades learned from earlier minis")
@@ -323,6 +325,19 @@ def main():
             if p.get("_house") and not p.get("regions"):
                 p["regions"] = [[0, bottom - int(0.3 * (bottom - top)), fg.shape[1], bottom]]
     masks, unmatched = match_paints(lab_img, fg, paints, args.threshold, args.kL)
+
+    # Hand fixes made with the site's lasso editor (tools/inputs/<id>/edits/)
+    if not args.no_edits:
+        docs = edits.saved_docs(ROOT / "tools" / "inputs" / mini_id)
+        if docs:
+            w, h = img.size
+            masks, notes = edits.apply(masks, [p["name"] for p in paints if p.get("highlight", True)], docs, w, h)
+            for n in notes:
+                print("note:", n)
+            painted = np.any(list(masks.values()), axis=0)
+            fg = fg | painted  # a lasso can add a bit the outline missed
+            unmatched = fg & ~painted
+            print(f"applied {len(docs)} saved edits file(s)")
 
     out_dir = ROOT / "minis" / mini_id
     out_dir.mkdir(parents=True, exist_ok=True)
