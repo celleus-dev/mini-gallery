@@ -8,4 +8,4 @@ python3 tools/process_mini.py --photo <original photo> \
   --fg-mask tools/inputs/marvel-united-captain-marvel/fg_mask.png
 
 Hint-based fg mask (busy speckled backdrop): saturated paint + face polygon + whole base ellipse.
-Ashen Stone placed on the base's stone floor, Black on the rim — to confirm with Dan.
+Ashen Stone = base flooring, Peachy Flesh = face (Dan, Oct 27 2026). Black on the rim.

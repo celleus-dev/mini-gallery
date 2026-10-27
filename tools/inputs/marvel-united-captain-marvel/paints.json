@@ -216,6 +216,61 @@
   "note": "helmet, shoulders, arms, gloves, boots and the sash"
  },
  {
+  "name": "Peachy Flesh",
+  "brand": "Army Painter Speedpaint",
+  "threshold": 30,
+  "priority": true,
+  "samples": [
+   [
+    470,
+    600
+   ],
+   [
+    450,
+    580
+   ],
+   [
+    500,
+    610
+   ]
+  ],
+  "regions": [
+   {
+    "polygon": [
+     [
+      405,
+      520
+     ],
+     [
+      470,
+      545
+     ],
+     [
+      540,
+      545
+     ],
+     [
+      560,
+      600
+     ],
+     [
+      520,
+      640
+     ],
+     [
+      450,
+      640
+     ],
+     [
+      395,
+      590
+     ]
+    ]
+   }
+  ],
+  "note": "Dan: the face"
+ },
+ {
   "name": "Ashen Stone",
   "brand": "Army Painter Speedpaint",
   "threshold": 34,
@@ -282,7 +337,7 @@
     ]
    }
   ],
-  "note": "the stone floor on the base (my reading; Dan to confirm)"
+  "note": "Dan: the base flooring"
  },
  {
   "name": "Black",

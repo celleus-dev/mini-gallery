@@ -564,7 +564,7 @@
       "game": "Marvel United",
       "date": "2026-10-27",
       "photo": "minis/marvel-united-captain-marvel/photo.jpg",
-      "updated": "20261027201739",
+      "updated": "20261027213840",
       "width": 883,
       "height": 1600,
       "paints": [
@@ -587,14 +587,21 @@
           "brand": "Army Painter Speedpaint",
           "hex": "#714808",
           "mask": "minis/marvel-united-captain-marvel/mask-golden-armour.png",
-          "coverage": 14.5
+          "coverage": 12.2
         },
         {
           "name": "Bright Red",
           "brand": "Army Painter Speedpaint",
           "hex": "#e15a3d",
           "mask": "minis/marvel-united-captain-marvel/mask-bright-red.png",
-          "coverage": 43.0
+          "coverage": 42.1
+        },
+        {
+          "name": "Peachy Flesh",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#eda668",
+          "mask": "minis/marvel-united-captain-marvel/mask-peachy-flesh.png",
+          "coverage": 3.2
         },
         {
           "name": "Ashen Stone",
