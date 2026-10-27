@@ -14,3 +14,8 @@ fg_mask.png: hint-based GrabCut (make_fg_mask.py composite.jpg fg_mask.png view.
 hint coordinates are at half scale). Busy dark fabric background.
 Paint colours: published Speedpaint 2.0 values (lexmechanic.com/paints/speedpaint-2);
 Vallejo Electric Blue and Magic Blue from Scalemates.
+
+Re-cropped Oct 27 2026 (Dan: photos looked too zoomed in): composite.jpg is now
+original-front.jpg cropped 330,370,1730,2470 and original-back.jpg cropped 60,370,1460,2470, each grown 15% per side
+(clamped to the photo), pasted side by side and scaled to max 1600 (tools/recrop.py).
+Add --date 2026-10-26 when re-running.

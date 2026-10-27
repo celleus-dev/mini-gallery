@@ -1,645 +1,645 @@
 [
- {
-  "name": "Grim Black",
-  "brand": "Army Painter Speedpaint",
-  "threshold": 30,
-  "samples": [
-   [
-    275,
-    560
-   ],
-   [
-    420,
-    105
-   ]
-  ],
-  "regions": [
-   [
-    345,
-    60,
-    470,
-    140
-   ],
-   [
-    180,
-    420,
-    335,
-    615
-   ],
-   [
-    90,
-    470,
-    150,
-    590
-   ],
-   [
-    245,
-    195,
-    345,
-    228
-   ]
-  ],
-  "note": "Dan: the guns (plus sunglasses)"
- },
- {
-  "name": "Gravelord Grey",
-  "brand": "Army Painter Speedpaint",
-  "regions": [
-   [
-    160,
-    290,
-    415,
-    605
-   ],
-   [
-    135,
-    625,
-    485,
-    765
-   ],
-   [
-    235,
-    795,
-    340,
-    905
-   ],
-   [
-    160,
-    215,
-    250,
-    290
-   ],
-   [
-    380,
-    215,
-    415,
-    290
-   ]
-  ],
-  "note": "Dan wrote 'Graveyard Gray', confirmed as Gravelord Grey; vest, belt pouches, knee pad",
-  "threshold": 26,
-  "samples": [
-   [
-    220,
-    300
-   ],
-   [
-    330,
-    690
-   ],
-   [
-    290,
-    850
-   ],
-   [
-    300,
-    250
-   ]
-  ]
- },
- {
-  "name": "Peachy Flesh",
-  "brand": "Army Painter Speedpaint",
-  "regions": [
-   [
-    255,
-    188,
-    368,
-    288
-   ],
-   [
-    170,
-    445,
-    270,
-    565
-   ],
-   [
-    285,
-    465,
-    375,
-    595
-   ]
-  ],
-  "note": "face and hands",
-  "threshold": 22,
-  "samples": [
-   [
-    300,
-    250
-   ],
-   [
-    320,
-    280
-   ],
-   [
-    285,
-    225
-   ],
-   [
-    215,
-    480
-   ],
-   [
-    235,
-    520
-   ],
-   [
-    320,
-    540
-   ],
-   [
-    300,
-    560
-   ]
-  ]
- },
- {
-  "name": "Dark Wood",
-  "brand": "Army Painter Speedpaint",
-  "regions": [
-   [
-    90,
-    240,
-    250,
-    665
-   ],
-   [
-    380,
-    240,
-    510,
-    665
-   ],
-   [
-    250,
-    305,
-    380,
-    665
-   ]
-  ],
-  "threshold": 30,
-  "samples": [
-   [
-    450,
-    350
-   ],
-   [
-    130,
-    320
-   ],
-   [
-    470,
-    470
-   ],
-   [
-    420,
-    540
-   ],
-   [
-    140,
-    450
-   ],
-   [
-    300,
-    640
-   ]
-  ],
-  "note": "Dan: the whole jacket (lighting makes parts look lighter)"
- },
- {
-  "name": "Hardened Leather",
-  "brand": "Army Painter Speedpaint",
-  "regions": [
-   [
-    110,
-    635,
-    230,
-    805
-   ]
-  ],
-  "samples": [
-   [
-    160,
-    720
-   ],
-   [
-    150,
-    690
-   ]
-  ],
-  "note": "Dan: only the hip pouch"
- },
- {
-  "name": "Broadsword Silver",
-  "brand": "Army Painter Speedpaint",
-  "threshold": 40,
-  "regions": [
-   {
-    "polygon": [
-     [
-      395,
-      1000
-     ],
-     [
-      430,
-      970
-     ],
-     [
-      470,
-      973
-     ],
-     [
-      490,
-      998
-     ],
-     [
-      540,
-      1008
-     ],
-     [
-      585,
-      1018
-     ],
-     [
-      602,
-      1050
-     ],
-     [
-      592,
-      1097
-     ],
-     [
-      560,
-      1118
-     ],
-     [
-      508,
-      1118
-     ],
-     [
-      488,
-      1088
-     ],
-     [
-      468,
-      1062
-     ],
-     [
-      428,
-      1057
-     ],
-     [
-      398,
-      1042
-     ]
+  {
+    "name": "Grim Black",
+    "brand": "Army Painter Speedpaint",
+    "threshold": 30,
+    "samples": [
+      [
+        344,
+        683
+      ],
+      [
+        473,
+        278
+      ]
+    ],
+    "regions": [
+      [
+        406,
+        238,
+        517,
+        309
+      ],
+      [
+        259,
+        558,
+        397,
+        732
+      ],
+      [
+        179,
+        603,
+        232,
+        710
+      ],
+      [
+        317,
+        358,
+        406,
+        387
+      ]
+    ],
+    "note": "Dan: the guns (plus sunglasses)"
+  },
+  {
+    "name": "Gravelord Grey",
+    "brand": "Army Painter Speedpaint",
+    "regions": [
+      [
+        241,
+        443,
+        468,
+        723
+      ],
+      [
+        219,
+        741,
+        531,
+        865
+      ],
+      [
+        308,
+        892,
+        402,
+        990
+      ],
+      [
+        241,
+        376,
+        321,
+        443
+      ],
+      [
+        437,
+        376,
+        468,
+        443
+      ]
+    ],
+    "note": "Dan wrote 'Graveyard Gray', confirmed as Gravelord Grey; vest, belt pouches, knee pad",
+    "threshold": 26,
+    "samples": [
+      [
+        295,
+        451
+      ],
+      [
+        393,
+        799
+      ],
+      [
+        357,
+        941
+      ],
+      [
+        366,
+        407
+      ]
     ]
-   }
-  ],
-  "note": "Dan: the rocks by his foot (not the base)",
-  "exclude_regions": [
-   {
-    "polygon": [
-     [
-      470,
-      998
-     ],
-     [
-      532,
-      1001
-     ],
-     [
-      548,
-      1025
-     ],
-     [
-      522,
-      1047
-     ],
-     [
-      480,
-      1050
-     ],
-     [
-      463,
-      1025
-     ]
+  },
+  {
+    "name": "Peachy Flesh",
+    "brand": "Army Painter Speedpaint",
+    "regions": [
+      [
+        326,
+        352,
+        426,
+        441
+      ],
+      [
+        250,
+        581,
+        339,
+        687
+      ],
+      [
+        353,
+        598,
+        433,
+        714
+      ]
+    ],
+    "note": "face and hands",
+    "threshold": 22,
+    "samples": [
+      [
+        366,
+        407
+      ],
+      [
+        384,
+        434
+      ],
+      [
+        353,
+        385
+      ],
+      [
+        290,
+        612
+      ],
+      [
+        308,
+        647
+      ],
+      [
+        384,
+        665
+      ],
+      [
+        366,
+        683
+      ]
     ]
-   }
-  ],
-  "samples": [
-   [
-    440,
-    990
-   ],
-   [
-    540,
-    1080
-   ],
-   [
-    575,
-    1045
-   ]
-  ]
- },
- {
-  "name": "Ghillie Dew",
-  "brand": "Army Painter Speedpaint",
-  "threshold": 40,
-  "samples": [
-   [
-    500,
-    1020
-   ],
-   [
-    515,
-    1030
-   ]
-  ],
-  "regions": [
-   {
-    "polygon": [
-     [
-      470,
-      998
-     ],
-     [
-      532,
-      1001
-     ],
-     [
-      548,
-      1025
-     ],
-     [
-      522,
-      1047
-     ],
-     [
-      480,
-      1050
-     ],
-     [
-      463,
-      1025
-     ]
+  },
+  {
+    "name": "Dark Wood",
+    "brand": "Army Painter Speedpaint",
+    "regions": [
+      [
+        179,
+        398,
+        321,
+        776
+      ],
+      [
+        437,
+        398,
+        553,
+        776
+      ],
+      [
+        321,
+        456,
+        437,
+        776
+      ]
+    ],
+    "threshold": 30,
+    "samples": [
+      [
+        499,
+        496
+      ],
+      [
+        215,
+        469
+      ],
+      [
+        517,
+        603
+      ],
+      [
+        473,
+        665
+      ],
+      [
+        223,
+        585
+      ],
+      [
+        366,
+        754
+      ]
+    ],
+    "note": "Dan: the whole jacket (lighting makes parts look lighter)"
+  },
+  {
+    "name": "Hardened Leather",
+    "brand": "Army Painter Speedpaint",
+    "regions": [
+      [
+        197,
+        750,
+        304,
+        901
+      ]
+    ],
+    "samples": [
+      [
+        241,
+        825
+      ],
+      [
+        232,
+        799
+      ]
+    ],
+    "note": "Dan: only the hip pouch"
+  },
+  {
+    "name": "Broadsword Silver",
+    "brand": "Army Painter Speedpaint",
+    "threshold": 40,
+    "regions": [
+      {
+        "polygon": [
+          [
+            451,
+            1075
+          ],
+          [
+            482,
+            1048
+          ],
+          [
+            517,
+            1051
+          ],
+          [
+            535,
+            1073
+          ],
+          [
+            580,
+            1082
+          ],
+          [
+            620,
+            1091
+          ],
+          [
+            635,
+            1119
+          ],
+          [
+            626,
+            1161
+          ],
+          [
+            597,
+            1180
+          ],
+          [
+            551,
+            1180
+          ],
+          [
+            533,
+            1153
+          ],
+          [
+            516,
+            1130
+          ],
+          [
+            480,
+            1125
+          ],
+          [
+            453,
+            1112
+          ]
+        ]
+      }
+    ],
+    "note": "Dan: the rocks by his foot (not the base)",
+    "exclude_regions": [
+      {
+        "polygon": [
+          [
+            517,
+            1073
+          ],
+          [
+            573,
+            1076
+          ],
+          [
+            587,
+            1097
+          ],
+          [
+            564,
+            1117
+          ],
+          [
+            526,
+            1119
+          ],
+          [
+            511,
+            1097
+          ]
+        ]
+      }
+    ],
+    "samples": [
+      [
+        491,
+        1066
+      ],
+      [
+        580,
+        1146
+      ],
+      [
+        611,
+        1115
+      ]
     ]
-   }
-  ],
-  "note": "Dan: the greenish strip in the middle of the rocks"
- },
- {
-  "name": "Poppy Red",
-  "brand": "Army Painter Speedpaint",
-  "regions": [
-   [
-    225,
-    60,
-    410,
-    222
-   ]
-  ]
- },
- {
-  "name": "Cloudburst Blue",
-  "brand": "Army Painter Speedpaint",
-  "threshold": 24,
-  "samples": [
-   [
-    240,
-    950
-   ],
-   [
-    400,
-    780
-   ],
-   [
-    270,
-    1060
-   ],
-   [
-    380,
-    880
-   ]
-  ],
-  "regions": [
-   [
-    205,
-    735,
-    455,
-    1115
-   ]
-  ],
-  "note": "Dan: the jeans"
- },
- {
-  "name": "Dusk Red",
-  "brand": "Army Painter Speedpaint",
-  "threshold": 28,
-  "samples": [
-   [
-    315,
-    1140
-   ],
-   [
-    355,
-    975
-   ]
-  ],
-  "regions": [
-   [
-    265,
-    1085,
-    365,
-    1175
-   ],
-   [
-    325,
-    935,
-    390,
-    1005
-   ]
-  ],
-  "note": "Dan: the boots"
- },
- {
-  "name": "Magic Blue",
-  "brand": "Vallejo Game Color",
-  "hex": "#006eb5",
-  "hex_source": "Scalemates, Vallejo Game Color 72.021 Magic Blue (https://www.scalemates.com/colors/vallejo-game-color--804/72021-magic-blue-acrylic-matt--4504)",
-  "threshold": 40,
-  "samples": [
-   [
-    560,
-    1150
-   ],
-   [
-    650,
-    1250
-   ]
-  ],
-  "regions": [
-   {
-    "polygon": [
-     [
-      490,
-      1140
-     ],
-     [
-      640,
-      1098
-     ],
-     [
-      708,
-      1148
-     ],
-     [
-      710,
-      1295
-     ],
-     [
-      590,
-      1340
-     ],
-     [
-      495,
-      1290
-     ]
+  },
+  {
+    "name": "Ghillie Dew",
+    "brand": "Army Painter Speedpaint",
+    "threshold": 40,
+    "samples": [
+      [
+        544,
+        1092
+      ],
+      [
+        557,
+        1101
+      ]
+    ],
+    "regions": [
+      {
+        "polygon": [
+          [
+            517,
+            1073
+          ],
+          [
+            573,
+            1076
+          ],
+          [
+            587,
+            1097
+          ],
+          [
+            564,
+            1117
+          ],
+          [
+            526,
+            1119
+          ],
+          [
+            511,
+            1097
+          ]
+        ]
+      }
+    ],
+    "note": "Dan: the greenish strip in the middle of the rocks"
+  },
+  {
+    "name": "Poppy Red",
+    "brand": "Army Painter Speedpaint",
+    "regions": [
+      [
+        299,
+        238,
+        464,
+        382
+      ]
     ]
-   }
-  ],
-  "note": "Dan: the clip on the base edge"
- },
- {
-  "name": "Black",
-  "brand": "Army Painter",
-  "role": "Base rim",
-  "hex": "#1e1e1f",
-  "threshold": 40,
-  "samples": [
-   [
-    300,
-    1310
-   ],
-   [
-    50,
-    1150
-   ],
-   [
-    150,
-    1000
-   ],
-   [
-    600,
-    1000
-   ],
-   [
-    250,
-    1200
-   ],
-   [
-    650,
-    1180
-   ]
-  ],
-  "regions": [
-   {
-    "ellipse": [
-     362,
-     1112,
-     348,
-     240
+  },
+  {
+    "name": "Cloudburst Blue",
+    "brand": "Army Painter Speedpaint",
+    "threshold": 24,
+    "samples": [
+      [
+        313,
+        1030
+      ],
+      [
+        455,
+        879
+      ],
+      [
+        339,
+        1128
+      ],
+      [
+        437,
+        968
+      ]
+    ],
+    "regions": [
+      [
+        281,
+        839,
+        504,
+        1177
+      ]
+    ],
+    "note": "Dan: the jeans"
+  },
+  {
+    "name": "Dusk Red",
+    "brand": "Army Painter Speedpaint",
+    "threshold": 28,
+    "samples": [
+      [
+        379,
+        1199
+      ],
+      [
+        415,
+        1052
+      ]
+    ],
+    "regions": [
+      [
+        335,
+        1150,
+        424,
+        1230
+      ],
+      [
+        388,
+        1017,
+        446,
+        1079
+      ]
+    ],
+    "note": "Dan: the boots"
+  },
+  {
+    "name": "Magic Blue",
+    "brand": "Vallejo Game Color",
+    "hex": "#006eb5",
+    "hex_source": "Scalemates, Vallejo Game Color 72.021 Magic Blue (https://www.scalemates.com/colors/vallejo-game-color--804/72021-magic-blue-acrylic-matt--4504)",
+    "threshold": 40,
+    "samples": [
+      [
+        597,
+        1208
+      ],
+      [
+        678,
+        1297
+      ]
+    ],
+    "regions": [
+      {
+        "polygon": [
+          [
+            535,
+            1199
+          ],
+          [
+            669,
+            1162
+          ],
+          [
+            729,
+            1206
+          ],
+          [
+            731,
+            1337
+          ],
+          [
+            624,
+            1377
+          ],
+          [
+            540,
+            1333
+          ]
+        ]
+      }
+    ],
+    "note": "Dan: the clip on the base edge"
+  },
+  {
+    "name": "Black",
+    "brand": "Army Painter",
+    "role": "Base rim",
+    "hex": "#1e1e1f",
+    "threshold": 40,
+    "samples": [
+      [
+        366,
+        1351
+      ],
+      [
+        143,
+        1208
+      ],
+      [
+        232,
+        1075
+      ],
+      [
+        633,
+        1075
+      ],
+      [
+        321,
+        1253
+      ],
+      [
+        678,
+        1235
+      ]
+    ],
+    "regions": [
+      {
+        "ellipse": [
+          421,
+          1174,
+          310,
+          214
+        ]
+      }
+    ],
+    "note": "Dan: the whole base is regular Army Painter black (looks grey from the lighting)",
+    "exclude_regions": [
+      {
+        "polygon": [
+          [
+            451,
+            1075
+          ],
+          [
+            482,
+            1048
+          ],
+          [
+            517,
+            1051
+          ],
+          [
+            535,
+            1073
+          ],
+          [
+            580,
+            1082
+          ],
+          [
+            620,
+            1091
+          ],
+          [
+            635,
+            1119
+          ],
+          [
+            626,
+            1161
+          ],
+          [
+            597,
+            1180
+          ],
+          [
+            551,
+            1180
+          ],
+          [
+            533,
+            1153
+          ],
+          [
+            516,
+            1130
+          ],
+          [
+            480,
+            1125
+          ],
+          [
+            453,
+            1112
+          ]
+        ]
+      },
+      {
+        "polygon": [
+          [
+            535,
+            1199
+          ],
+          [
+            669,
+            1162
+          ],
+          [
+            729,
+            1206
+          ],
+          [
+            731,
+            1337
+          ],
+          [
+            624,
+            1377
+          ],
+          [
+            540,
+            1333
+          ]
+        ]
+      }
     ]
-   }
-  ],
-  "note": "Dan: the whole base is regular Army Painter black (looks grey from the lighting)",
-  "exclude_regions": [
-   {
-    "polygon": [
-     [
-      395,
-      1000
-     ],
-     [
-      430,
-      970
-     ],
-     [
-      470,
-      973
-     ],
-     [
-      490,
-      998
-     ],
-     [
-      540,
-      1008
-     ],
-     [
-      585,
-      1018
-     ],
-     [
-      602,
-      1050
-     ],
-     [
-      592,
-      1097
-     ],
-     [
-      560,
-      1118
-     ],
-     [
-      508,
-      1118
-     ],
-     [
-      488,
-      1088
-     ],
-     [
-      468,
-      1062
-     ],
-     [
-      428,
-      1057
-     ],
-     [
-      398,
-      1042
-     ]
-    ]
-   },
-   {
-    "polygon": [
-     [
-      490,
-      1140
-     ],
-     [
-      640,
-      1098
-     ],
-     [
-      708,
-      1148
-     ],
-     [
-      710,
-      1295
-     ],
-     [
-      590,
-      1340
-     ],
-     [
-      495,
-      1290
-     ]
-    ]
-   }
-  ]
- }
+  }
 ]

@@ -158,23 +158,23 @@
       "game": "6 Siege",
       "date": "2026-10-26",
       "photo": "minis/6-siege-flores/photo.jpg",
-      "updated": "20261026215520",
-      "width": 742,
-      "height": 1383,
+      "updated": "20261027214410",
+      "width": 858,
+      "height": 1600,
       "paints": [
         {
           "name": "Grim Black",
           "brand": "Army Painter Speedpaint",
           "hex": "#161511",
           "mask": "minis/6-siege-flores/mask-grim-black.png",
-          "coverage": 2.1
+          "coverage": 2.2
         },
         {
           "name": "Gravelord Grey",
           "brand": "Army Painter Speedpaint",
           "hex": "#44474c",
           "mask": "minis/6-siege-flores/mask-gravelord-grey.png",
-          "coverage": 17.9
+          "coverage": 18.1
         },
         {
           "name": "Peachy Flesh",
@@ -195,14 +195,14 @@
           "brand": "Army Painter Speedpaint",
           "hex": "#8c501e",
           "mask": "minis/6-siege-flores/mask-hardened-leather.png",
-          "coverage": 1.1
+          "coverage": 1.0
         },
         {
           "name": "Broadsword Silver",
           "brand": "Army Painter Speedpaint",
           "hex": "#595854",
           "mask": "minis/6-siege-flores/mask-broadsword-silver.png",
-          "coverage": 3.1
+          "coverage": 3.0
         },
         {
           "name": "Ghillie Dew",
@@ -255,16 +255,16 @@
       "game": "6 Siege",
       "date": "2026-10-26",
       "photo": "minis/6-siege-blitz/photo.jpg",
-      "updated": "20261026220013",
+      "updated": "20261027214627",
       "width": 1600,
-      "height": 1200,
+      "height": 1155,
       "paints": [
         {
           "name": "Grim Black",
           "brand": "Army Painter Speedpaint",
           "hex": "#161511",
           "mask": "minis/6-siege-blitz/mask-grim-black.png",
-          "coverage": 7.6
+          "coverage": 9.3
         },
         {
           "name": "Electric Blue",
@@ -285,21 +285,21 @@
           "brand": "Army Painter Speedpaint",
           "hex": "#482d1a",
           "mask": "minis/6-siege-blitz/mask-dark-wood.png",
-          "coverage": 0.5
+          "coverage": 0.4
         },
         {
           "name": "Tyrian Navy",
           "brand": "Army Painter Speedpaint",
           "hex": "#2a414f",
           "mask": "minis/6-siege-blitz/mask-tyrian-navy.png",
-          "coverage": 5.8
+          "coverage": 6.2
         },
         {
           "name": "Occultist Cloak",
           "brand": "Army Painter Speedpaint",
           "hex": "#30323e",
           "mask": "minis/6-siege-blitz/mask-occultist-cloak.png",
-          "coverage": 51.4
+          "coverage": 50.9
         },
         {
           "name": "Broadsword Silver",
@@ -331,30 +331,30 @@
       "game": "6 Siege",
       "date": "2026-10-26",
       "photo": "minis/6-siege-recruit/photo.jpg",
-      "updated": "20261026220307",
+      "updated": "20261027214715",
       "width": 1600,
-      "height": 1287,
+      "height": 1288,
       "paints": [
         {
           "name": "Cloudburst Blue",
           "brand": "Army Painter Speedpaint",
           "hex": "#3c4258",
           "mask": "minis/6-siege-recruit/mask-cloudburst-blue.png",
-          "coverage": 7.3
+          "coverage": 7.2
         },
         {
           "name": "Gravelord Grey",
           "brand": "Army Painter Speedpaint",
           "hex": "#44474c",
           "mask": "minis/6-siege-recruit/mask-gravelord-grey.png",
-          "coverage": 21.2
+          "coverage": 21.4
         },
         {
           "name": "Grim Black",
           "brand": "Army Painter Speedpaint",
           "hex": "#161511",
           "mask": "minis/6-siege-recruit/mask-grim-black.png",
-          "coverage": 9.1
+          "coverage": 8.3
         },
         {
           "name": "Hardened Leather",
@@ -368,14 +368,14 @@
           "brand": "Army Painter Speedpaint",
           "hex": "#482d1a",
           "mask": "minis/6-siege-recruit/mask-dark-wood.png",
-          "coverage": 3.4
+          "coverage": 3.5
         },
         {
           "name": "Burnt Moss",
           "brand": "Army Painter Speedpaint",
           "hex": "#4d5a50",
           "mask": "minis/6-siege-recruit/mask-burnt-moss.png",
-          "coverage": 1.2
+          "coverage": 1.3
         },
         {
           "name": "Peachy Flesh",
@@ -389,14 +389,14 @@
           "brand": "Army Painter Speedpaint",
           "hex": "#90ac23",
           "mask": "minis/6-siege-recruit/mask-ghillie-dew.png",
-          "coverage": 2.8
+          "coverage": 3.2
         },
         {
           "name": "Magic Blue",
           "brand": "Vallejo Game Color",
           "hex": "#006eb5",
           "mask": "minis/6-siege-recruit/mask-magic-blue.png",
-          "coverage": 5.9
+          "coverage": 5.8
         },
         {
           "name": "Black",
@@ -414,16 +414,16 @@
       "game": "Marvel United",
       "date": "2026-10-27",
       "photo": "minis/marvel-united-colossus/photo.jpg",
-      "updated": "20261027193524",
-      "width": 1140,
-      "height": 1550,
+      "updated": "20261027214511",
+      "width": 1177,
+      "height": 1600,
       "paints": [
         {
           "name": "Bright Red",
           "brand": "Army Painter Speedpaint",
           "hex": "#e15a3d",
           "mask": "minis/marvel-united-colossus/mask-bright-red.png",
-          "coverage": 28.7
+          "coverage": 28.9
         },
         {
           "name": "Maize Yellow",
@@ -437,7 +437,7 @@
           "brand": "Army Painter Warpaints",
           "hex": "#b5b5bd",
           "mask": "minis/marvel-united-colossus/mask-shining-silver.png",
-          "coverage": 14.3
+          "coverage": 13.5
         },
         {
           "name": "Ashen Stone",
@@ -451,7 +451,7 @@
           "brand": "Army Painter Speedpaint",
           "hex": "#161511",
           "mask": "minis/marvel-united-colossus/mask-grim-black.png",
-          "coverage": 14.3
+          "coverage": 14.9
         },
         {
           "name": "Dead White",
@@ -476,30 +476,30 @@
       "game": "Marvel United",
       "date": "2026-10-27",
       "photo": "minis/marvel-united-ant-man/photo.jpg",
-      "updated": "20261027194744",
-      "width": 970,
-      "height": 1400,
+      "updated": "20261027214440",
+      "width": 1109,
+      "height": 1600,
       "paints": [
         {
           "name": "Slaughter Red",
           "brand": "Army Painter Speedpaint",
           "hex": "#991926",
           "mask": "minis/marvel-united-ant-man/mask-slaughter-red.png",
-          "coverage": 11.0
+          "coverage": 10.9
         },
         {
           "name": "Shining Silver",
           "brand": "Army Painter Warpaints",
           "hex": "#b5b5bd",
           "mask": "minis/marvel-united-ant-man/mask-shining-silver.png",
-          "coverage": 31.6
+          "coverage": 31.5
         },
         {
           "name": "Broadsword Silver",
           "brand": "Army Painter Speedpaint",
           "hex": "#595854",
           "mask": "minis/marvel-united-ant-man/mask-broadsword-silver.png",
-          "coverage": 7.0
+          "coverage": 6.6
         },
         {
           "name": "Grim Black",
@@ -531,9 +531,9 @@
       "game": "Marvel United",
       "date": "2026-10-27",
       "photo": "minis/marvel-united-wasp/photo.jpg",
-      "updated": "20261027195007",
-      "width": 810,
-      "height": 1360,
+      "updated": "20261027214514",
+      "width": 954,
+      "height": 1600,
       "paints": []
     },
     {
@@ -542,8 +542,8 @@
       "game": "Marvel United",
       "date": "2026-10-27",
       "photo": "minis/marvel-united-rocket/photo.jpg",
-      "updated": "20261027200057",
-      "width": 1138,
+      "updated": "20261027214512",
+      "width": 1116,
       "height": 1600,
       "paints": []
     },

@@ -13,3 +13,8 @@ python3 tools/process_mini.py --photo composite.jpg \
 fg_mask.png: hint-based GrabCut (make_fg_mask.py composite.jpg fg_mask.png view.jpg hints.json;
 hint coordinates are at half scale). Busy dark fabric background.
 Paint colours: published Speedpaint 2.0 values (lexmechanic.com/paints/speedpaint-2).
+
+Re-cropped Oct 27 2026 (Dan: photos looked too zoomed in): composite.jpg is now
+original-1.jpg cropped 350,370,1450,2140 and original-2.jpg cropped 410,370,1510,2140, each grown 15% per side
+(clamped to the photo), pasted side by side and scaled to max 1600 (tools/recrop.py).
+Add --date 2026-10-26 when re-running.
