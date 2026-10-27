@@ -1,0 +1,338 @@
+[
+  {
+    "name": "Grim Black",
+    "brand": "Army Painter Speedpaint"
+  },
+  {
+    "name": "Electric Blue",
+    "brand": "Vallejo Game Color",
+    "hex": "#3495b6",
+    "hex_source": "Scalemates, Vallejo Game Color 72.023 Electric Blue (https://www.scalemates.com/colors/vallejo-game-color--804/72023-electric-blue-acrylic-matt--4505)"
+  },
+  {
+    "name": "Hardened Leather",
+    "brand": "Army Painter Speedpaint"
+  },
+  {
+    "name": "Dark Wood",
+    "brand": "Army Painter Speedpaint"
+  },
+  {
+    "name": "Tyrian Navy",
+    "brand": "Army Painter Speedpaint",
+    "samples": [
+      [
+        363,
+        266
+      ],
+      [
+        412,
+        339
+      ],
+      [
+        242,
+        476
+      ],
+      [
+        274,
+        484
+      ],
+      [
+        202,
+        403
+      ],
+      [
+        161,
+        831
+      ]
+    ],
+    "threshold": 26,
+    "note": "Dan: the blue-grey"
+  },
+  {
+    "name": "Occultist Cloak",
+    "brand": "Army Painter Speedpaint",
+    "samples": [
+      [
+        621,
+        347
+      ],
+      [
+        646,
+        468
+      ],
+      [
+        662,
+        710
+      ],
+      [
+        1100,
+        549
+      ],
+      [
+        1221,
+        791
+      ],
+      [
+        1019,
+        468
+      ]
+    ],
+    "threshold": 28,
+    "note": "Dan: the grey that isn't black"
+  },
+  {
+    "name": "Broadsword Silver",
+    "brand": "Army Painter Speedpaint",
+    "regions": [
+      [
+        355,
+        319,
+        553,
+        424
+      ]
+    ],
+    "samples": [
+      [
+        484,
+        347
+      ],
+      [
+        403,
+        387
+      ],
+      [
+        524,
+        339
+      ],
+      [
+        436,
+        371
+      ]
+    ],
+    "threshold": 30,
+    "note": "Dan: just the gun in his hand"
+  },
+  {
+    "name": "Magic Blue",
+    "brand": "Vallejo Game Color",
+    "hex": "#006eb5",
+    "hex_source": "Scalemates, Vallejo Game Color 72.021 Magic Blue (https://www.scalemates.com/colors/vallejo-game-color--804/72021-magic-blue-acrylic-matt--4504)",
+    "note": "Dan: the clip on the base edge"
+  },
+  {
+    "name": "Black",
+    "brand": "Army Painter",
+    "role": "Base rim",
+    "hex": "#1e1e1f",
+    "threshold": 40,
+    "samples": [
+      [
+        339,
+        952
+      ],
+      [
+        218,
+        1001
+      ],
+      [
+        500,
+        1001
+      ],
+      [
+        178,
+        1049
+      ],
+      [
+        339,
+        1073
+      ],
+      [
+        1382,
+        912
+      ],
+      [
+        1140,
+        1025
+      ],
+      [
+        1439,
+        1001
+      ],
+      [
+        258,
+        1097
+      ],
+      [
+        460,
+        1089
+      ],
+      [
+        258,
+        912
+      ],
+      [
+        460,
+        1033
+      ],
+      [
+        379,
+        1089
+      ],
+      [
+        218,
+        993
+      ],
+      [
+        1140,
+        1041
+      ],
+      [
+        1422,
+        952
+      ]
+    ],
+    "regions": [
+      {
+        "ellipse": [
+          370,
+          960,
+          262,
+          152
+        ]
+      },
+      {
+        "ellipse": [
+          1257,
+          936,
+          244,
+          123
+        ]
+      }
+    ],
+    "note": "regular Army Painter black base (looks grey/silver under the light); top and rim",
+    "exclude_regions": [
+      {
+        "polygon": [
+          [
+            938,
+            629
+          ],
+          [
+            1414,
+            629
+          ],
+          [
+            1406,
+            952
+          ],
+          [
+            1358,
+            967
+          ],
+          [
+            1100,
+            970
+          ],
+          [
+            1019,
+            932
+          ],
+          [
+            979,
+            710
+          ]
+        ]
+      },
+      {
+        "polygon": [
+          [
+            1225,
+            952
+          ],
+          [
+            1342,
+            940
+          ],
+          [
+            1358,
+            1033
+          ],
+          [
+            1346,
+            1065
+          ],
+          [
+            1233,
+            1065
+          ],
+          [
+            1225,
+            1001
+          ]
+        ]
+      },
+      {
+        "polygon": [
+          [
+            129,
+            791
+          ],
+          [
+            226,
+            791
+          ],
+          [
+            206,
+            948
+          ],
+          [
+            141,
+            944
+          ]
+        ]
+      },
+      {
+        "polygon": [
+          [
+            387,
+            629
+          ],
+          [
+            557,
+            629
+          ],
+          [
+            549,
+            884
+          ],
+          [
+            395,
+            876
+          ]
+        ]
+      },
+      {
+        "polygon": [
+          [
+            573,
+            629
+          ],
+          [
+            686,
+            629
+          ],
+          [
+            662,
+            920
+          ],
+          [
+            597,
+            920
+          ]
+        ]
+      }
+    ],
+    "priority": true
+  }
+]
