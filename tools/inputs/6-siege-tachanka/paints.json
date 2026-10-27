@@ -1,0 +1,319 @@
+[
+  {
+    "name": "Camo Green",
+    "hex": "#8ca375",
+    "hex_source": "provisional: averaged from Dan's photo (helmet and vest) until the paint's brand/range is confirmed",
+    "samples": [
+      [
+        370,
+        210
+      ],
+      [
+        330,
+        235
+      ],
+      [
+        400,
+        600
+      ],
+      [
+        450,
+        370
+      ],
+      [
+        430,
+        640
+      ],
+      [
+        300,
+        580
+      ],
+      [
+        345,
+        190
+      ]
+    ],
+    "threshold": 24,
+    "note": "Dan's paint list"
+  },
+  {
+    "name": "Ghillie Dew",
+    "brand": "Army Painter Speedpaint",
+    "samples": [
+      [
+        240,
+        420
+      ],
+      [
+        560,
+        400
+      ],
+      [
+        250,
+        500
+      ],
+      [
+        620,
+        430
+      ],
+      [
+        330,
+        520
+      ],
+      [
+        230,
+        380
+      ]
+    ],
+    "threshold": 26,
+    "regions": [
+      [
+        190,
+        300,
+        700,
+        650
+      ]
+    ]
+  },
+  {
+    "name": "Broadsword Silver",
+    "brand": "Army Painter Speedpaint",
+    "samples": [
+      [
+        800,
+        570
+      ],
+      [
+        900,
+        580
+      ],
+      [
+        480,
+        500
+      ],
+      [
+        700,
+        560
+      ],
+      [
+        950,
+        580
+      ]
+    ],
+    "threshold": 26,
+    "regions": [
+      [
+        420,
+        470,
+        985,
+        615
+      ]
+    ]
+  },
+  {
+    "name": "Gravelord Grey",
+    "brand": "Army Painter Speedpaint",
+    "samples": [
+      [
+        400,
+        300
+      ],
+      [
+        380,
+        320
+      ],
+      [
+        320,
+        380
+      ],
+      [
+        330,
+        430
+      ]
+    ],
+    "threshold": 22
+  },
+  {
+    "name": "Burnt Moss",
+    "brand": "Army Painter Speedpaint"
+  },
+  {
+    "name": "Hot Orange",
+    "brand": "Vallejo Game Color",
+    "hex": "#e64c2a",
+    "hex_source": "Scalemates, Vallejo Game Color 72.009 Hot Orange (https://www.scalemates.com/colors/vallejo-game-color--804/72009-hot-orange-acrylic-matt--4502)",
+    "samples": [
+      [
+        670,
+        1080
+      ],
+      [
+        640,
+        1040
+      ],
+      [
+        690,
+        1120
+      ],
+      [
+        700,
+        1060
+      ]
+    ],
+    "threshold": 30,
+    "regions": [
+      {
+        "polygon": [
+          [
+            568,
+            1050
+          ],
+          [
+            650,
+            1008
+          ],
+          [
+            722,
+            1030
+          ],
+          [
+            724,
+            1105
+          ],
+          [
+            662,
+            1170
+          ],
+          [
+            625,
+            1168
+          ]
+        ]
+      }
+    ],
+    "note": "Dan: the clip on the base edge"
+  },
+  {
+    "name": "Black",
+    "brand": "Army Painter",
+    "role": "Base rim",
+    "hex": "#1e1e1f",
+    "threshold": 40,
+    "samples": [
+      [
+        300,
+        1150
+      ],
+      [
+        200,
+        1100
+      ],
+      [
+        450,
+        1180
+      ],
+      [
+        350,
+        1000
+      ],
+      [
+        250,
+        1050
+      ],
+      [
+        500,
+        1060
+      ],
+      [
+        170,
+        1130
+      ]
+    ],
+    "regions": [
+      {
+        "ellipse": [
+          425,
+          1062,
+          305,
+          137
+        ]
+      }
+    ],
+    "exclude_regions": [
+      {
+        "polygon": [
+          [
+            568,
+            1050
+          ],
+          [
+            650,
+            1008
+          ],
+          [
+            722,
+            1030
+          ],
+          [
+            724,
+            1105
+          ],
+          [
+            662,
+            1170
+          ],
+          [
+            625,
+            1168
+          ]
+        ]
+      },
+      {
+        "polygon": [
+          [
+            140,
+            930
+          ],
+          [
+            250,
+            920
+          ],
+          [
+            255,
+            1005
+          ],
+          [
+            145,
+            1008
+          ]
+        ]
+      },
+      {
+        "polygon": [
+          [
+            535,
+            900
+          ],
+          [
+            620,
+            880
+          ],
+          [
+            675,
+            990
+          ],
+          [
+            655,
+            1008
+          ],
+          [
+            545,
+            995
+          ]
+        ]
+      }
+    ],
+    "priority": true,
+    "note": "regular Army Painter black base (looks grey/silver under the light); whole round base"
+  }
+]
