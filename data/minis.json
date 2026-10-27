@@ -469,6 +469,61 @@
           "coverage": 5.2
         }
       ]
+    },
+    {
+      "id": "marvel-united-ant-man",
+      "name": "Ant-Man",
+      "game": "Marvel United",
+      "date": "2026-10-27",
+      "photo": "minis/marvel-united-ant-man/photo.jpg",
+      "updated": "20261027194744",
+      "width": 970,
+      "height": 1400,
+      "paints": [
+        {
+          "name": "Slaughter Red",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#991926",
+          "mask": "minis/marvel-united-ant-man/mask-slaughter-red.png",
+          "coverage": 11.0
+        },
+        {
+          "name": "Shining Silver",
+          "brand": "Army Painter Warpaints",
+          "hex": "#b5b5bd",
+          "mask": "minis/marvel-united-ant-man/mask-shining-silver.png",
+          "coverage": 31.6
+        },
+        {
+          "name": "Broadsword Silver",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#595854",
+          "mask": "minis/marvel-united-ant-man/mask-broadsword-silver.png",
+          "coverage": 7.0
+        },
+        {
+          "name": "Grim Black",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#161511",
+          "mask": "minis/marvel-united-ant-man/mask-grim-black.png",
+          "coverage": 4.8
+        },
+        {
+          "name": "Ashen Stone",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#b3b9b9",
+          "mask": "minis/marvel-united-ant-man/mask-ashen-stone.png",
+          "coverage": 18.4
+        },
+        {
+          "name": "Black",
+          "brand": "Army Painter",
+          "role": "Base rim",
+          "hex": "#1e1e1f",
+          "mask": "minis/marvel-united-ant-man/mask-black.png",
+          "coverage": 15.1
+        }
+      ]
     }
   ]
 }
