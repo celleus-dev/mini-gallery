@@ -1,8 +1,6 @@
 [
   {
-    "name": "Camo Green",
-    "hex": "#8ca375",
-    "hex_source": "provisional: averaged from Dan's photo (helmet and vest) until the paint's brand/range is confirmed",
+    "name": "Camo Cloak",
     "samples": [
       [
         370,
@@ -34,7 +32,16 @@
       ]
     ],
     "threshold": 24,
-    "note": "Dan's paint list"
+    "note": "Dan: helmet and vest (he calls it Camo Green)",
+    "brand": "Army Painter Speedpaint",
+    "regions": [
+      [
+        180,
+        150,
+        720,
+        720
+      ]
+    ]
   },
   {
     "name": "Ghillie Dew",
@@ -131,11 +138,129 @@
         430
       ]
     ],
-    "threshold": 22
+    "threshold": 22,
+    "regions": [
+      [
+        180,
+        160,
+        720,
+        640
+      ]
+    ]
   },
   {
     "name": "Burnt Moss",
-    "brand": "Army Painter Speedpaint"
+    "brand": "Army Painter Speedpaint",
+    "samples": [
+      [
+        280,
+        820
+      ],
+      [
+        530,
+        750
+      ],
+      [
+        240,
+        700
+      ],
+      [
+        560,
+        820
+      ],
+      [
+        300,
+        900
+      ],
+      [
+        480,
+        700
+      ],
+      [
+        230,
+        880
+      ],
+      [
+        590,
+        860
+      ]
+    ],
+    "threshold": 30,
+    "regions": [
+      [
+        150,
+        600,
+        700,
+        1010
+      ]
+    ],
+    "note": "Dan: the trousers",
+    "exclude_regions": [
+      {
+        "polygon": [
+          [
+            135,
+            875
+          ],
+          [
+            255,
+            870
+          ],
+          [
+            262,
+            1012
+          ],
+          [
+            140,
+            1012
+          ]
+        ]
+      },
+      {
+        "polygon": [
+          [
+            528,
+            865
+          ],
+          [
+            615,
+            860
+          ],
+          [
+            680,
+            985
+          ],
+          [
+            665,
+            1012
+          ],
+          [
+            540,
+            1000
+          ]
+        ]
+      },
+      {
+        "polygon": [
+          [
+            260,
+            930
+          ],
+          [
+            530,
+            925
+          ],
+          [
+            540,
+            1000
+          ],
+          [
+            262,
+            1010
+          ]
+        ]
+      }
+    ]
   },
   {
     "name": "Hot Orange",
@@ -198,7 +323,7 @@
     "brand": "Army Painter",
     "role": "Base rim",
     "hex": "#1e1e1f",
-    "threshold": 40,
+    "threshold": 48,
     "samples": [
       [
         300,
@@ -227,6 +352,22 @@
       [
         170,
         1130
+      ],
+      [
+        350,
+        960
+      ],
+      [
+        450,
+        950
+      ],
+      [
+        300,
+        975
+      ],
+      [
+        500,
+        980
       ]
     ],
     "regions": [
