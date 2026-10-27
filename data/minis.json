@@ -619,6 +619,46 @@
           "coverage": 12.6
         }
       ]
+    },
+    {
+      "id": "marvel-united-black-widow",
+      "name": "Black Widow",
+      "game": "Marvel United",
+      "date": "2026-10-27",
+      "photo": "minis/marvel-united-black-widow/photo.jpg",
+      "updated": "20261027213919",
+      "width": 1000,
+      "height": 1240,
+      "paints": [
+        {
+          "name": "Nuclear Sunrise",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#e56f25",
+          "mask": "minis/marvel-united-black-widow/mask-nuclear-sunrise.png",
+          "coverage": 16.1
+        },
+        {
+          "name": "Peachy Flesh",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#eda668",
+          "mask": "minis/marvel-united-black-widow/mask-peachy-flesh.png",
+          "coverage": 5.8
+        },
+        {
+          "name": "Ashen Stone",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#b3b9b9",
+          "mask": "minis/marvel-united-black-widow/mask-ashen-stone.png",
+          "coverage": 41.2
+        },
+        {
+          "name": "Gravelord Grey",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#44474c",
+          "mask": "minis/marvel-united-black-widow/mask-gravelord-grey.png",
+          "coverage": 20.2
+        }
+      ]
     }
   ]
 }
