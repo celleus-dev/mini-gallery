@@ -546,6 +546,17 @@
       "width": 1138,
       "height": 1600,
       "paints": []
+    },
+    {
+      "id": "marvel-united-star-lord",
+      "name": "Star-Lord",
+      "game": "Marvel United",
+      "date": "2026-10-27",
+      "photo": "minis/marvel-united-star-lord/photo.jpg",
+      "updated": "20261027200751",
+      "width": 1475,
+      "height": 1600,
+      "paints": []
     }
   ]
 }
