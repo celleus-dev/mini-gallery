@@ -524,6 +524,17 @@
           "coverage": 15.1
         }
       ]
+    },
+    {
+      "id": "marvel-united-wasp",
+      "name": "Wasp",
+      "game": "Marvel United",
+      "date": "2026-10-27",
+      "photo": "minis/marvel-united-wasp/photo.jpg",
+      "updated": "20261027195007",
+      "width": 810,
+      "height": 1360,
+      "paints": []
     }
   ]
 }
