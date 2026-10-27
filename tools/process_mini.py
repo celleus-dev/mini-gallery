@@ -78,10 +78,15 @@ def hex_to_rgb(h):
     return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
 
 
-def load_photo(path, crop=None):
+def load_photo(path, crop=None, pad=0.0):
     img = Image.open(path)
     img = ImageOps.exif_transpose(img).convert("RGB")
     if crop:
+        if pad:  # breathing room around the mini, so the photo isn't too zoomed in
+            l, t, r, b = crop
+            dx, dy = round((r - l) * pad), round((b - t) * pad)
+            crop = (max(0, l - dx), max(0, t - dy),
+                    min(img.width, r + dx), min(img.height, b + dy))
         img = img.crop(crop)
     w, h = img.size
     scale = min(1.0, MAX_SIDE / max(w, h))
@@ -275,6 +280,9 @@ def main():
     ap.add_argument("--background", choices=["border", "grabcut", "rembg", "none"], default="border",
                     help="border: plain backdrop; grabcut: busy backdrop (use with --crop)")
     ap.add_argument("--crop", help="left,top,right,bottom in photo pixels: crop to the mini first")
+    ap.add_argument("--pad", type=float, default=0.0,
+                    help="extra margin around --crop, as a fraction of its size per side "
+                         "(0.15 = 15%%; use this for new minis so photos aren't too zoomed in)")
     ap.add_argument("--fg-mask", help="optional image the same size as the (cropped) photo; "
                                       "white = mini, black = background. Overrides --background.")
     ap.add_argument("--bg-threshold", type=float, default=12.0)
@@ -309,7 +317,7 @@ def main():
                                  for c in m["clusters"] if c["weight"] >= 0.1]
 
     crop = tuple(int(v) for v in args.crop.split(",")) if args.crop else None
-    img = load_photo(args.photo, crop)
+    img = load_photo(args.photo, crop, args.pad)
     rgb = np.array(img).astype(float) / 255.0
     lab_img = color.rgb2lab(ndi.gaussian_filter(rgb, sigma=(1, 1, 0)))
 

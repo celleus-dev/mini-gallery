@@ -163,7 +163,7 @@ h2 {
   background: var(--bg-sunken);
   overflow: hidden;
 }
-.card-img img { width: 100%; height: 100%; object-fit: cover; }
+.card-img img { width: 100%; height: 100%; object-fit: contain; }
 .card-body { padding: 10px 12px 12px; }
 .card-title { font-weight: 700; font-size: 0.98rem; line-height: 1.3; }
 .card-meta { color: var(--text-dim); font-size: 0.82rem; margin-top: 2px; }
