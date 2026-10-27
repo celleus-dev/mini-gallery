@@ -557,6 +557,61 @@
       "width": 1475,
       "height": 1600,
       "paints": []
+    },
+    {
+      "id": "marvel-united-captain-marvel",
+      "name": "Captain Marvel",
+      "game": "Marvel United",
+      "date": "2026-10-27",
+      "photo": "minis/marvel-united-captain-marvel/photo.jpg",
+      "updated": "20261027201739",
+      "width": 883,
+      "height": 1600,
+      "paints": [
+        {
+          "name": "Maize Yellow",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#f6d31f",
+          "mask": "minis/marvel-united-captain-marvel/mask-maize-yellow.png",
+          "coverage": 5.1
+        },
+        {
+          "name": "Magic Blue",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#0b79ae",
+          "mask": "minis/marvel-united-captain-marvel/mask-magic-blue.png",
+          "coverage": 6.1
+        },
+        {
+          "name": "Golden Armour",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#714808",
+          "mask": "minis/marvel-united-captain-marvel/mask-golden-armour.png",
+          "coverage": 14.5
+        },
+        {
+          "name": "Bright Red",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#e15a3d",
+          "mask": "minis/marvel-united-captain-marvel/mask-bright-red.png",
+          "coverage": 43.0
+        },
+        {
+          "name": "Ashen Stone",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#b3b9b9",
+          "mask": "minis/marvel-united-captain-marvel/mask-ashen-stone.png",
+          "coverage": 17.2
+        },
+        {
+          "name": "Black",
+          "brand": "Army Painter",
+          "role": "Base rim",
+          "hex": "#1e1e1f",
+          "mask": "minis/marvel-united-captain-marvel/mask-black.png",
+          "coverage": 12.6
+        }
+      ]
     }
   ]
 }

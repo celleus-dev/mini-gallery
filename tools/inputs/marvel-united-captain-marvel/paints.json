@@ -1,0 +1,329 @@
+[
+ {
+  "name": "Maize Yellow",
+  "brand": "Army Painter Speedpaint",
+  "threshold": 30,
+  "samples": [
+   [
+    530,
+    270
+   ],
+   [
+    600,
+    330
+   ],
+   [
+    480,
+    300
+   ]
+  ],
+  "regions": [
+   {
+    "polygon": [
+     [
+      450,
+      290
+     ],
+     [
+      495,
+      195
+     ],
+     [
+      565,
+      210
+     ],
+     [
+      600,
+      290
+     ],
+     [
+      645,
+      315
+     ],
+     [
+      625,
+      355
+     ],
+     [
+      545,
+      395
+     ],
+     [
+      470,
+      360
+     ]
+    ]
+   }
+  ],
+  "note": "the hair crest"
+ },
+ {
+  "name": "Magic Blue",
+  "brand": "Army Painter Speedpaint",
+  "threshold": 30,
+  "samples": [
+   [
+    420,
+    830
+   ],
+   [
+    340,
+    670
+   ],
+   [
+    460,
+    880
+   ],
+   [
+    230,
+    620
+   ]
+  ],
+  "regions": [
+   {
+    "polygon": [
+     [
+      285,
+      640
+     ],
+     [
+      400,
+      615
+     ],
+     [
+      560,
+      640
+     ],
+     [
+      560,
+      760
+     ],
+     [
+      480,
+      960
+     ],
+     [
+      410,
+      960
+     ],
+     [
+      330,
+      880
+     ],
+     [
+      290,
+      780
+     ]
+    ]
+   },
+   [
+    200,
+    595,
+    260,
+    650
+   ]
+  ],
+  "note": "suit body and legs"
+ },
+ {
+  "name": "Golden Armour",
+  "brand": "Army Painter Speedpaint",
+  "threshold": 20,
+  "samples": [
+   [
+    330,
+    745
+   ],
+   [
+    245,
+    600
+   ],
+   [
+    440,
+    725
+   ],
+   [
+    620,
+    580
+   ],
+   [
+    430,
+    955
+   ]
+  ],
+  "regions": [
+   [
+    120,
+    540,
+    700,
+    800
+   ],
+   [
+    330,
+    920,
+    460,
+    975
+   ]
+  ],
+  "note": "trim, star, belt and medallion"
+ },
+ {
+  "name": "Bright Red",
+  "brand": "Army Painter Speedpaint",
+  "threshold": 34,
+  "samples": [
+   [
+    420,
+    430
+   ],
+   [
+    300,
+    560
+   ],
+   [
+    160,
+    740
+   ],
+   [
+    640,
+    690
+   ],
+   [
+    300,
+    1150
+   ],
+   [
+    230,
+    880
+   ],
+   [
+    550,
+    1110
+   ],
+   [
+    520,
+    800
+   ]
+  ],
+  "regions": [
+   [
+    110,
+    300,
+    770,
+    1200
+   ]
+  ],
+  "note": "helmet, shoulders, arms, gloves, boots and the sash"
+ },
+ {
+  "name": "Ashen Stone",
+  "brand": "Army Painter Speedpaint",
+  "threshold": 34,
+  "priority": true,
+  "samples": [
+   [
+    180,
+    1150
+   ],
+   [
+    700,
+    1200
+   ],
+   [
+    450,
+    1250
+   ],
+   [
+    650,
+    1100
+   ]
+  ],
+  "regions": [
+   {
+    "ellipse": [
+     440,
+     1185,
+     305,
+     128
+    ]
+   }
+  ],
+  "exclude_regions": [
+   {
+    "polygon": [
+     [
+      230,
+      1110
+     ],
+     [
+      290,
+      1000
+     ],
+     [
+      420,
+      990
+     ],
+     [
+      600,
+      1050
+     ],
+     [
+      650,
+      1130
+     ],
+     [
+      580,
+      1195
+     ],
+     [
+      250,
+      1195
+     ]
+    ]
+   }
+  ],
+  "note": "the stone floor on the base (my reading; Dan to confirm)"
+ },
+ {
+  "name": "Black",
+  "brand": "Army Painter",
+  "role": "Base rim",
+  "hex": "#1e1e1f",
+  "threshold": 40,
+  "samples": [
+   [
+    200,
+    1330
+   ],
+   [
+    700,
+    1290
+   ],
+   [
+    450,
+    1370
+   ]
+  ],
+  "regions": [
+   {
+    "ellipse": [
+     440,
+     1222,
+     325,
+     175
+    ]
+   }
+  ],
+  "exclude_regions": [
+   {
+    "ellipse": [
+     440,
+     1185,
+     305,
+     128
+    ]
+   }
+  ],
+  "note": "base rim, regular Army Painter black"
+ }
+]
