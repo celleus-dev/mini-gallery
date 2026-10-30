@@ -104,3 +104,19 @@ rather than guessed.
 GitHub Pages is off while the site is private. To go public: make the repository
 public (or use a paid plan), then Settings → Pages → deploy from the `main`
 branch, root folder.
+
+## Database (Supabase)
+
+When `assets/config.js` has the Supabase URL and publishable key, the site reads
+minis and games from Supabase and photos/masks from its `gallery` storage
+bucket. Without it, or if Supabase can't be reached, it falls back to
+`data/minis.json` and the files here. The repo stays the master copy.
+
+- `supabase/setup.sql`: tables, access rules and the storage bucket. Run once in
+  Supabase's SQL Editor (put your login email in the last line).
+- `login.html`: email sign-in link (not linked from the site). Signed-in admins
+  get a **Save to gallery** button in the editor; saved edits go to the `edits` table.
+- `tools/sync_supabase.py`: `push` uploads the repo to Supabase; `pull-edits`
+  applies saved editor edits with `apply_edits.py`.
+- `.github/workflows/supabase-sync.yml` runs both on every push, every 3 hours
+  and on demand. Needs the repository secret `SUPABASE_SECRET_KEY`.

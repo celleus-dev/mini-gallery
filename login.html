@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Sign in · Swatchwork Minis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css?v=6">
+  <style>
+    .login { max-width: 420px; padding: 36px 0 60px; }
+    .login form { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; }
+    .login input {
+      background: var(--bg-raised); border: 1px solid var(--line); color: var(--text);
+      border-radius: 999px; padding: 10px 16px; font: inherit;
+    }
+    .login input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+    .login .btn { align-self: flex-start; }
+  </style>
+</head>
+<body>
+  <!-- Not linked from the site. Signing in lets Dan save editor changes to the database. -->
+  <header class="site-header">
+    <div class="wrap"><a class="brand" href="./">Swatchwork<span> Minis</span></a></div>
+  </header>
+  <main class="wrap login" id="main">
+    <div class="page-head" style="padding-top:0"><h1>Sign in</h1></div>
+    <p class="lede" id="msg">Loading…</p>
+    <div id="body"></div>
+  </main>
+  <script src="assets/config.js?v=1"></script>
+  <script src="assets/supa.js?v=1"></script>
+  <script>
+  (async function () {
+    "use strict";
+    const $ = (s) => document.querySelector(s);
+    const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    // Only allow going on to a page on this site.
+    const nextRaw = new URLSearchParams(location.search).get("next") || "edit.html";
+    const next = /^[a-z]+\.html(\?[^#]*)?$/i.test(nextRaw) ? nextRaw : "edit.html";
+
+    if (!window.Swatchwork.enabled) {
+      $("#msg").textContent = "Sign-in isn't set up yet.";
+      return;
+    }
+    let who;
+    try { who = await window.Swatchwork.whoAmI(); }
+    catch (e) { $("#msg").textContent = "Sign-in isn't available right now. Try again later."; return; }
+    const { sb, email, admin } = who;
+
+    if (email) {
+      $("#msg").innerHTML = `Signed in as <strong>${esc(email)}</strong>.` +
+        (admin ? "" : " This account can view the gallery but can't save edits.");
+      $("#body").innerHTML = `<form><a class="btn btn-primary" href="${esc(next)}">Continue to the editor</a>
+        <button class="btn" type="button" id="out">Sign out</button></form>`;
+      $("#out").addEventListener("click", async () => { await sb.auth.signOut(); location.reload(); });
+      return;
+    }
+
+    $("#msg").textContent = "Enter your email and we'll send you a sign-in link. No password needed.";
+    $("#body").innerHTML = `<form id="f">
+        <input type="email" id="email" required autocomplete="email" placeholder="you@example.com">
+        <button class="btn btn-primary" type="submit">Email me a link</button>
+        <p class="hint" id="note"></p></form>`;
+    $("#f").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const btn = $("#f button"); btn.disabled = true;
+      const back = new URL(`login.html?next=${encodeURIComponent(next)}`, location.href).href;
+      const { error } = await sb.auth.signInWithOtp({
+        email: $("#email").value.trim(),
+        options: { emailRedirectTo: back, shouldCreateUser: true },
+      });
+      btn.disabled = false;
+      $("#note").textContent = error ? "Couldn't send the link: " + error.message
+                                     : "Check your email and tap the link to finish signing in.";
+    });
+  })();
+  </script>
+</body>
+</html>

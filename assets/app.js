@@ -1,6 +1,6 @@
 /* Swatchwork Minis — shared logic for every page.
- * Data lives in data/minis.json (one entry per miniature) and the optional
- * data/games.json (extra details per board game). All URLs are relative so the
+ * Data comes from Supabase when assets/config.js is filled in (see assets/supa.js),
+ * otherwise from data/minis.json and the optional data/games.json. All URLs are relative so the
  * site works at https://<user>.github.io/mini-gallery/ and on a custom domain. */
 
 (function () {
@@ -44,21 +44,9 @@
     return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
   }
 
-  async function getJSON(path, fallback) {
-    try {
-      const r = await fetch(path, { cache: "no-cache" });
-      if (!r.ok) return fallback;
-      return await r.json();
-    } catch (e) {
-      return fallback;
-    }
-  }
-
   async function loadData() {
-    const [m, g] = await Promise.all([
-      getJSON("data/minis.json", { minis: [] }),
-      getJSON("data/games.json", { games: [] }),
-    ]);
+    const { minis: all, games: gameRows } = await window.Swatchwork.loadData();
+    const m = { minis: all }, g = { games: gameRows };
     const minis = (m.minis || []).slice().sort((a, b) => (b.date || "").localeCompare(a.date || ""));
     const gameInfo = {};
     (g.games || []).forEach((x) => (gameInfo[slug(x.name)] = x));

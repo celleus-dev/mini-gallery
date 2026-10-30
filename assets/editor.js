@@ -25,6 +25,7 @@
   function loadImage(src) {
     return new Promise((res, rej) => {
       const im = new Image();
+      im.crossOrigin = "anonymous"; // photos may come from Supabase storage
       im.onload = () => res(im);
       im.onerror = () => rej(new Error("could not load " + src));
       im.src = src;
@@ -35,7 +36,7 @@
     const main = $("#main");
     let data;
     try {
-      data = await (await fetch("data/minis.json", { cache: "no-cache" })).json();
+      data = await window.Swatchwork.loadData();
     } catch (e) {
       main.innerHTML = `<div class="empty"><strong>Couldn't load the minis</strong>Try reloading.</div>`;
       return;
@@ -116,10 +117,12 @@
           <p class="panel-title">Your edits</p>
           <p class="lede ed-count" id="count">No edits yet.</p>
           <div class="ed-actions">
-            <button class="btn btn-primary" id="download" disabled>Download edits</button>
+            <button class="btn btn-primary" id="save" disabled hidden>Save to gallery</button>
+            <button class="btn" id="download" disabled>Download edits</button>
             <button class="btn" id="discard" disabled>Discard all</button>
           </div>
-          <p class="hint">Edits don't change the site by themselves. Send the downloaded file in your chat with Claude; you'll see a review before anything is published.</p>
+          <p class="hint" id="save-hint">Edits don't change the site by themselves. Send the downloaded file in your chat with Claude; you'll see a review before anything is published.</p>
+          <p class="hint" id="account"></p>
         </aside>
       </div>`;
 
@@ -211,6 +214,7 @@
       $("#undo").disabled = !n;
       $("#redo").disabled = !redo.length;
       $("#download").disabled = !n;
+      $("#save").disabled = !n || saved;
       $("#discard").disabled = !n;
     }
     function changed() {
@@ -309,8 +313,7 @@
     });
     $("#download").addEventListener("click", () => {
       const now = new Date();
-      const doc = { mini: mini.id, size: [W, H], photo_updated: mini.updated || null,
-                    created: now.toISOString(), edits: ops };
+      const doc = editsDoc();
       const stamp = now.toISOString().slice(0, 16).replace(/[-:]/g, "").replace("T", "-");
       const a = document.createElement("a");
       a.href = URL.createObjectURL(new Blob([JSON.stringify(doc)], { type: "application/json" }));
@@ -320,6 +323,42 @@
       saved = true; store(draftKey, { ops, saved }); render();
       $("#status").textContent = "Downloaded. Send that file in your chat with Claude.";
     });
+    // ---------- save to the database (signed-in admins only) ----------
+    function editsDoc() {
+      return { mini: mini.id, size: [W, H], photo_updated: mini.updated || null,
+               created: new Date().toISOString(), edits: ops };
+    }
+    if (window.Swatchwork.enabled) {
+      window.Swatchwork.whoAmI().then(({ sb, email, admin }) => {
+        const login = `login.html?next=${encodeURIComponent(location.pathname.split("/").pop() + location.search)}`;
+        if (!email) {
+          $("#account").innerHTML = `<a href="${esc(login)}">Sign in</a> to save edits straight to the gallery.`;
+          return;
+        }
+        if (!admin) {
+          $("#account").textContent = `Signed in as ${email}, but this account can't save edits.`;
+          return;
+        }
+        $("#account").innerHTML = `Signed in as ${esc(email)} · <a href="${esc(login)}">account</a>`;
+        $("#save-hint").textContent = "Saved edits are applied to the gallery automatically, usually within a few hours.";
+        const save = $("#save");
+        save.hidden = false;
+        render();
+        save.addEventListener("click", async () => {
+          save.disabled = true;
+          $("#status").textContent = "Saving…";
+          const { error } = await sb.from("edits").insert({ mini_id: mini.id, doc: editsDoc() });
+          if (error) {
+            $("#status").textContent = "Couldn't save: " + error.message + ". You can still download the edits.";
+            render();
+            return;
+          }
+          saved = true; store(draftKey, { ops, saved }); render();
+          $("#status").textContent = "Saved. The gallery will update once the edits are applied.";
+        });
+      }).catch(() => { $("#account").textContent = "Sign-in isn't available right now."; });
+    }
+
     document.addEventListener("keydown", (e) => {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "z") { e.preventDefault(); $(e.shiftKey ? "#redo" : "#undo").click(); }
       if (e.key === "Escape" && pts) { pts = null; lctx.clearRect(0, 0, W, H); }
