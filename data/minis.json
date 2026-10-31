@@ -522,7 +522,7 @@
       "game": "6 Siege",
       "date": "2026-10-27",
       "photo": "minis/6-siege-tachanka/photo.jpg",
-      "updated": "20261027221102",
+      "updated": "20261031150733",
       "width": 1118,
       "height": 1366,
       "paints": [
@@ -531,42 +531,42 @@
           "brand": "Army Painter Speedpaint",
           "hex": "#5a713b",
           "mask": "minis/6-siege-tachanka/mask-camo-cloak.png",
-          "coverage": 15.7
+          "coverage": 15.0
         },
         {
           "name": "Ghillie Dew",
           "brand": "Army Painter Speedpaint",
           "hex": "#90ac23",
           "mask": "minis/6-siege-tachanka/mask-ghillie-dew.png",
-          "coverage": 9.8
+          "coverage": 10.3
         },
         {
           "name": "Broadsword Silver",
           "brand": "Army Painter Speedpaint",
           "hex": "#595854",
           "mask": "minis/6-siege-tachanka/mask-broadsword-silver.png",
-          "coverage": 7.5
+          "coverage": 10.5
         },
         {
           "name": "Gravelord Grey",
           "brand": "Army Painter Speedpaint",
           "hex": "#44474c",
           "mask": "minis/6-siege-tachanka/mask-gravelord-grey.png",
-          "coverage": 6.7
+          "coverage": 4.1
         },
         {
           "name": "Burnt Moss",
           "brand": "Army Painter Speedpaint",
           "hex": "#4d5a50",
           "mask": "minis/6-siege-tachanka/mask-burnt-moss.png",
-          "coverage": 15.3
+          "coverage": 14.9
         },
         {
           "name": "Hot Orange",
           "brand": "Vallejo Game Color",
           "hex": "#e64c2a",
           "mask": "minis/6-siege-tachanka/mask-hot-orange.png",
-          "coverage": 4.5
+          "coverage": 4.0
         },
         {
           "name": "Black",
@@ -574,7 +574,7 @@
           "role": "Base rim",
           "hex": "#1e1e1f",
           "mask": "minis/6-siege-tachanka/mask-black.png",
-          "coverage": 28.0
+          "coverage": 28.4
         }
       ]
     },
