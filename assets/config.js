@@ -2,6 +2,6 @@
  * the database rules (supabase/setup.sql) decide what it can do.
  * Leave both empty and the site reads data/minis.json from this repo instead. */
 window.SWATCHWORK_CONFIG = {
-  supabaseUrl: "",
-  supabaseKey: "",
+  supabaseUrl: "https://snupfvpwimtyjlxouvxr.supabase.co",
+  supabaseKey: "sb_publishable_mUkCljbSYhCtBoyEbSlXJA_r89Smwtr",
 };
