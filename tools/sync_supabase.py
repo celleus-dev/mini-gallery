@@ -110,7 +110,12 @@ def push(sb):
     gone = [i for i in existing if i not in {m["id"] for m in minis}]
     for i in gone:
         sb.call("DELETE", f"/rest/v1/minis?id=eq.{urllib.parse.quote(i)}", headers={"Prefer": "return=minimal"})
-        print(f"removed {i}")
+        files = sb.call("POST", f"/storage/v1/object/list/{BUCKET}",
+                        {"prefix": f"minis/{i}/", "limit": 1000}) or []
+        paths = [f"minis/{i}/{f['name']}" for f in files if f.get("name")]
+        if paths:
+            sb.call("DELETE", f"/storage/v1/object/{BUCKET}", {"prefixes": paths})
+        print(f"removed {i} ({len(paths)} files)")
 
     if games:
         sb.call("POST", "/rest/v1/games?on_conflict=name", [{"name": g["name"], "data": g} for g in games],
