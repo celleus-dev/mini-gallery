@@ -282,6 +282,7 @@
         <div class="title-row">
           <h1>${esc(mini.name)}</h1>
           <button class="btn" type="button" id="btn-edit" aria-pressed="false" hidden>Edit paints</button>
+          <button class="btn btn-danger" type="button" id="btn-delete" hidden>Delete</button>
         </div>
       </div>
       <div id="editor-host" hidden></div>
@@ -312,10 +313,56 @@
     setupEditToggle(mini);
   }
 
+  // ---------- Delete (signed-in admins only, asks first) ----------
+  function setupDelete(mini, sb) {
+    const btn = $("#btn-delete");
+    btn.hidden = false;
+    const gameUrl = `game.html?g=${encodeURIComponent(slug(mini.game || "Unsorted"))}`;
+
+    const dlg = document.createElement("dialog");
+    dlg.className = "confirm";
+    dlg.setAttribute("aria-labelledby", "confirm-title");
+    dlg.innerHTML = `
+      <form method="dialog">
+        <h2 id="confirm-title">Delete ${esc(mini.name)}?</h2>
+        <p>This removes ${esc(mini.name)}, its photo and its paint areas from the gallery.
+           Claude can still bring it back from the site's history if you change your mind.</p>
+        <p class="confirm-error" id="confirm-error" role="alert"></p>
+        <div class="confirm-actions">
+          <button class="btn" value="cancel" autofocus>Cancel</button>
+          <button class="btn btn-danger-solid" type="button" id="confirm-yes">Delete ${esc(mini.name)}</button>
+        </div>
+      </form>`;
+    document.body.appendChild(dlg);
+    const yes = dlg.querySelector("#confirm-yes"), err = dlg.querySelector("#confirm-error");
+
+    btn.addEventListener("click", () => {
+      err.textContent = "";
+      yes.disabled = false;
+      yes.textContent = `Delete ${mini.name}`;
+      dlg.showModal();
+    });
+    yes.addEventListener("click", async () => {
+      yes.disabled = true;
+      yes.textContent = "Deleting…";
+      const { error } = await sb.rpc("delete_mini", { mini: mini.id });
+      if (error) {
+        err.textContent = /delete_mini|function|schema cache/i.test(error.message)
+          ? "Deleting isn't set up in the database yet (supabase/002_delete.sql)."
+          : `Couldn't delete: ${error.message}`;
+        yes.disabled = false;
+        yes.textContent = "Try again";
+        return;
+      }
+      location.replace(gameUrl);
+    });
+  }
+
   // ---------- "Edit paints" mode (signed-in admins only) ----------
   function setupEditToggle(mini) {
     const btn = $("#btn-edit");
-    if (!window.Swatchwork.enabled || !window.SwatchworkEditor || !(mini.paints || []).length) return;
+    if (!window.Swatchwork.enabled) return;
+    const canEdit = !!window.SwatchworkEditor && (mini.paints || []).length > 0;
     const host = $("#editor-host"), view = $("#view");
     let close = null, busy = false;
 
@@ -353,8 +400,10 @@
       setUrl(false);
     }
 
-    window.Swatchwork.whoAmI().then(({ admin }) => {
+    window.Swatchwork.whoAmI().then(({ sb, admin }) => {
       if (!admin) return;
+      setupDelete(mini, sb);
+      if (!canEdit) return;
       btn.hidden = false;
       btn.addEventListener("click", () => (close ? leave() : enter()));
       if (param("edit")) enter();

@@ -422,3 +422,24 @@ h2 {
 .ed-intro { margin: 0 0 4px; }
 .footer-row { display: flex; justify-content: space-between; gap: 8px 16px; flex-wrap: wrap; }
 [hidden] { display: none !important; }
+
+/* ---------- Delete button and confirmation ---------- */
+.btn-danger { color: #e8836f; border-color: #6b3328; }
+.btn-danger:hover { border-color: #e8836f; }
+.btn-danger-solid { background: #c4513b; border-color: #c4513b; color: #fff; }
+.btn-danger-solid:hover { background: #d55c45; border-color: #d55c45; }
+dialog.confirm {
+  background: var(--bg-raised);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px 24px;
+  width: min(420px, calc(100vw - 32px));
+}
+dialog.confirm::backdrop { background: rgba(0, 0, 0, 0.6); }
+dialog.confirm h2 { font-family: var(--font-display); font-weight: 600; font-size: 1.4rem; margin: 0 0 10px; }
+dialog.confirm p { color: var(--text-dim); margin: 0 0 12px; line-height: 1.5; }
+.confirm-error { color: #e8836f !important; }
+.confirm-error:empty { display: none; }
+.confirm-actions { display: flex; justify-content: flex-end; gap: 8px; flex-wrap: wrap; margin-top: 6px; }

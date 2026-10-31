@@ -10,6 +10,9 @@
         -> applies lasso edits saved from the editor (edits table, status
            "pending") with tools/apply_edits.py, then marks them applied/skipped.
            Commit and push afterwards, then run "push".
+    python3 tools/sync_supabase.py pull-deletions
+        -> removes minis deleted from the site (deletions table) from the repo
+           and from storage. Commit and push afterwards.
 
 Needs SUPABASE_SECRET_KEY in the environment (the project's secret key; never
 commit it). The project URL is read from assets/config.js, or SUPABASE_URL.
@@ -21,6 +24,7 @@ import argparse
 import datetime as dt
 import json
 import mimetypes
+import shutil
 import os
 import re
 import subprocess
@@ -53,7 +57,7 @@ class Supabase:
         if not key.startswith("sb_"):  # legacy service_role key (a JWT) also goes in Authorization
             self.headers["Authorization"] = f"Bearer {key}"
 
-    def call(self, method, path, body=None, headers=None, raw=False):
+    def call(self, method, path, body=None, headers=None, raw=False, missing_ok=False):
         h = dict(self.headers, **(headers or {}))
         data = body
         if body is not None and not raw:
@@ -65,6 +69,8 @@ class Supabase:
                 text = r.read().decode() or "null"
                 return json.loads(text) if "json" in r.headers.get("Content-Type", "") else text
         except urllib.error.HTTPError as e:
+            if missing_ok and e.code == 404:
+                return None
             sys.exit(f"Supabase {method} {path}: {e.code} {e.read().decode()[:300]}")
 
     def upload(self, path, file):
@@ -110,12 +116,7 @@ def push(sb):
     gone = [i for i in existing if i not in {m["id"] for m in minis}]
     for i in gone:
         sb.call("DELETE", f"/rest/v1/minis?id=eq.{urllib.parse.quote(i)}", headers={"Prefer": "return=minimal"})
-        files = sb.call("POST", f"/storage/v1/object/list/{BUCKET}",
-                        {"prefix": f"minis/{i}/", "limit": 1000}) or []
-        paths = [f"minis/{i}/{f['name']}" for f in files if f.get("name")]
-        if paths:
-            sb.call("DELETE", f"/storage/v1/object/{BUCKET}", {"prefixes": paths})
-        print(f"removed {i} ({len(paths)} files)")
+        print(f"removed {i} ({delete_files(sb, i)} files)")
 
     if games:
         sb.call("POST", "/rest/v1/games?on_conflict=name", [{"name": g["name"], "data": g} for g in games],
@@ -127,6 +128,51 @@ def push(sb):
                     headers={"Prefer": "return=minimal"})
 
     print(f"synced {len(minis)} minis, {len(games)} games, {uploaded} files uploaded")
+
+
+def delete_files(sb, mini_id):
+    """Remove a mini's photo and masks from storage; returns how many."""
+    files = sb.call("POST", f"/storage/v1/object/list/{BUCKET}",
+                    {"prefix": f"minis/{mini_id}/", "limit": 1000}) or []
+    paths = [f"minis/{mini_id}/{f['name']}" for f in files if f.get("name")]
+    if paths:
+        sb.call("DELETE", f"/storage/v1/object/{BUCKET}", {"prefixes": paths})
+    return len(paths)
+
+
+def pull_deletions(sb):
+    """Minis deleted from the site: remove them from the repo and storage."""
+    pending = sb.call("GET", "/rest/v1/deletions?status=eq.pending&select=id,mini_id&order=id",
+                      missing_ok=True)
+    if pending is None:
+        print("deletions table not set up yet (run supabase/002_delete.sql)")
+        return
+    if not pending:
+        print("no pending deletions")
+        return
+    data_path = ROOT / "data" / "minis.json"
+    data = json.loads(data_path.read_text())
+    rebuild = False
+    for d in pending:
+        mid = d["mini_id"]
+        if not re.fullmatch(r"[a-z0-9][a-z0-9-]*", mid or ""):
+            print(f"deletion {d['id']}: odd id {mid!r}, left alone")
+            continue
+        mini = next((m for m in data["minis"] if m["id"] == mid), None)
+        if mini:
+            rebuild |= bool(mini.get("verified"))
+            data["minis"].remove(mini)
+        for folder in (ROOT / "minis" / mid, ROOT / "tools" / "inputs" / mid, ROOT / "dataset" / mid):
+            if folder.is_dir():
+                shutil.rmtree(folder)
+        n = delete_files(sb, mid)
+        sb.call("PATCH", f"/rest/v1/deletions?id=eq.{d['id']}", {"status": "done", "done_at": now()},
+                {"Prefer": "return=minimal"})
+        print(f"deleted {mid} ({n} stored files)")
+    data_path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
+    if rebuild:  # it was in the training data: rebuild without it
+        subprocess.run([sys.executable, str(ROOT / "tools" / "learn.py")], cwd=ROOT, check=True,
+                       stdout=subprocess.DEVNULL)
 
 
 def pull_edits(sb):
@@ -152,10 +198,10 @@ def pull_edits(sb):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("action", choices=["push", "pull-edits"])
+    ap.add_argument("action", choices=["push", "pull-edits", "pull-deletions"])
     args = ap.parse_args()
     sb = Supabase(*config())
-    push(sb) if args.action == "push" else pull_edits(sb)
+    {"push": push, "pull-edits": pull_edits, "pull-deletions": pull_deletions}[args.action](sb)
 
 
 if __name__ == "__main__":

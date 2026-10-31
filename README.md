@@ -119,7 +119,11 @@ bucket. Without it, or if Supabase can't be reached, it falls back to
 - `login.html`: email sign-in link, reached from "Sign in" in the footer. Signed-in
   admins get the **Edit paints** toggle; saved edits go to the `edits` table.
 - `edit.html` only forwards old bookmarks to `mini.html?id=<id>&edit=1`.
+- `supabase/002_delete.sql`: run once after `setup.sql`. Adds the **Delete** button's
+  backend: signed-in admins see Delete on each mini (with a confirmation box). The mini
+  leaves the site at once; the sync then removes it from the repo and from storage.
 - `tools/sync_supabase.py`: `push` uploads the repo to Supabase; `pull-edits`
-  applies saved editor edits with `apply_edits.py`.
+  applies saved editor edits with `apply_edits.py`; `pull-deletions` removes minis
+  deleted on the site from the repo and storage.
 - `.github/workflows/supabase-sync.yml` runs both on every push, every 3 hours
   and on demand. Needs the repository secret `SUPABASE_SECRET_KEY`.
