@@ -48,8 +48,10 @@ tools/process_mini.py  turns a photo + paint list into the files above
 
 ## Fine-tuning paint areas (lasso editor)
 
-`edit.html?id=<mini-id>` (not linked from the site; bookmark it) lets Dan draw
-around areas to add them to a paint or remove them. It never changes the site:
+Each mini's page has an **Edit paints** toggle, shown only to signed-in admins
+(sign in from the footer link). It switches the page into the lasso editor, where
+Dan draws around areas to add them to a paint or remove them. "Save to gallery"
+stores the lasso shapes in Supabase for the sync workflow to apply; as a backup,
 "Download edits" saves a small JSON file of the lasso shapes. To apply one:
 
 ```
@@ -114,8 +116,9 @@ bucket. Without it, or if Supabase can't be reached, it falls back to
 
 - `supabase/setup.sql`: tables, access rules and the storage bucket. Run once in
   Supabase's SQL Editor (put your login email in the last line).
-- `login.html`: email sign-in link (not linked from the site). Signed-in admins
-  get a **Save to gallery** button in the editor; saved edits go to the `edits` table.
+- `login.html`: email sign-in link, reached from "Sign in" in the footer. Signed-in
+  admins get the **Edit paints** toggle; saved edits go to the `edits` table.
+- `edit.html` only forwards old bookmarks to `mini.html?id=<id>&edit=1`.
 - `tools/sync_supabase.py`: `push` uploads the repo to Supabase; `pull-edits`
   applies saved editor edits with `apply_edits.py`.
 - `.github/workflows/supabase-sync.yml` runs both on every push, every 3 hours

@@ -1,9 +1,12 @@
-/* Swatchwork Minis — lasso paint editor (edit.html).
+/* Swatchwork Minis — lasso paint editor, shown on a mini's page in "Edit paints" mode.
  *
  * Draw around an area to add it to a paint, or switch to Remove to take it away.
- * Nothing is saved to the site from here: "Download edits" saves a small JSON
- * file (the lasso shapes) that's applied with tools/apply_edits.py after review.
- * Work in progress is kept in this browser's storage so a closed tab isn't lost.
+ * Signed-in admins save the lasso shapes to the database ("Save to gallery");
+ * the sync workflow applies them with tools/apply_edits.py. "Download edits"
+ * is kept as a backup. Work in progress is kept in this browser's storage.
+ *
+ *   const close = await window.SwatchworkEditor.mount(container, mini);
+ *   close()  // -> false if the person chose to keep editing unsaved work
  */
 (function () {
   "use strict";
@@ -32,44 +35,13 @@
     });
   }
 
-  async function boot() {
-    const main = $("#main");
-    let data;
-    try {
-      data = await window.Swatchwork.loadData();
-    } catch (e) {
-      main.innerHTML = `<div class="empty"><strong>Couldn't load the minis</strong>Try reloading.</div>`;
-      return;
-    }
-    const id = new URLSearchParams(location.search).get("id");
-    const mini = (data.minis || []).find((m) => m.id === id);
-    if (!mini) return pickList(main, data.minis || []);
-    document.title = `Edit ${mini.name} · Swatchwork Minis`;
-    editor(main, mini);
-  }
-
-  function pickList(main, minis) {
-    main.innerHTML = `
-      <div class="page-head"><h1>Paint editor</h1>
-        <p class="lede">Choose a mini to fine-tune where its paints are.</p></div>
-      <div class="grid">${minis.map((m) => `
-        <a class="card" href="edit.html?id=${encodeURIComponent(m.id)}">
-          <div class="card-img"><img src="${esc(v(m.photo, m))}" alt="" loading="lazy"></div>
-          <div class="card-body"><div class="card-title">${esc(m.name)}</div>
-          <div class="card-meta">${esc(m.game || "")}</div></div>
-        </a>`).join("")}</div>`;
-  }
-
-  async function editor(main, mini) {
+  async function mount(main, mini) {
+    const $ = (sel) => main.querySelector(sel);
     const paints = mini.paints || [];
     const draftKey = `swatchwork-edits:${mini.id}:${mini.updated || ""}`;
 
     main.innerHTML = `
-      <div class="page-head">
-        <p class="eyebrow"><a href="edit.html">All minis</a> · <a href="mini.html?id=${encodeURIComponent(mini.id)}">View page</a></p>
-        <h1>${esc(mini.name)}</h1>
-        <p class="lede">Pick a paint, then draw around an area on the photo. Lift your finger or mouse to finish the shape.</p>
-      </div>
+      <p class="lede ed-intro">Pick a paint, then draw around an area on the photo. Lift your finger or mouse to finish the shape.</p>
       <div class="ed-layout">
         <div>
           <div class="ed-tools" role="toolbar" aria-label="Editor tools">
@@ -274,13 +246,13 @@
 
     // ---------- controls ----------
     function setPressed(selector, el) {
-      document.querySelectorAll(selector).forEach((b) => b.setAttribute("aria-pressed", String(b === el)));
+      main.querySelectorAll(selector).forEach((b) => b.setAttribute("aria-pressed", String(b === el)));
     }
-    document.querySelectorAll("[data-mode]").forEach((b) => b.addEventListener("click", () => {
+    main.querySelectorAll("[data-mode]").forEach((b) => b.addEventListener("click", () => {
       mode = b.dataset.mode; setPressed("[data-mode]", b);
       lasso.classList.toggle("pan", mode === "pan");
     }));
-    document.querySelectorAll("[data-show]").forEach((b) => b.addEventListener("click", () => {
+    main.querySelectorAll("[data-show]").forEach((b) => b.addEventListener("click", () => {
       show = b.dataset.show; setPressed("[data-show]", b); render();
     }));
     function selectPaint(i) {
@@ -290,7 +262,7 @@
       $("#pick-swatch").style.background = paints[i].hex;
       render();
     }
-    document.querySelectorAll("#paint-list .paint").forEach((b) =>
+    main.querySelectorAll("#paint-list .paint").forEach((b) =>
       b.addEventListener("click", () => selectPaint(Number(b.dataset.i))));
     $("#pick").addEventListener("change", (e) => selectPaint(Number(e.target.value)));
     $("#pick-swatch").style.background = paints[0].hex;
@@ -330,7 +302,7 @@
     }
     if (window.Swatchwork.enabled) {
       window.Swatchwork.whoAmI().then(({ sb, email, admin }) => {
-        const login = `login.html?next=${encodeURIComponent(location.pathname.split("/").pop() + location.search)}`;
+        const login = `login.html?next=${encodeURIComponent(`mini.html?id=${mini.id}&edit=1`)}`;
         if (!email) {
           $("#account").innerHTML = `<a href="${esc(login)}">Sign in</a> to save edits straight to the gallery.`;
           return;
@@ -339,7 +311,7 @@
           $("#account").textContent = `Signed in as ${email}, but this account can't save edits.`;
           return;
         }
-        $("#account").innerHTML = `Signed in as ${esc(email)} · <a href="${esc(login)}">account</a>`;
+        $("#account").textContent = `Signed in as ${email}`;
         $("#save-hint").textContent = "Saved edits are applied to the gallery automatically, usually within a few hours.";
         const save = $("#save");
         save.hidden = false;
@@ -359,14 +331,28 @@
       }).catch(() => { $("#account").textContent = "Sign-in isn't available right now."; });
     }
 
-    document.addEventListener("keydown", (e) => {
+    const onKey = (e) => {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "z") { e.preventDefault(); $(e.shiftKey ? "#redo" : "#undo").click(); }
       if (e.key === "Escape" && pts) { pts = null; lctx.clearRect(0, 0, W, H); }
-    });
-    window.addEventListener("beforeunload", (e) => { if (!saved && ops.length) { e.preventDefault(); e.returnValue = ""; } });
+    };
+    const onLeave = (e) => { if (!saved && ops.length) { e.preventDefault(); e.returnValue = ""; } };
+    document.addEventListener("keydown", onKey);
+    window.addEventListener("beforeunload", onLeave);
 
     render();
+
+    // Leave edit mode. Unsaved work stays in this browser's storage either way.
+    return function close() {
+      if (!saved && ops.length &&
+          !window.confirm("You have edits that aren't saved yet. Leave edit mode anyway? They'll still be here next time.")) {
+        return false;
+      }
+      document.removeEventListener("keydown", onKey);
+      window.removeEventListener("beforeunload", onLeave);
+      main.innerHTML = "";
+      return true;
+    };
   }
 
-  boot();
+  window.SwatchworkEditor = { mount };
 })();

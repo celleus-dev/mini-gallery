@@ -414,3 +414,11 @@ h2 {
   max-width: 220px;
 }
 .ed-pick .swatch { width: 22px; height: 22px; border-radius: 6px; flex: none; }
+
+/* ---------- Edit mode on a mini's page ---------- */
+.title-row { display: flex; align-items: center; gap: 12px 16px; flex-wrap: wrap; }
+.title-row h1 { margin-right: auto; }
+#btn-edit[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.ed-intro { margin: 0 0 4px; }
+.footer-row { display: flex; justify-content: space-between; gap: 8px 16px; flex-wrap: wrap; }
+[hidden] { display: none !important; }

@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css?v=6">
+  <link rel="stylesheet" href="assets/style.css?v=7">
   <style>
     .login { max-width: 420px; padding: 36px 0 60px; }
     .login form { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; }
@@ -21,7 +21,7 @@
   </style>
 </head>
 <body>
-  <!-- Not linked from the site. Signing in lets Dan save editor changes to the database. -->
+  <!-- Not linked from the site. Signing in shows "Edit paints" on each mini. -->
   <header class="site-header">
     <div class="wrap"><a class="brand" href="./">Swatchwork<span> Minis</span></a></div>
   </header>
@@ -31,7 +31,7 @@
     <div id="body"></div>
   </main>
   <script src="assets/config.js?v=2"></script>
-  <script src="assets/supa.js?v=1"></script>
+  <script src="assets/supa.js?v=2"></script>
   <script>
   (async function () {
     "use strict";
@@ -39,8 +39,8 @@
     const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
       ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
     // Only allow going on to a page on this site.
-    const nextRaw = new URLSearchParams(location.search).get("next") || "edit.html";
-    const next = /^[a-z]+\.html(\?[^#]*)?$/i.test(nextRaw) ? nextRaw : "edit.html";
+    const nextRaw = new URLSearchParams(location.search).get("next") || "index.html";
+    const next = /^[a-z]+\.html(\?[^#]*)?$/i.test(nextRaw) ? nextRaw : "index.html";
 
     if (!window.Swatchwork.enabled) {
       $("#msg").textContent = "Sign-in isn't set up yet.";
@@ -53,8 +53,8 @@
 
     if (email) {
       $("#msg").innerHTML = `Signed in as <strong>${esc(email)}</strong>.` +
-        (admin ? "" : " This account can view the gallery but can't save edits.");
-      $("#body").innerHTML = `<form><a class="btn btn-primary" href="${esc(next)}">Continue to the editor</a>
+        (admin ? "" : " This account can view the gallery but can't edit paints.");
+      $("#body").innerHTML = `<form><a class="btn btn-primary" href="${esc(next)}">Continue</a>
         <button class="btn" type="button" id="out">Sign out</button></form>`;
       $("#out").addEventListener("click", async () => { await sb.auth.signOut(); location.reload(); });
       return;

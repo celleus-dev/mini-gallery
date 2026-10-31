@@ -84,7 +84,24 @@
     const el = $("#site-footer");
     if (!el) return;
     el.className = "site-footer";
-    el.innerHTML = `<div class="wrap">Painted miniatures, sorted by board game.</div>`;
+    el.innerHTML = `<div class="wrap footer-row"><span>Painted miniatures, sorted by board game.</span>
+      <span id="account-link"></span></div>`;
+    // Small sign-in link for Dan; editing is offered on a mini's page once signed in.
+    if (!window.Swatchwork.enabled) return;
+    const here = location.pathname.split("/").pop() + location.search;
+    window.Swatchwork.whoAmI().then(({ sb, email }) => {
+      const slot = $("#account-link");
+      if (!email) {
+        slot.innerHTML = `<a href="login.html?next=${encodeURIComponent(here || "index.html")}">Sign in</a>`;
+        return;
+      }
+      slot.innerHTML = `${esc(email)} · <a href="#" id="sign-out">Sign out</a>`;
+      $("#sign-out").addEventListener("click", async (e) => {
+        e.preventDefault();
+        await sb.auth.signOut();
+        location.reload();
+      });
+    }).catch(() => {});
   }
 
   function card(mini) {
@@ -262,9 +279,13 @@
     main.innerHTML = `
       <div class="page-head">
         <p class="eyebrow"><a href="game.html?g=${encodeURIComponent(gameSlug)}">${esc(mini.game || "Unsorted")}</a></p>
-        <h1>${esc(mini.name)}</h1>
+        <div class="title-row">
+          <h1>${esc(mini.name)}</h1>
+          <button class="btn" type="button" id="btn-edit" aria-pressed="false" hidden>Edit paints</button>
+        </div>
       </div>
-      <div class="mini-layout">
+      <div id="editor-host" hidden></div>
+      <div class="mini-layout" id="view">
         <div>
           <div class="viewer">
             <div class="viewer-stage" id="stage" style="${ratio}">
@@ -288,6 +309,56 @@
       </div>`;
 
     if (mapped.length) setupViewer(mini);
+    setupEditToggle(mini);
+  }
+
+  // ---------- "Edit paints" mode (signed-in admins only) ----------
+  function setupEditToggle(mini) {
+    const btn = $("#btn-edit");
+    if (!window.Swatchwork.enabled || !window.SwatchworkEditor || !(mini.paints || []).length) return;
+    const host = $("#editor-host"), view = $("#view");
+    let close = null, busy = false;
+
+    function setUrl(on) {
+      const u = new URL(location.href);
+      if (on) u.searchParams.set("edit", "1"); else u.searchParams.delete("edit");
+      history.replaceState(null, "", u);
+    }
+
+    async function enter() {
+      if (busy || close) return;
+      busy = true;
+      btn.setAttribute("aria-pressed", "true");
+      btn.textContent = "Done editing";
+      view.hidden = true;
+      host.hidden = false;
+      host.innerHTML = `<p class="hint">Loading the editor…</p>`;
+      setUrl(true);
+      try {
+        close = await window.SwatchworkEditor.mount(host, mini);
+      } catch (e) {
+        host.innerHTML = `<div class="empty"><strong>Couldn't open the editor</strong>The photo or paint areas didn't load. Try reloading.</div>`;
+        close = () => { host.innerHTML = ""; return true; };
+      }
+      busy = false;
+    }
+
+    function leave() {
+      if (busy || !close || !close()) return;
+      close = null;
+      host.hidden = true;
+      view.hidden = false;
+      btn.setAttribute("aria-pressed", "false");
+      btn.textContent = "Edit paints";
+      setUrl(false);
+    }
+
+    window.Swatchwork.whoAmI().then(({ admin }) => {
+      if (!admin) return;
+      btn.hidden = false;
+      btn.addEventListener("click", () => (close ? leave() : enter()));
+      if (param("edit")) enter();
+    }).catch(() => {});
   }
 
   // ---------- paint highlight viewer ----------

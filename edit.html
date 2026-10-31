@@ -2,25 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <title>Paint editor · Swatchwork Minis</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css?v=6">
+  <title>Swatchwork Minis</title>
+  <script>
+    // The paint editor now lives on each mini's page ("Edit paints").
+    // Old bookmarks land here and are sent on.
+    (function () {
+      var id = new URLSearchParams(location.search).get("id");
+      location.replace(id ? "mini.html?id=" + encodeURIComponent(id) + "&edit=1" : "./");
+    })();
+  </script>
 </head>
-<body>
-  <!-- Not linked from the site. Edits are only downloaded as a file; nothing here changes the site. -->
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="./">Swatchwork<span> Minis</span></a>
-      <span class="ed-badge">Paint editor</span>
-    </div>
-  </header>
-  <main id="main" class="wrap"></main>
-  <script src="assets/config.js?v=2"></script>
-  <script src="assets/supa.js?v=1"></script>
-  <script src="assets/editor.js?v=6"></script>
-</body>
+<body></body>
 </html>
