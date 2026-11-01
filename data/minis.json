@@ -936,6 +936,17 @@
           "coverage": 29.0
         }
       ]
+    },
+    {
+      "id": "rising-sun-fire-dragon",
+      "name": "Fire Dragon",
+      "game": "Rising Sun",
+      "date": "2026-11-01",
+      "photo": "minis/rising-sun-fire-dragon/photo.jpg",
+      "updated": "20261101172420",
+      "width": 1600,
+      "height": 1336,
+      "paints": []
     }
   ]
 }
