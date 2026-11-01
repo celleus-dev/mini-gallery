@@ -1009,6 +1009,17 @@
           "coverage": 33.9
         }
       ]
+    },
+    {
+      "id": "rising-sun-jorogumo",
+      "name": "Jorogumo",
+      "game": "Rising Sun",
+      "date": "2026-11-01",
+      "photo": "minis/rising-sun-jorogumo/photo.jpg",
+      "updated": "20261101172451",
+      "width": 1141,
+      "height": 1600,
+      "paints": []
     }
   ]
 }
