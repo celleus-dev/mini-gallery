@@ -1098,6 +1098,61 @@
           "coverage": 27.9
         }
       ]
+    },
+    {
+      "id": "6-siege-pulse",
+      "name": "Pulse",
+      "game": "6 Siege",
+      "date": "2026-11-01",
+      "photo": "minis/6-siege-pulse/photo.jpg",
+      "updated": "20261102132603",
+      "width": 754,
+      "height": 1118,
+      "paints": [
+        {
+          "name": "Peachy Flesh",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#eda668",
+          "mask": "minis/6-siege-pulse/mask-peachy-flesh.png",
+          "coverage": 3.0
+        },
+        {
+          "name": "Grim Black",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#161511",
+          "mask": "minis/6-siege-pulse/mask-grim-black.png",
+          "coverage": 33.3
+        },
+        {
+          "name": "Gravelord Grey",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#44474c",
+          "mask": "minis/6-siege-pulse/mask-gravelord-grey.png",
+          "coverage": 18.0
+        },
+        {
+          "name": "Cloudburst Blue",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#3c4258",
+          "mask": "minis/6-siege-pulse/mask-cloudburst-blue.png",
+          "coverage": 6.4
+        },
+        {
+          "name": "Hot Orange",
+          "brand": "Vallejo Game Color",
+          "hex": "#e64c2a",
+          "mask": "minis/6-siege-pulse/mask-hot-orange.png",
+          "coverage": 5.5
+        },
+        {
+          "name": "Black",
+          "brand": "Army Painter",
+          "role": "Base rim",
+          "hex": "#1e1e1f",
+          "mask": "minis/6-siege-pulse/mask-black.png",
+          "coverage": 27.8
+        }
+      ]
     }
   ]
 }
