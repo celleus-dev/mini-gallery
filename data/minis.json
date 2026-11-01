@@ -867,6 +867,75 @@
           "coverage": 31.0
         }
       ]
+    },
+    {
+      "id": "6-siege-smoke",
+      "name": "Smoke",
+      "game": "6 Siege",
+      "date": "2026-11-01",
+      "photo": "minis/6-siege-smoke/photo.jpg",
+      "updated": "20261101171815",
+      "width": 846,
+      "height": 1007,
+      "paints": [
+        {
+          "name": "Tyrian Navy",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#2a414f",
+          "mask": "minis/6-siege-smoke/mask-tyrian-navy.png",
+          "coverage": 19.3
+        },
+        {
+          "name": "Camo Cloak",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#5a713b",
+          "mask": "minis/6-siege-smoke/mask-camo-cloak.png",
+          "coverage": 4.5
+        },
+        {
+          "name": "Gravelord Grey",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#44474c",
+          "mask": "minis/6-siege-smoke/mask-gravelord-grey.png",
+          "coverage": 7.6
+        },
+        {
+          "name": "Grim Black",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#161511",
+          "mask": "minis/6-siege-smoke/mask-grim-black.png",
+          "coverage": 28.3
+        },
+        {
+          "name": "Dark Wood",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#482d1a",
+          "mask": "minis/6-siege-smoke/mask-dark-wood.png",
+          "coverage": 0.9
+        },
+        {
+          "name": "Electric Blue",
+          "brand": "Vallejo Game Color",
+          "hex": "#3495b6",
+          "mask": "minis/6-siege-smoke/mask-electric-blue.png",
+          "coverage": 0.1
+        },
+        {
+          "name": "Hot Orange",
+          "brand": "Vallejo Game Color",
+          "hex": "#e64c2a",
+          "mask": "minis/6-siege-smoke/mask-hot-orange.png",
+          "coverage": 5.7
+        },
+        {
+          "name": "Black",
+          "brand": "Army Painter",
+          "role": "Base rim",
+          "hex": "#1e1e1f",
+          "mask": "minis/6-siege-smoke/mask-black.png",
+          "coverage": 29.0
+        }
+      ]
     }
   ]
 }
