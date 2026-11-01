@@ -798,6 +798,75 @@
           "coverage": 31.1
         }
       ]
+    },
+    {
+      "id": "6-siege-mute",
+      "name": "Mute",
+      "game": "6 Siege",
+      "date": "2026-11-01",
+      "photo": "minis/6-siege-mute/photo.jpg",
+      "updated": "20261101160023",
+      "width": 910,
+      "height": 1203,
+      "paints": [
+        {
+          "name": "Tyrian Navy",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#2a414f",
+          "mask": "minis/6-siege-mute/mask-tyrian-navy.png",
+          "coverage": 26.4
+        },
+        {
+          "name": "Camo Cloak",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#5a713b",
+          "mask": "minis/6-siege-mute/mask-camo-cloak.png",
+          "coverage": 6.6
+        },
+        {
+          "name": "Gravelord Grey",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#44474c",
+          "mask": "minis/6-siege-mute/mask-gravelord-grey.png",
+          "coverage": 7.3
+        },
+        {
+          "name": "Grim Black",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#161511",
+          "mask": "minis/6-siege-mute/mask-grim-black.png",
+          "coverage": 19.1
+        },
+        {
+          "name": "Dark Wood",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#482d1a",
+          "mask": "minis/6-siege-mute/mask-dark-wood.png",
+          "coverage": 1.1
+        },
+        {
+          "name": "Electric Blue",
+          "brand": "Vallejo Game Color",
+          "hex": "#3495b6",
+          "mask": "minis/6-siege-mute/mask-electric-blue.png",
+          "coverage": 0.4
+        },
+        {
+          "name": "Hot Orange",
+          "brand": "Vallejo Game Color",
+          "hex": "#e64c2a",
+          "mask": "minis/6-siege-mute/mask-hot-orange.png",
+          "coverage": 6.3
+        },
+        {
+          "name": "Black",
+          "brand": "Army Painter",
+          "role": "Base rim",
+          "hex": "#1e1e1f",
+          "mask": "minis/6-siege-mute/mask-black.png",
+          "coverage": 27.1
+        }
+      ]
     }
   ]
 }
