@@ -1031,6 +1031,73 @@
       "width": 1273,
       "height": 1600,
       "paints": []
+    },
+    {
+      "id": "6-siege-recruit-defender",
+      "name": "Recruit (Defender)",
+      "game": "6 Siege",
+      "date": "2026-11-01",
+      "photo": "minis/6-siege-recruit-defender/photo.jpg",
+      "updated": "20261101173909",
+      "width": 1594,
+      "height": 1149,
+      "paints": [
+        {
+          "name": "Camo Cloak",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#5a713b",
+          "mask": "minis/6-siege-recruit-defender/mask-camo-cloak.png",
+          "coverage": 16.5
+        },
+        {
+          "name": "Absolution Green",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#214a28"
+        },
+        {
+          "name": "Burnt Moss",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#4d5a50",
+          "mask": "minis/6-siege-recruit-defender/mask-burnt-moss.png",
+          "coverage": 6.4
+        },
+        {
+          "name": "Grim Black",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#161511",
+          "mask": "minis/6-siege-recruit-defender/mask-grim-black.png",
+          "coverage": 30.9
+        },
+        {
+          "name": "Dark Wood",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#482d1a",
+          "mask": "minis/6-siege-recruit-defender/mask-dark-wood.png",
+          "coverage": 5.0
+        },
+        {
+          "name": "Nuclear Sunrise",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#e56f25",
+          "mask": "minis/6-siege-recruit-defender/mask-nuclear-sunrise.png",
+          "coverage": 0.1
+        },
+        {
+          "name": "Hot Orange",
+          "brand": "Vallejo Game Color",
+          "hex": "#e64c2a",
+          "mask": "minis/6-siege-recruit-defender/mask-hot-orange.png",
+          "coverage": 6.0
+        },
+        {
+          "name": "Black",
+          "brand": "Army Painter",
+          "role": "Base rim",
+          "hex": "#1e1e1f",
+          "mask": "minis/6-siege-recruit-defender/mask-black.png",
+          "coverage": 29.7
+        }
+      ]
     }
   ]
 }
