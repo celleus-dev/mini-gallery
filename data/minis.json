@@ -947,6 +947,68 @@
       "width": 1600,
       "height": 1336,
       "paints": []
+    },
+    {
+      "id": "6-siege-doc",
+      "name": "Doc",
+      "game": "6 Siege",
+      "date": "2026-11-01",
+      "photo": "minis/6-siege-doc/photo.jpg",
+      "updated": "20261101172311",
+      "width": 690,
+      "height": 1021,
+      "paints": [
+        {
+          "name": "Blinding Light",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#f5f4ef",
+          "mask": "minis/6-siege-doc/mask-blinding-light.png",
+          "coverage": 10.2
+        },
+        {
+          "name": "Pastel Indigo",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#9fbcda",
+          "mask": "minis/6-siege-doc/mask-pastel-indigo.png",
+          "coverage": 2.1
+        },
+        {
+          "name": "Magic Blue",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#0b79ae",
+          "mask": "minis/6-siege-doc/mask-magic-blue.png",
+          "coverage": 12.8
+        },
+        {
+          "name": "Occultist Cloak",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#30323e",
+          "mask": "minis/6-siege-doc/mask-occultist-cloak.png",
+          "coverage": 25.5
+        },
+        {
+          "name": "Grim Black",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#161511",
+          "mask": "minis/6-siege-doc/mask-grim-black.png",
+          "coverage": 5.0
+        },
+        {
+          "name": "Hot Orange",
+          "brand": "Vallejo Game Color",
+          "hex": "#e64c2a",
+          "mask": "minis/6-siege-doc/mask-hot-orange.png",
+          "coverage": 6.2
+        },
+        {
+          "name": "Black",
+          "brand": "Army Painter",
+          "role": "Base rim",
+          "hex": "#1e1e1f",
+          "mask": "minis/6-siege-doc/mask-black.png",
+          "coverage": 33.9
+        }
+      ]
     }
   ]
 }
