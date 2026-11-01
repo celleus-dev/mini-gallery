@@ -736,7 +736,7 @@
       "game": "6 Siege",
       "date": "2026-11-01",
       "photo": "minis/6-siege-kapkan/photo.jpg",
-      "updated": "20261101160126",
+      "updated": "20261101160300",
       "width": 1600,
       "height": 913,
       "paints": [
@@ -746,11 +746,6 @@
           "hex": "#161511",
           "mask": "minis/6-siege-kapkan/mask-grim-black.png",
           "coverage": 39.4
-        },
-        {
-          "name": "Ghillie Dew",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#90ac23"
         },
         {
           "name": "Camo Cloak",
