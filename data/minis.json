@@ -729,6 +729,80 @@
           "coverage": 30.1
         }
       ]
+    },
+    {
+      "id": "6-siege-kapkan",
+      "name": "Kapkan",
+      "game": "6 Siege",
+      "date": "2026-11-01",
+      "photo": "minis/6-siege-kapkan/photo.jpg",
+      "updated": "20261101160126",
+      "width": 1600,
+      "height": 913,
+      "paints": [
+        {
+          "name": "Grim Black",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#161511",
+          "mask": "minis/6-siege-kapkan/mask-grim-black.png",
+          "coverage": 39.4
+        },
+        {
+          "name": "Ghillie Dew",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#90ac23"
+        },
+        {
+          "name": "Camo Cloak",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#5a713b",
+          "mask": "minis/6-siege-kapkan/mask-camo-cloak.png",
+          "coverage": 4.8
+        },
+        {
+          "name": "Lizardfolk Cyan",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#39989c",
+          "mask": "minis/6-siege-kapkan/mask-lizardfolk-cyan.png",
+          "coverage": 4.1
+        },
+        {
+          "name": "Gravelord Grey",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#44474c",
+          "mask": "minis/6-siege-kapkan/mask-gravelord-grey.png",
+          "coverage": 1.9
+        },
+        {
+          "name": "Gunner Camo",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#325141",
+          "mask": "minis/6-siege-kapkan/mask-gunner-camo.png",
+          "coverage": 2.6
+        },
+        {
+          "name": "Algae Green",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#9caa53",
+          "mask": "minis/6-siege-kapkan/mask-algae-green.png",
+          "coverage": 4.2
+        },
+        {
+          "name": "Hot Orange",
+          "brand": "Vallejo Game Color",
+          "hex": "#e64c2a",
+          "mask": "minis/6-siege-kapkan/mask-hot-orange.png",
+          "coverage": 5.5
+        },
+        {
+          "name": "Black",
+          "brand": "Army Painter",
+          "role": "Base rim",
+          "hex": "#1e1e1f",
+          "mask": "minis/6-siege-kapkan/mask-black.png",
+          "coverage": 31.1
+        }
+      ]
     }
   ]
 }

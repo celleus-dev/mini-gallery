@@ -1,0 +1,363 @@
+[
+ {
+  "name": "Grim Black",
+  "brand": "Army Painter Speedpaint"
+ },
+ {
+  "name": "Ghillie Dew",
+  "brand": "Army Painter Speedpaint"
+ },
+ {
+  "name": "Camo Cloak",
+  "brand": "Army Painter Speedpaint",
+  "note": "Dan calls it Camo Green"
+ },
+ {
+  "name": "Lizardfolk Cyan",
+  "brand": "Army Painter Speedpaint",
+  "note": "sleeves",
+  "samples": [
+   [
+    528,
+    404
+   ],
+   [
+    1349,
+    409
+   ],
+   [
+    518,
+    384
+   ],
+   [
+    548,
+    363
+   ],
+   [
+    492,
+    392
+   ],
+   [
+    572,
+    397
+   ],
+   [
+    1331,
+    411
+   ],
+   [
+    501,
+    357
+   ]
+  ],
+  "threshold": 30
+ },
+ {
+  "name": "Gravelord Grey",
+  "brand": "Army Painter Speedpaint",
+  "note": "Dan confirmed (wrote 'Grayard Grey')"
+ },
+ {
+  "name": "Gunner Camo",
+  "brand": "Army Painter Speedpaint"
+ },
+ {
+  "name": "Algae Green",
+  "brand": "Army Painter Speedpaint",
+  "samples": [
+   [
+    606,
+    339
+   ],
+   [
+    545,
+    214
+   ],
+   [
+    528,
+    157
+   ],
+   [
+    599,
+    339
+   ],
+   [
+    614,
+    319
+   ],
+   [
+    1323,
+    175
+   ],
+   [
+    622,
+    307
+   ],
+   [
+    544,
+    243
+   ]
+  ],
+  "threshold": 30,
+  "note": "Dan: bright yellow-green netting on head and shoulders"
+ },
+ {
+  "name": "Hot Orange",
+  "brand": "Vallejo Game Color",
+  "hex": "#e64c2a",
+  "hex_source": "Scalemates, Vallejo Game Color 72.009 Hot Orange",
+  "note": "clip on the base edge",
+  "regions": [
+   {
+    "polygon": [
+     [
+      203,
+      665
+     ],
+     [
+      300,
+      658
+     ],
+     [
+      338,
+      690
+     ],
+     [
+      322,
+      722
+     ],
+     [
+      284,
+      782
+     ],
+     [
+      208,
+      782
+     ]
+    ]
+   },
+   {
+    "polygon": [
+     [
+      993,
+      703
+     ],
+     [
+      1090,
+      686
+     ],
+     [
+      1142,
+      703
+     ],
+     [
+      1132,
+      742
+     ],
+     [
+      1102,
+      818
+     ],
+     [
+      998,
+      822
+     ]
+    ]
+   }
+  ],
+  "samples": [
+   [
+    250,
+    720
+   ],
+   [
+    1050,
+    750
+   ]
+  ],
+  "threshold": 30
+ },
+ {
+  "name": "Black",
+  "brand": "Army Painter",
+  "role": "Base rim",
+  "hex": "#1e1e1f",
+  "note": "regular Army Painter black base, whole circle",
+  "priority": true,
+  "threshold": 30,
+  "regions": [
+   {
+    "ellipse": [
+     496,
+     699,
+     256,
+     99
+    ]
+   },
+   {
+    "ellipse": [
+     1257.5,
+     692.5,
+     269.5,
+     137.5
+    ]
+   }
+  ],
+  "samples": [
+   [
+    600,
+    770
+   ],
+   [
+    1300,
+    790
+   ],
+   [
+    700,
+    700
+   ],
+   [
+    1450,
+    720
+   ]
+  ],
+  "exclude_regions": [
+   {
+    "polygon": [
+     [
+      203,
+      665
+     ],
+     [
+      300,
+      658
+     ],
+     [
+      338,
+      690
+     ],
+     [
+      322,
+      722
+     ],
+     [
+      284,
+      782
+     ],
+     [
+      208,
+      782
+     ]
+    ]
+   },
+   {
+    "polygon": [
+     [
+      993,
+      703
+     ],
+     [
+      1090,
+      686
+     ],
+     [
+      1142,
+      703
+     ],
+     [
+      1132,
+      742
+     ],
+     [
+      1102,
+      818
+     ],
+     [
+      998,
+      822
+     ]
+    ]
+   },
+   {
+    "polygon": [
+     [
+      400,
+      560
+     ],
+     [
+      485,
+      560
+     ],
+     [
+      482,
+      695
+     ],
+     [
+      405,
+      695
+     ]
+    ]
+   },
+   {
+    "polygon": [
+     [
+      480,
+      560
+     ],
+     [
+      605,
+      560
+     ],
+     [
+      600,
+      672
+     ],
+     [
+      480,
+      676
+     ]
+    ]
+   },
+   {
+    "polygon": [
+     [
+      1190,
+      560
+     ],
+     [
+      1278,
+      560
+     ],
+     [
+      1275,
+      705
+     ],
+     [
+      1195,
+      705
+     ]
+    ]
+   },
+   {
+    "polygon": [
+     [
+      1265,
+      540
+     ],
+     [
+      1362,
+      540
+     ],
+     [
+      1355,
+      668
+     ],
+     [
+      1262,
+      660
+     ]
+    ]
+   }
+  ]
+ }
+]
