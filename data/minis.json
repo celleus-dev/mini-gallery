@@ -1020,6 +1020,17 @@
       "width": 1141,
       "height": 1600,
       "paints": []
+    },
+    {
+      "id": "rising-sun-jinmenju",
+      "name": "Jinmenju",
+      "game": "Rising Sun",
+      "date": "2026-11-01",
+      "photo": "minis/rising-sun-jinmenju/photo.jpg",
+      "updated": "20261101172533",
+      "width": 1273,
+      "height": 1600,
+      "paints": []
     }
   ]
 }
