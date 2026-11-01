@@ -653,6 +653,82 @@
           "coverage": 18.1
         }
       ]
+    },
+    {
+      "id": "6-siege-thunderbird",
+      "name": "Thunderbird",
+      "game": "6 Siege",
+      "date": "2026-11-01",
+      "photo": "minis/6-siege-thunderbird/photo.jpg",
+      "updated": "20261101155846",
+      "width": 1456,
+      "height": 1158,
+      "paints": [
+        {
+          "name": "Satchel Brown",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#583d32",
+          "mask": "minis/6-siege-thunderbird/mask-satchel-brown.png",
+          "coverage": 34.7
+        },
+        {
+          "name": "Hardened Leather",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#8c501e",
+          "mask": "minis/6-siege-thunderbird/mask-hardened-leather.png",
+          "coverage": 3.1
+        },
+        {
+          "name": "Grim Black",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#161511",
+          "mask": "minis/6-siege-thunderbird/mask-grim-black.png",
+          "coverage": 10.6
+        },
+        {
+          "name": "Gravelord Grey",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#44474c",
+          "mask": "minis/6-siege-thunderbird/mask-gravelord-grey.png",
+          "coverage": 6.8
+        },
+        {
+          "name": "Peachy Flesh",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#eda668",
+          "mask": "minis/6-siege-thunderbird/mask-peachy-flesh.png",
+          "coverage": 0.4
+        },
+        {
+          "name": "Noble Skin",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#4f493d",
+          "mask": "minis/6-siege-thunderbird/mask-noble-skin.png",
+          "coverage": 0.9
+        },
+        {
+          "name": "Poppy Red",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#c8453b",
+          "mask": "minis/6-siege-thunderbird/mask-poppy-red.png",
+          "coverage": 0.3
+        },
+        {
+          "name": "Hot Orange",
+          "brand": "Vallejo Game Color",
+          "hex": "#e64c2a",
+          "mask": "minis/6-siege-thunderbird/mask-hot-orange.png",
+          "coverage": 6.1
+        },
+        {
+          "name": "Black",
+          "brand": "Army Painter",
+          "role": "Base rim",
+          "hex": "#1e1e1f",
+          "mask": "minis/6-siege-thunderbird/mask-black.png",
+          "coverage": 30.1
+        }
+      ]
     }
   ]
 }
