@@ -15,3 +15,7 @@ Peachy Flesh, Noble Skin, Satchel Brown, Poppy Red. Clip = Vallejo Hot Orange; b
 First-pass placement (awaiting Dan's corrections): Satchel Brown jacket+trousers, Hardened Leather pouches,
 Grim Black gun/goggles, Gravelord Grey helmet+boots, both skin paints on face/hands, Poppy Red collar+sash.
 White patches and the grey pouch left unmarked.
+
+Nov 2 2026 (Dan): grey-backdrop view removed; the site now shows only the black-backdrop photo.
+Current build: black.jpg + black_paints.json + black_fg_mask.png (made from the composite with
+tools/single_view.py). The composite files above are kept for reference only.

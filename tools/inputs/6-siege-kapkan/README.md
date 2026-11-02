@@ -11,3 +11,7 @@ python3 tools/process_mini.py --photo tools/inputs/6-siege-kapkan/composite.jpg 
 
 Hot Orange = the clip (Vallejo Game Color 72.009, Scalemates #e64c2a). Base: Black, whole circle.
 Camo Cloak = what Dan calls Camo Green. Gravelord Grey confirmed by Dan. Algae Green = the yellow-green netting (Dan, Nov 1 2026).
+
+Nov 2 2026 (Dan): grey-backdrop view removed; the site now shows only the black-backdrop photo.
+Current build: black.jpg + black_paints.json + black_fg_mask.png (made from the composite with
+tools/single_view.py). The composite files above are kept for reference only.

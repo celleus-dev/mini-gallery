@@ -655,220 +655,6 @@
       ]
     },
     {
-      "id": "6-siege-thunderbird",
-      "name": "Thunderbird",
-      "game": "6 Siege",
-      "date": "2026-11-01",
-      "photo": "minis/6-siege-thunderbird/photo.jpg",
-      "updated": "20261101155846",
-      "width": 1456,
-      "height": 1158,
-      "paints": [
-        {
-          "name": "Satchel Brown",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#583d32",
-          "mask": "minis/6-siege-thunderbird/mask-satchel-brown.png",
-          "coverage": 34.7
-        },
-        {
-          "name": "Hardened Leather",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#8c501e",
-          "mask": "minis/6-siege-thunderbird/mask-hardened-leather.png",
-          "coverage": 3.1
-        },
-        {
-          "name": "Grim Black",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#161511",
-          "mask": "minis/6-siege-thunderbird/mask-grim-black.png",
-          "coverage": 10.6
-        },
-        {
-          "name": "Gravelord Grey",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#44474c",
-          "mask": "minis/6-siege-thunderbird/mask-gravelord-grey.png",
-          "coverage": 6.8
-        },
-        {
-          "name": "Peachy Flesh",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#eda668",
-          "mask": "minis/6-siege-thunderbird/mask-peachy-flesh.png",
-          "coverage": 0.4
-        },
-        {
-          "name": "Noble Skin",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#4f493d",
-          "mask": "minis/6-siege-thunderbird/mask-noble-skin.png",
-          "coverage": 0.9
-        },
-        {
-          "name": "Poppy Red",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#c8453b",
-          "mask": "minis/6-siege-thunderbird/mask-poppy-red.png",
-          "coverage": 0.3
-        },
-        {
-          "name": "Hot Orange",
-          "brand": "Vallejo Game Color",
-          "hex": "#e64c2a",
-          "mask": "minis/6-siege-thunderbird/mask-hot-orange.png",
-          "coverage": 6.1
-        },
-        {
-          "name": "Black",
-          "brand": "Army Painter",
-          "role": "Base rim",
-          "hex": "#1e1e1f",
-          "mask": "minis/6-siege-thunderbird/mask-black.png",
-          "coverage": 30.1
-        }
-      ]
-    },
-    {
-      "id": "6-siege-kapkan",
-      "name": "Kapkan",
-      "game": "6 Siege",
-      "date": "2026-11-01",
-      "photo": "minis/6-siege-kapkan/photo.jpg",
-      "updated": "20261101160300",
-      "width": 1600,
-      "height": 913,
-      "paints": [
-        {
-          "name": "Grim Black",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#161511",
-          "mask": "minis/6-siege-kapkan/mask-grim-black.png",
-          "coverage": 39.4
-        },
-        {
-          "name": "Camo Cloak",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#5a713b",
-          "mask": "minis/6-siege-kapkan/mask-camo-cloak.png",
-          "coverage": 4.8
-        },
-        {
-          "name": "Lizardfolk Cyan",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#39989c",
-          "mask": "minis/6-siege-kapkan/mask-lizardfolk-cyan.png",
-          "coverage": 4.1
-        },
-        {
-          "name": "Gravelord Grey",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#44474c",
-          "mask": "minis/6-siege-kapkan/mask-gravelord-grey.png",
-          "coverage": 1.9
-        },
-        {
-          "name": "Gunner Camo",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#325141",
-          "mask": "minis/6-siege-kapkan/mask-gunner-camo.png",
-          "coverage": 2.6
-        },
-        {
-          "name": "Algae Green",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#9caa53",
-          "mask": "minis/6-siege-kapkan/mask-algae-green.png",
-          "coverage": 4.2
-        },
-        {
-          "name": "Hot Orange",
-          "brand": "Vallejo Game Color",
-          "hex": "#e64c2a",
-          "mask": "minis/6-siege-kapkan/mask-hot-orange.png",
-          "coverage": 5.5
-        },
-        {
-          "name": "Black",
-          "brand": "Army Painter",
-          "role": "Base rim",
-          "hex": "#1e1e1f",
-          "mask": "minis/6-siege-kapkan/mask-black.png",
-          "coverage": 31.1
-        }
-      ]
-    },
-    {
-      "id": "6-siege-mute",
-      "name": "Mute",
-      "game": "6 Siege",
-      "date": "2026-11-01",
-      "photo": "minis/6-siege-mute/photo.jpg",
-      "updated": "20261101170852",
-      "width": 1600,
-      "height": 1134,
-      "paints": [
-        {
-          "name": "Tyrian Navy",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#2a414f",
-          "mask": "minis/6-siege-mute/mask-tyrian-navy.png",
-          "coverage": 22.0
-        },
-        {
-          "name": "Camo Cloak",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#5a713b",
-          "mask": "minis/6-siege-mute/mask-camo-cloak.png",
-          "coverage": 6.4
-        },
-        {
-          "name": "Gravelord Grey",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#44474c",
-          "mask": "minis/6-siege-mute/mask-gravelord-grey.png",
-          "coverage": 6.1
-        },
-        {
-          "name": "Grim Black",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#161511",
-          "mask": "minis/6-siege-mute/mask-grim-black.png",
-          "coverage": 19.8
-        },
-        {
-          "name": "Dark Wood",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#482d1a",
-          "mask": "minis/6-siege-mute/mask-dark-wood.png",
-          "coverage": 0.8
-        },
-        {
-          "name": "Electric Blue",
-          "brand": "Vallejo Game Color",
-          "hex": "#3495b6",
-          "mask": "minis/6-siege-mute/mask-electric-blue.png",
-          "coverage": 0.4
-        },
-        {
-          "name": "Hot Orange",
-          "brand": "Vallejo Game Color",
-          "hex": "#e64c2a",
-          "mask": "minis/6-siege-mute/mask-hot-orange.png",
-          "coverage": 6.5
-        },
-        {
-          "name": "Black",
-          "brand": "Army Painter",
-          "role": "Base rim",
-          "hex": "#1e1e1f",
-          "mask": "minis/6-siege-mute/mask-black.png",
-          "coverage": 31.0
-        }
-      ]
-    },
-    {
       "id": "6-siege-smoke",
       "name": "Smoke",
       "game": "6 Siege",
@@ -1096,6 +882,220 @@
           "hex": "#1e1e1f",
           "mask": "minis/6-siege-recruit-defender/mask-black.png",
           "coverage": 29.7
+        }
+      ]
+    },
+    {
+      "id": "6-siege-mute",
+      "name": "Mute",
+      "game": "6 Siege",
+      "date": "2026-11-01",
+      "photo": "minis/6-siege-mute/photo.jpg",
+      "updated": "20261102131923",
+      "width": 910,
+      "height": 1203,
+      "paints": [
+        {
+          "name": "Tyrian Navy",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#2a414f",
+          "mask": "minis/6-siege-mute/mask-tyrian-navy.png",
+          "coverage": 25.7
+        },
+        {
+          "name": "Camo Cloak",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#5a713b",
+          "mask": "minis/6-siege-mute/mask-camo-cloak.png",
+          "coverage": 6.8
+        },
+        {
+          "name": "Gravelord Grey",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#44474c",
+          "mask": "minis/6-siege-mute/mask-gravelord-grey.png",
+          "coverage": 7.4
+        },
+        {
+          "name": "Grim Black",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#161511",
+          "mask": "minis/6-siege-mute/mask-grim-black.png",
+          "coverage": 18.3
+        },
+        {
+          "name": "Dark Wood",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#482d1a",
+          "mask": "minis/6-siege-mute/mask-dark-wood.png",
+          "coverage": 1.1
+        },
+        {
+          "name": "Electric Blue",
+          "brand": "Vallejo Game Color",
+          "hex": "#3495b6",
+          "mask": "minis/6-siege-mute/mask-electric-blue.png",
+          "coverage": 0.4
+        },
+        {
+          "name": "Hot Orange",
+          "brand": "Vallejo Game Color",
+          "hex": "#e64c2a",
+          "mask": "minis/6-siege-mute/mask-hot-orange.png",
+          "coverage": 6.3
+        },
+        {
+          "name": "Black",
+          "brand": "Army Painter",
+          "role": "Base rim",
+          "hex": "#1e1e1f",
+          "mask": "minis/6-siege-mute/mask-black.png",
+          "coverage": 27.1
+        }
+      ]
+    },
+    {
+      "id": "6-siege-kapkan",
+      "name": "Kapkan",
+      "game": "6 Siege",
+      "date": "2026-11-01",
+      "photo": "minis/6-siege-kapkan/photo.jpg",
+      "updated": "20261102131939",
+      "width": 870,
+      "height": 950,
+      "paints": [
+        {
+          "name": "Grim Black",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#161511",
+          "mask": "minis/6-siege-kapkan/mask-grim-black.png",
+          "coverage": 37.6
+        },
+        {
+          "name": "Camo Cloak",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#5a713b",
+          "mask": "minis/6-siege-kapkan/mask-camo-cloak.png",
+          "coverage": 7.3
+        },
+        {
+          "name": "Lizardfolk Cyan",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#39989c",
+          "mask": "minis/6-siege-kapkan/mask-lizardfolk-cyan.png",
+          "coverage": 4.5
+        },
+        {
+          "name": "Gravelord Grey",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#44474c",
+          "mask": "minis/6-siege-kapkan/mask-gravelord-grey.png",
+          "coverage": 5.0
+        },
+        {
+          "name": "Gunner Camo",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#325141",
+          "mask": "minis/6-siege-kapkan/mask-gunner-camo.png",
+          "coverage": 3.7
+        },
+        {
+          "name": "Algae Green",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#9caa53",
+          "mask": "minis/6-siege-kapkan/mask-algae-green.png",
+          "coverage": 4.9
+        },
+        {
+          "name": "Hot Orange",
+          "brand": "Vallejo Game Color",
+          "hex": "#e64c2a",
+          "mask": "minis/6-siege-kapkan/mask-hot-orange.png",
+          "coverage": 5.1
+        },
+        {
+          "name": "Black",
+          "brand": "Army Painter",
+          "role": "Base rim",
+          "hex": "#1e1e1f",
+          "mask": "minis/6-siege-kapkan/mask-black.png",
+          "coverage": 27.0
+        }
+      ]
+    },
+    {
+      "id": "6-siege-thunderbird",
+      "name": "Thunderbird",
+      "game": "6 Siege",
+      "date": "2026-11-01",
+      "photo": "minis/6-siege-thunderbird/photo.jpg",
+      "updated": "20261102131944",
+      "width": 728,
+      "height": 1158,
+      "paints": [
+        {
+          "name": "Satchel Brown",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#583d32",
+          "mask": "minis/6-siege-thunderbird/mask-satchel-brown.png",
+          "coverage": 36.2
+        },
+        {
+          "name": "Hardened Leather",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#8c501e",
+          "mask": "minis/6-siege-thunderbird/mask-hardened-leather.png",
+          "coverage": 3.6
+        },
+        {
+          "name": "Grim Black",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#161511",
+          "mask": "minis/6-siege-thunderbird/mask-grim-black.png",
+          "coverage": 10.0
+        },
+        {
+          "name": "Gravelord Grey",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#44474c",
+          "mask": "minis/6-siege-thunderbird/mask-gravelord-grey.png",
+          "coverage": 8.9
+        },
+        {
+          "name": "Peachy Flesh",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#eda668",
+          "mask": "minis/6-siege-thunderbird/mask-peachy-flesh.png",
+          "coverage": 0.6
+        },
+        {
+          "name": "Noble Skin",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#4f493d",
+          "mask": "minis/6-siege-thunderbird/mask-noble-skin.png",
+          "coverage": 1.0
+        },
+        {
+          "name": "Poppy Red",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#c8453b",
+          "mask": "minis/6-siege-thunderbird/mask-poppy-red.png",
+          "coverage": 0.4
+        },
+        {
+          "name": "Hot Orange",
+          "brand": "Vallejo Game Color",
+          "hex": "#e64c2a",
+          "mask": "minis/6-siege-thunderbird/mask-hot-orange.png",
+          "coverage": 6.0
+        },
+        {
+          "name": "Black",
+          "brand": "Army Painter",
+          "role": "Base rim",
+          "hex": "#1e1e1f",
+          "mask": "minis/6-siege-thunderbird/mask-black.png",
+          "coverage": 27.9
         }
       ]
     }

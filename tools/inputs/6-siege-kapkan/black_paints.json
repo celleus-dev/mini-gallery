@@ -1,0 +1,231 @@
+[
+ {
+  "name": "Grim Black",
+  "brand": "Army Painter Speedpaint"
+ },
+ {
+  "name": "Camo Cloak",
+  "brand": "Army Painter Speedpaint",
+  "note": "Dan calls it Camo Green"
+ },
+ {
+  "name": "Lizardfolk Cyan",
+  "brand": "Army Painter Speedpaint",
+  "note": "sleeves",
+  "samples": [
+   [
+    549,
+    420
+   ],
+   [
+    538,
+    399
+   ],
+   [
+    570,
+    377
+   ],
+   [
+    511,
+    407
+   ],
+   [
+    595,
+    413
+   ],
+   [
+    521,
+    371
+   ]
+  ],
+  "threshold": 30
+ },
+ {
+  "name": "Gravelord Grey",
+  "brand": "Army Painter Speedpaint",
+  "note": "Dan confirmed (wrote 'Grayard Grey')"
+ },
+ {
+  "name": "Gunner Camo",
+  "brand": "Army Painter Speedpaint"
+ },
+ {
+  "name": "Algae Green",
+  "brand": "Army Painter Speedpaint",
+  "samples": [
+   [
+    630,
+    352
+   ],
+   [
+    566,
+    222
+   ],
+   [
+    549,
+    163
+   ],
+   [
+    623,
+    352
+   ],
+   [
+    638,
+    332
+   ],
+   [
+    647,
+    319
+   ],
+   [
+    565,
+    253
+   ]
+  ],
+  "threshold": 30,
+  "note": "Dan: bright yellow-green netting on head and shoulders"
+ },
+ {
+  "name": "Hot Orange",
+  "brand": "Vallejo Game Color",
+  "hex": "#e64c2a",
+  "hex_source": "Scalemates, Vallejo Game Color 72.009 Hot Orange",
+  "note": "clip on the base edge",
+  "regions": [
+   {
+    "polygon": [
+     [
+      211,
+      691
+     ],
+     [
+      312,
+      684
+     ],
+     [
+      351,
+      717
+     ],
+     [
+      335,
+      750
+     ],
+     [
+      295,
+      813
+     ],
+     [
+      216,
+      813
+     ]
+    ]
+   }
+  ],
+  "samples": [
+   [
+    260,
+    748
+   ]
+  ],
+  "threshold": 30
+ },
+ {
+  "name": "Black",
+  "brand": "Army Painter",
+  "role": "Base rim",
+  "hex": "#1e1e1f",
+  "note": "regular Army Painter black base, whole circle",
+  "priority": true,
+  "threshold": 30,
+  "regions": [
+   {
+    "ellipse": [
+     516,
+     727,
+     266,
+     103
+    ]
+   }
+  ],
+  "samples": [
+   [
+    624,
+    800
+   ],
+   [
+    728,
+    728
+   ]
+  ],
+  "exclude_regions": [
+   {
+    "polygon": [
+     [
+      211,
+      691
+     ],
+     [
+      312,
+      684
+     ],
+     [
+      351,
+      717
+     ],
+     [
+      335,
+      750
+     ],
+     [
+      295,
+      813
+     ],
+     [
+      216,
+      813
+     ]
+    ]
+   },
+   {
+    "polygon": [
+     [
+      416,
+      582
+     ],
+     [
+      504,
+      582
+     ],
+     [
+      501,
+      722
+     ],
+     [
+      421,
+      722
+     ]
+    ]
+   },
+   {
+    "polygon": [
+     [
+      499,
+      582
+     ],
+     [
+      629,
+      582
+     ],
+     [
+      624,
+      698
+     ],
+     [
+      499,
+      703
+     ]
+    ]
+   }
+  ]
+ }
+]

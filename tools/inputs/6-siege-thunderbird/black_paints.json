@@ -1,0 +1,403 @@
+[
+ {
+  "name": "Satchel Brown",
+  "brand": "Army Painter Speedpaint",
+  "note": "jacket and trousers (unconfirmed)",
+  "regions": [
+   {
+    "polygon": [
+     [
+      202,
+      235
+     ],
+     [
+      482,
+      235
+     ],
+     [
+      512,
+      420
+     ],
+     [
+      482,
+      520
+     ],
+     [
+      462,
+      850
+     ],
+     [
+      302,
+      850
+     ],
+     [
+      262,
+      620
+     ],
+     [
+      202,
+      560
+     ]
+    ]
+   }
+  ],
+  "threshold": 28
+ },
+ {
+  "name": "Hardened Leather",
+  "brand": "Army Painter Speedpaint",
+  "note": "pouches and holster",
+  "regions": [
+   [
+    212,
+    488,
+    477,
+    632
+   ]
+  ],
+  "threshold": 28
+ },
+ {
+  "name": "Grim Black",
+  "brand": "Army Painter Speedpaint",
+  "note": "gun and goggles",
+  "regions": [
+   {
+    "polygon": [
+     [
+      272,
+      320
+     ],
+     [
+      347,
+      288
+     ],
+     [
+      542,
+      395
+     ],
+     [
+      632,
+      508
+     ],
+     [
+      610,
+      532
+     ],
+     [
+      507,
+      472
+     ],
+     [
+      387,
+      458
+     ],
+     [
+      287,
+      378
+     ]
+    ]
+   },
+   [
+    264,
+    135,
+    390,
+    205
+   ]
+  ],
+  "threshold": 24
+ },
+ {
+  "name": "Gravelord Grey",
+  "brand": "Army Painter Speedpaint",
+  "note": "helmet and boots (Dan wrote 'Graveyard Grey')",
+  "regions": [
+   [
+    264,
+    132,
+    390,
+    250
+   ],
+   {
+    "polygon": [
+     [
+      307,
+      705
+     ],
+     [
+      384,
+      705
+     ],
+     [
+      384,
+      840
+     ],
+     [
+      307,
+      840
+     ]
+    ]
+   },
+   {
+    "polygon": [
+     [
+      387,
+      780
+     ],
+     [
+      457,
+      780
+     ],
+     [
+      457,
+      880
+     ],
+     [
+      387,
+      880
+     ]
+    ]
+   }
+  ],
+  "threshold": 26
+ },
+ {
+  "name": "Peachy Flesh",
+  "brand": "Army Painter Speedpaint",
+  "note": "skin",
+  "regions": [
+   [
+    270,
+    205,
+    334,
+    262
+   ],
+   [
+    357,
+    378,
+    427,
+    435
+   ],
+   [
+    502,
+    458,
+    534,
+    490
+   ]
+  ],
+  "threshold": 26
+ },
+ {
+  "name": "Noble Skin",
+  "brand": "Army Painter Speedpaint",
+  "note": "skin",
+  "regions": [
+   [
+    270,
+    205,
+    334,
+    262
+   ],
+   [
+    357,
+    378,
+    427,
+    435
+   ],
+   [
+    502,
+    458,
+    534,
+    490
+   ]
+  ],
+  "threshold": 26
+ },
+ {
+  "name": "Poppy Red",
+  "brand": "Army Painter Speedpaint",
+  "note": "collar and sash",
+  "regions": [
+   [
+    347,
+    235,
+    412,
+    298
+   ],
+   [
+    254,
+    442,
+    312,
+    498
+   ]
+  ],
+  "threshold": 26
+ },
+ {
+  "name": "Hot Orange",
+  "brand": "Vallejo Game Color",
+  "hex": "#e64c2a",
+  "hex_source": "Scalemates, Vallejo Game Color 72.009 Hot Orange (https://www.scalemates.com/colors/vallejo-game-color--804/72009-hot-orange-acrylic-matt--4502)",
+  "note": "the clip on the base edge",
+  "regions": [
+   {
+    "polygon": [
+     [
+      105,
+      915
+     ],
+     [
+      152,
+      882
+     ],
+     [
+      234,
+      878
+     ],
+     [
+      270,
+      905
+     ],
+     [
+      250,
+      945
+     ],
+     [
+      204,
+      1002
+     ],
+     [
+      115,
+      998
+     ]
+    ]
+   }
+  ],
+  "threshold": 34,
+  "samples": [
+   [
+    152,
+    940
+   ],
+   [
+    222,
+    915
+   ],
+   [
+    172,
+    970
+   ]
+  ]
+ },
+ {
+  "name": "Black",
+  "brand": "Army Painter",
+  "role": "Base rim",
+  "hex": "#1e1e1f",
+  "priority": true,
+  "threshold": 48,
+  "note": "regular Army Painter black base; whole round base",
+  "samples": [
+   [
+    522,
+    880
+   ],
+   [
+    472,
+    960
+   ],
+   [
+    222,
+    880
+   ],
+   [
+    572,
+    930
+   ]
+  ],
+  "regions": [
+   {
+    "ellipse": [
+     369,
+     903,
+     268,
+     112
+    ]
+   }
+  ],
+  "exclude_regions": [
+   {
+    "polygon": [
+     [
+      105,
+      915
+     ],
+     [
+      152,
+      882
+     ],
+     [
+      234,
+      878
+     ],
+     [
+      270,
+      905
+     ],
+     [
+      250,
+      945
+     ],
+     [
+      204,
+      1002
+     ],
+     [
+      115,
+      998
+     ]
+    ]
+   },
+   {
+    "polygon": [
+     [
+      307,
+      705
+     ],
+     [
+      384,
+      705
+     ],
+     [
+      384,
+      840
+     ],
+     [
+      307,
+      840
+     ]
+    ]
+   },
+   {
+    "polygon": [
+     [
+      387,
+      780
+     ],
+     [
+      457,
+      780
+     ],
+     [
+      457,
+      880
+     ],
+     [
+      387,
+      880
+     ]
+    ]
+   }
+  ]
+ }
+]

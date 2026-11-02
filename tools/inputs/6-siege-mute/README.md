@@ -19,3 +19,8 @@ Vallejo Electric Blue (72.023, #3495b6, Scalemates). Hot Orange clip (72.009, #e
 Black base added per the standing rules. First pass: Tyrian Navy uniform, Camo Cloak harness,
 Gravelord Grey vest/pouches, Grim Black gun/boots/mask, Dark Wood hip pouch, Electric Blue goggles.
 Red armband (grey photo) left unmarked: no paint listed for it.
+
+Nov 2 2026 (Dan): grey-backdrop view removed; the site now shows only the black-backdrop photo.
+Current build: black.jpg + black_paints.json + black_fg_mask.png (made from the composite with
+tools/single_view.py). The composite files above are kept for reference only.
+For Mute specifically: black.jpg = original-2.jpg cropped 725,161,1635,1364, with paints-black.json and fg_mask-black.png.
