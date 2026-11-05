@@ -382,17 +382,6 @@
       ]
     },
     {
-      "id": "marvel-united-wasp",
-      "name": "Wasp",
-      "game": "Marvel United",
-      "date": "2026-10-27",
-      "photo": "minis/marvel-united-wasp/photo.jpg",
-      "updated": "20261027214514",
-      "width": 954,
-      "height": 1600,
-      "paints": []
-    },
-    {
       "id": "marvel-united-rocket",
       "name": "Rocket",
       "game": "Marvel United",
@@ -400,17 +389,6 @@
       "photo": "minis/marvel-united-rocket/photo.jpg",
       "updated": "20261027214512",
       "width": 1116,
-      "height": 1600,
-      "paints": []
-    },
-    {
-      "id": "marvel-united-star-lord",
-      "name": "Star-Lord",
-      "game": "Marvel United",
-      "date": "2026-10-27",
-      "photo": "minis/marvel-united-star-lord/photo.jpg",
-      "updated": "20261027200751",
-      "width": 1475,
       "height": 1600,
       "paints": []
     },
@@ -1153,6 +1131,39 @@
           "coverage": 27.8
         }
       ]
+    },
+    {
+      "id": "marvel-united-star-lord",
+      "name": "Star-Lord",
+      "game": "Marvel United",
+      "date": "2026-10-27",
+      "photo": "minis/marvel-united-star-lord/photo.jpg",
+      "updated": "20261105235051",
+      "width": 1300,
+      "height": 1189,
+      "paints": []
+    },
+    {
+      "id": "marvel-united-wasp",
+      "name": "Wasp",
+      "game": "Marvel United",
+      "date": "2026-10-27",
+      "photo": "minis/marvel-united-wasp/photo.jpg",
+      "updated": "20261105235052",
+      "width": 780,
+      "height": 1359,
+      "paints": []
+    },
+    {
+      "id": "marvel-united-bishop",
+      "name": "Bishop",
+      "game": "Marvel United",
+      "date": "2026-11-05",
+      "photo": "minis/marvel-united-bishop/photo.jpg",
+      "updated": "20261105235053",
+      "width": 851,
+      "height": 1404,
+      "paints": []
     }
   ]
 }
