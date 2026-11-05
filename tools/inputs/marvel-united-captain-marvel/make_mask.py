@@ -12,8 +12,8 @@ for i in range(1, n):
     if st[i, cv2.CC_STAT_AREA] > 1500:
         keep[lab == i] = 255
 pil = Image.fromarray(keep); d = ImageDraw.Draw(pil)
-d.polygon([(405, 520), (470, 545), (540, 545), (560, 600), (520, 640), (450, 640), (395, 590)], fill=255)  # face
-d.ellipse([440 - 325, 1222 - 175, 440 + 325, 1222 + 175], fill=255)  # whole base
+d.polygon([(278, 472), (318, 455), (352, 472), (366, 518), (346, 546), (300, 542), (276, 506)], fill=255)  # face
+d.ellipse([405 - 290, 1105 - 150, 405 + 290, 1105 + 150], fill=255)  # whole base
 k = cv2.morphologyEx(np.array(pil), cv2.MORPH_CLOSE, np.ones((15, 15), np.uint8))
 k = cv2.morphologyEx(k, cv2.MORPH_OPEN, np.ones((5, 5), np.uint8))
 Image.fromarray(k).save(sys.argv[2])

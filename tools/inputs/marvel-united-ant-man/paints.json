@@ -1,673 +1,269 @@
 [
-  {
-    "name": "Slaughter Red",
-    "brand": "Army Painter Speedpaint",
-    "regions": [
-      [
-        207,
-        202,
-        972,
-        1064
-      ]
-    ],
-    "exclude_regions": [
-      {
-        "polygon": [
-          [
-            181,
-            1081
-          ],
-          [
-            243,
-            1055
-          ],
-          [
-            884,
-            1051
-          ],
-          [
-            964,
-            1108
-          ],
-          [
-            946,
-            1152
-          ],
-          [
-            876,
-            1196
-          ],
-          [
-            744,
-            1222
-          ],
-          [
-            568,
-            1231
-          ],
-          [
-            392,
-            1222
-          ],
-          [
-            260,
-            1196
-          ],
-          [
-            181,
-            1152
-          ]
-        ]
-      }
-    ],
-    "samples": [
-      [
-        498,
-        835
-      ],
-      [
-        498,
-        695
-      ],
-      [
-        920,
-        624
-      ],
-      [
-        638,
-        554
-      ],
-      [
-        357,
-        484
-      ],
-      [
-        427,
-        281
-      ]
-    ],
-    "note": "suit, eye lenses, antenna tips"
-  },
-  {
-    "name": "Shining Silver",
-    "brand": "Army Painter Warpaints",
-    "hex": "#b5b5bd",
-    "hex_source": "MiniMatch, The Army Painter Shining Silver (https://minimatch.app/paint/the-army-painter-shining-silver)",
-    "regions": [
-      [
-        207,
-        202,
-        972,
-        1064
-      ]
-    ],
-    "exclude_regions": [
-      {
-        "polygon": [
-          [
-            181,
-            1081
-          ],
-          [
-            243,
-            1055
-          ],
-          [
-            884,
-            1051
-          ],
-          [
-            964,
-            1108
-          ],
-          [
-            946,
-            1152
-          ],
-          [
-            876,
-            1196
-          ],
-          [
-            744,
-            1222
-          ],
-          [
-            568,
-            1231
-          ],
-          [
-            392,
-            1222
-          ],
-          [
-            260,
-            1196
-          ],
-          [
-            181,
-            1152
-          ]
-        ]
-      },
-      {
-        "polygon": [
-          [
-            225,
-            958
-          ],
-          [
-            269,
-            888
-          ],
-          [
-            375,
-            870
-          ],
-          [
-            401,
-            958
-          ],
-          [
-            348,
-            989
-          ],
-          [
-            234,
-            989
-          ]
-        ]
-      }
-    ],
-    "threshold": 34,
-    "samples": [
-      [
-        568,
-        413
-      ],
-      [
-        638,
-        413
-      ],
-      [
-        709,
-        484
-      ],
-      [
-        849,
-        835
-      ],
-      [
-        779,
-        554
-      ],
-      [
-        524,
-        1011
-      ],
-      [
-        304,
-        475
-      ]
-    ],
-    "note": "helmet, armour plates, girder"
-  },
-  {
-    "name": "Broadsword Silver",
-    "brand": "Army Painter Speedpaint",
-    "regions": [
-      [
-        207,
-        202,
-        972,
-        1064
-      ]
-    ],
-    "exclude_regions": [
-      {
-        "polygon": [
-          [
-            181,
-            1081
-          ],
-          [
-            243,
-            1055
-          ],
-          [
-            884,
-            1051
-          ],
-          [
-            964,
-            1108
-          ],
-          [
-            946,
-            1152
-          ],
-          [
-            876,
-            1196
-          ],
-          [
-            744,
-            1222
-          ],
-          [
-            568,
-            1231
-          ],
-          [
-            392,
-            1222
-          ],
-          [
-            260,
-            1196
-          ],
-          [
-            181,
-            1152
-          ]
-        ]
-      },
-      {
-        "polygon": [
-          [
-            225,
-            958
-          ],
-          [
-            269,
-            888
-          ],
-          [
-            375,
-            870
-          ],
-          [
-            401,
-            958
-          ],
-          [
-            348,
-            989
-          ],
-          [
-            234,
-            989
-          ]
-        ]
-      }
-    ],
-    "samples": [
-      [
-        498,
-        484
-      ],
-      [
-        498,
-        554
-      ]
-    ],
-    "note": "darker metal"
-  },
-  {
-    "name": "Grim Black",
-    "brand": "Army Painter Speedpaint",
-    "regions": [
-      [
-        207,
-        202,
-        972,
-        1064
-      ]
-    ],
-    "exclude_regions": [
-      {
-        "polygon": [
-          [
-            181,
-            1081
-          ],
-          [
-            243,
-            1055
-          ],
-          [
-            884,
-            1051
-          ],
-          [
-            964,
-            1108
-          ],
-          [
-            946,
-            1152
-          ],
-          [
-            876,
-            1196
-          ],
-          [
-            744,
-            1222
-          ],
-          [
-            568,
-            1231
-          ],
-          [
-            392,
-            1222
-          ],
-          [
-            260,
-            1196
-          ],
-          [
-            181,
-            1152
-          ]
-        ]
-      },
-      {
-        "polygon": [
-          [
-            225,
-            958
-          ],
-          [
-            269,
-            888
-          ],
-          [
-            375,
-            870
-          ],
-          [
-            401,
-            958
-          ],
-          [
-            348,
-            989
-          ],
-          [
-            234,
-            989
-          ]
-        ]
-      }
-    ],
-    "samples": [
-      [
-        427,
-        624
-      ],
-      [
-        498,
-        765
-      ],
-      [
-        568,
-        765
-      ],
-      [
-        638,
-        765
-      ]
-    ],
-    "note": "undersuit and outlines"
-  },
-  {
-    "name": "Ashen Stone",
-    "brand": "Army Painter Speedpaint",
-    "regions": [
-      {
-        "polygon": [
-          [
-            181,
-            1081
-          ],
-          [
-            243,
-            1055
-          ],
-          [
-            884,
-            1051
-          ],
-          [
-            964,
-            1108
-          ],
-          [
-            946,
-            1152
-          ],
-          [
-            876,
-            1196
-          ],
-          [
-            744,
-            1222
-          ],
-          [
-            568,
-            1231
-          ],
-          [
-            392,
-            1222
-          ],
-          [
-            260,
-            1196
-          ],
-          [
-            181,
-            1152
-          ]
-        ]
-      },
-      {
-        "polygon": [
-          [
-            225,
-            958
-          ],
-          [
-            269,
-            888
-          ],
-          [
-            375,
-            870
-          ],
-          [
-            401,
-            958
-          ],
-          [
-            348,
-            989
-          ],
-          [
-            234,
-            989
-          ]
-        ]
-      }
-    ],
-    "exclude_regions": [
-      {
-        "polygon": [
-          [
-            177,
-            1011
-          ],
-          [
-            862,
-            954
-          ],
-          [
-            876,
-            1051
-          ],
-          [
-            190,
-            1086
-          ]
-        ]
-      }
-    ],
-    "threshold": 30,
-    "priority": true,
-    "samples": [
-      [
-        375,
-        1240
-      ],
-      [
-        445,
-        1275
-      ],
-      [
-        375,
-        1169
-      ],
-      [
-        796,
-        1240
-      ],
-      [
-        304,
-        1204
-      ],
-      [
-        287,
-        905
-      ]
-    ],
-    "note": "rocks on the base"
-  },
-  {
-    "name": "Black",
-    "brand": "Army Painter",
-    "role": "Base rim",
-    "hex": "#1e1e1f",
-    "threshold": 40,
-    "priority": true,
-    "regions": [
-      {
-        "ellipse": [
-          546,
-          1226,
-          403,
-          165
-        ]
-      }
-    ],
-    "exclude_regions": [
-      {
-        "polygon": [
-          [
-            181,
-            1081
-          ],
-          [
-            243,
-            1055
-          ],
-          [
-            884,
-            1051
-          ],
-          [
-            964,
-            1108
-          ],
-          [
-            946,
-            1152
-          ],
-          [
-            876,
-            1196
-          ],
-          [
-            744,
-            1222
-          ],
-          [
-            568,
-            1231
-          ],
-          [
-            392,
-            1222
-          ],
-          [
-            260,
-            1196
-          ],
-          [
-            181,
-            1152
-          ]
-        ]
-      },
-      {
-        "polygon": [
-          [
-            177,
-            1011
-          ],
-          [
-            862,
-            954
-          ],
-          [
-            876,
-            1051
-          ],
-          [
-            190,
-            1086
-          ]
-        ]
-      }
-    ],
-    "samples": [
-      [
-        401,
-        1336
-      ],
-      [
-        480,
-        1336
-      ],
-      [
-        638,
-        1336
-      ],
-      [
-        243,
-        1358
-      ],
-      [
-        480,
-        1402
-      ],
-      [
-        796,
-        1327
-      ]
-    ],
-    "note": "the whole base is regular Army Painter black"
-  }
+ {
+  "name": "Slaughter Red",
+  "brand": "Army Painter Speedpaint",
+  "regions": [
+   [
+    110,
+    140,
+    650,
+    742
+   ]
+  ],
+  "samples": [
+   [
+    370,
+    320
+   ],
+   [
+    270,
+    560
+   ],
+   [
+    290,
+    400
+   ],
+   [
+    560,
+    440
+   ],
+   [
+    265,
+    165
+   ],
+   [
+    455,
+    175
+   ]
+  ],
+  "note": "suit, eye lenses, antenna tips",
+  "exclude_regions": [
+   {
+    "ellipse": [
+     380,
+     826,
+     265,
+     66
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Shining Silver",
+  "brand": "Army Painter Warpaints",
+  "hex": "#b5b5bd",
+  "hex_source": "MiniMatch, The Army Painter Shining Silver (https://minimatch.app/paint/the-army-painter-shining-silver)",
+  "threshold": 34,
+  "regions": [
+   [
+    110,
+    140,
+    650,
+    742
+   ]
+  ],
+  "samples": [
+   [
+    380,
+    220
+   ],
+   [
+    420,
+    180
+   ],
+   [
+    580,
+    560
+   ],
+   [
+    300,
+    690
+   ],
+   [
+    500,
+    680
+   ],
+   [
+    170,
+    330
+   ]
+  ],
+  "note": "helmet, armour plates, coin",
+  "exclude_regions": [
+   {
+    "ellipse": [
+     380,
+     826,
+     265,
+     66
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Broadsword Silver",
+  "brand": "Army Painter Speedpaint",
+  "regions": [
+   [
+    110,
+    140,
+    650,
+    742
+   ]
+  ],
+  "samples": [
+   [
+    240,
+    640
+   ],
+   [
+    560,
+    600
+   ]
+  ],
+  "note": "darker metal",
+  "exclude_regions": [
+   {
+    "ellipse": [
+     380,
+     826,
+     265,
+     66
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Grim Black",
+  "brand": "Army Painter Speedpaint",
+  "regions": [
+   [
+    110,
+    140,
+    650,
+    742
+   ]
+  ],
+  "samples": [
+   [
+    350,
+    560
+   ],
+   [
+    420,
+    520
+   ],
+   [
+    150,
+    410
+   ]
+  ],
+  "note": "undersuit and outlines",
+  "exclude_regions": [
+   {
+    "ellipse": [
+     380,
+     826,
+     265,
+     66
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Ashen Stone",
+  "brand": "Army Painter Speedpaint",
+  "threshold": 30,
+  "priority": true,
+  "regions": [
+   {
+    "ellipse": [
+     380,
+     826,
+     265,
+     66
+    ]
+   }
+  ],
+  "samples": [
+   [
+    230,
+    820
+   ],
+   [
+    470,
+    815
+   ],
+   [
+    380,
+    840
+   ],
+   [
+    560,
+    805
+   ]
+  ],
+  "note": "rocks on the base",
+  "exclude_regions": [
+   {
+    "ellipse": [
+     380,
+     712,
+     272,
+     50
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Black",
+  "brand": "Army Painter",
+  "role": "Base rim",
+  "hex": "#1e1e1f",
+  "threshold": 40,
+  "priority": true,
+  "regions": [
+   {
+    "ellipse": [
+     372,
+     860,
+     280,
+     115
+    ]
+   }
+  ],
+  "samples": [
+   [
+    300,
+    940
+   ],
+   [
+    150,
+    905
+   ],
+   [
+    560,
+    925
+   ]
+  ],
+  "note": "the whole base is regular Army Painter black",
+  "exclude_regions": [
+   {
+    "ellipse": [
+     380,
+     826,
+     265,
+     66
+    ]
+   },
+   {
+    "ellipse": [
+     380,
+     712,
+     272,
+     50
+    ]
+   }
+  ]
+ }
 ]
