@@ -1223,6 +1223,17 @@
       "width": 510,
       "height": 730,
       "paints": []
+    },
+    {
+      "id": "townsfolk-tussle-blopsy-twins",
+      "name": "Blopsy Twins",
+      "game": "Townsfolk Tussle",
+      "date": "2026-11-06",
+      "photo": "minis/townsfolk-tussle-blopsy-twins/photo.jpg",
+      "updated": "20261106174308",
+      "width": 662,
+      "height": 637,
+      "paints": []
     }
   ]
 }
