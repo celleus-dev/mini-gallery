@@ -1157,6 +1157,17 @@
       "width": 1191,
       "height": 1600,
       "paints": []
+    },
+    {
+      "id": "townsfolk-tussle-granny-melba",
+      "name": "Granny Melba",
+      "game": "Townsfolk Tussle",
+      "date": "2026-11-06",
+      "photo": "minis/townsfolk-tussle-granny-melba/photo.jpg",
+      "updated": "20261106173645",
+      "width": 476,
+      "height": 637,
+      "paints": []
     }
   ]
 }
