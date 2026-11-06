@@ -1201,6 +1201,17 @@
       "width": 594,
       "height": 791,
       "paints": []
+    },
+    {
+      "id": "townsfolk-tussle-norman-fishboy",
+      "name": "Norman Fishboy",
+      "game": "Townsfolk Tussle",
+      "date": "2026-11-06",
+      "photo": "minis/townsfolk-tussle-norman-fishboy/photo.jpg",
+      "updated": "20261106174055",
+      "width": 433,
+      "height": 816,
+      "paints": []
     }
   ]
 }
