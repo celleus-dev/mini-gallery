@@ -1179,6 +1179,17 @@
       "width": 476,
       "height": 705,
       "paints": []
+    },
+    {
+      "id": "townsfolk-tussle-georgie-irongut",
+      "name": "Georgie Irongut",
+      "game": "Townsfolk Tussle",
+      "date": "2026-11-06",
+      "photo": "minis/townsfolk-tussle-georgie-irongut/photo.jpg",
+      "updated": "20261106173957",
+      "width": 578,
+      "height": 730,
+      "paints": []
     }
   ]
 }
