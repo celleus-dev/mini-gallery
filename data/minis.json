@@ -1212,6 +1212,17 @@
       "width": 433,
       "height": 816,
       "paints": []
+    },
+    {
+      "id": "townsfolk-tussle-henlo-bulwark",
+      "name": "Henlo Bulwark",
+      "game": "Townsfolk Tussle",
+      "date": "2026-11-06",
+      "photo": "minis/townsfolk-tussle-henlo-bulwark/photo.jpg",
+      "updated": "20261106174121",
+      "width": 510,
+      "height": 730,
+      "paints": []
     }
   ]
 }
