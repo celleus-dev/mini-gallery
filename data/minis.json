@@ -908,9 +908,9 @@
       "game": "Marvel United",
       "date": "2026-10-27",
       "photo": "minis/marvel-united-star-lord/photo.jpg",
-      "updated": "20261105235051",
-      "width": 1300,
-      "height": 1189,
+      "updated": "20261106141007",
+      "width": 1600,
+      "height": 1304,
       "paints": []
     },
     {
@@ -919,9 +919,9 @@
       "game": "Marvel United",
       "date": "2026-10-27",
       "photo": "minis/marvel-united-wasp/photo.jpg",
-      "updated": "20261105235052",
-      "width": 780,
-      "height": 1359,
+      "updated": "20261106141011",
+      "width": 980,
+      "height": 1600,
       "paints": []
     },
     {
@@ -930,9 +930,9 @@
       "game": "Marvel United",
       "date": "2026-11-05",
       "photo": "minis/marvel-united-bishop/photo.jpg",
-      "updated": "20261105235053",
-      "width": 851,
-      "height": 1404,
+      "updated": "20261106141010",
+      "width": 1080,
+      "height": 1600,
       "paints": []
     },
     {
@@ -941,9 +941,9 @@
       "game": "Marvel United",
       "date": "2026-10-27",
       "photo": "minis/marvel-united-black-widow/photo.jpg",
-      "updated": "20261105235242",
-      "width": 884,
-      "height": 1182,
+      "updated": "20261106141042",
+      "width": 1156,
+      "height": 1384,
       "paints": [
         {
           "name": "Nuclear Sunrise",
@@ -981,9 +981,9 @@
       "game": "Marvel United",
       "date": "2026-10-27",
       "photo": "minis/marvel-united-captain-marvel/photo.jpg",
-      "updated": "20261105235429",
-      "width": 780,
-      "height": 1426,
+      "updated": "20261106141059",
+      "width": 991,
+      "height": 1600,
       "paints": [
         {
           "name": "Maize Yellow",
@@ -1011,7 +1011,7 @@
           "brand": "Army Painter Speedpaint",
           "hex": "#e15a3d",
           "mask": "minis/marvel-united-captain-marvel/mask-bright-red.png",
-          "coverage": 43.3
+          "coverage": 43.2
         },
         {
           "name": "Peachy Flesh",
@@ -1043,9 +1043,9 @@
       "game": "Marvel United",
       "date": "2026-10-27",
       "photo": "minis/marvel-united-ant-man/photo.jpg",
-      "updated": "20261105235606",
-      "width": 747,
-      "height": 1099,
+      "updated": "20261106141113",
+      "width": 977,
+      "height": 1352,
       "paints": [
         {
           "name": "Slaughter Red",
@@ -1098,9 +1098,9 @@
       "game": "Marvel United",
       "date": "2026-10-27",
       "photo": "minis/marvel-united-colossus/photo.jpg",
-      "updated": "20261106000814",
-      "width": 1002,
-      "height": 1296,
+      "updated": "20261106141134",
+      "width": 1310,
+      "height": 1510,
       "paints": [
         {
           "name": "Bright Red",
@@ -1160,9 +1160,9 @@
       "game": "Marvel United",
       "date": "2026-10-27",
       "photo": "minis/marvel-united-rocket/photo.jpg",
-      "updated": "20261106000823",
-      "width": 818,
-      "height": 1047,
+      "updated": "20261106141010",
+      "width": 1070,
+      "height": 1303,
       "paints": []
     },
     {
@@ -1171,9 +1171,9 @@
       "game": "Marvel United",
       "date": "2026-11-05",
       "photo": "minis/marvel-united-taskmaster/photo.jpg",
-      "updated": "20261106001950",
-      "width": 981,
-      "height": 1482,
+      "updated": "20261106141015",
+      "width": 1232,
+      "height": 1600,
       "paints": []
     },
     {
@@ -1182,9 +1182,9 @@
       "game": "Marvel United",
       "date": "2026-11-05",
       "photo": "minis/marvel-united-ultron/photo.jpg",
-      "updated": "20261106001951",
-      "width": 806,
-      "height": 1207,
+      "updated": "20261106141013",
+      "width": 1054,
+      "height": 1395,
       "paints": []
     },
     {
@@ -1193,9 +1193,9 @@
       "game": "Marvel United",
       "date": "2026-11-05",
       "photo": "minis/marvel-united-red-skull/photo.jpg",
-      "updated": "20261106001951",
-      "width": 839,
-      "height": 1182,
+      "updated": "20261106141008",
+      "width": 1097,
+      "height": 1394,
       "paints": []
     },
     {
@@ -1204,9 +1204,9 @@
       "game": "Marvel United",
       "date": "2026-11-05",
       "photo": "minis/marvel-united-deadpool/photo.jpg",
-      "updated": "20261106001952",
-      "width": 1059,
-      "height": 1435,
+      "updated": "20261106141006",
+      "width": 1330,
+      "height": 1600,
       "paints": []
     },
     {
@@ -1215,9 +1215,9 @@
       "game": "Marvel United",
       "date": "2026-11-05",
       "photo": "minis/marvel-united-groot/photo.jpg",
-      "updated": "20261106002002",
-      "width": 950,
-      "height": 1437,
+      "updated": "20261106141012",
+      "width": 1191,
+      "height": 1600,
       "paints": []
     }
   ]

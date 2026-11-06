@@ -5,7 +5,7 @@ Photo only, no paint list (Dan, Oct 27 2026: "No colors").
 python3 tools/process_mini.py --photo tools/inputs/marvel-united-star-lord/original.jpg \
   --paints tools/inputs/marvel-united-star-lord/paints.json \
   --name "Star-Lord" --game "Marvel United" --id marvel-united-star-lord \
-  --date 2026-10-27 --crop 600,600,1600,1515 --pad 0.15 \
+  --date 2026-10-27 --crop 600,600,1600,1515 --pad 0.35 \
   --background none --no-house --no-learned
 
 --no-house: nothing is mapped, so the house Black isn't added. No fg mask.
