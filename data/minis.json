@@ -265,79 +265,6 @@
       ]
     },
     {
-      "id": "marvel-united-colossus",
-      "name": "Colossus",
-      "game": "Marvel United",
-      "date": "2026-10-27",
-      "photo": "minis/marvel-united-colossus/photo.jpg",
-      "updated": "20261027214511",
-      "width": 1177,
-      "height": 1600,
-      "paints": [
-        {
-          "name": "Bright Red",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#e15a3d",
-          "mask": "minis/marvel-united-colossus/mask-bright-red.png",
-          "coverage": 28.9
-        },
-        {
-          "name": "Maize Yellow",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#f6d31f",
-          "mask": "minis/marvel-united-colossus/mask-maize-yellow.png",
-          "coverage": 5.9
-        },
-        {
-          "name": "Shining Silver",
-          "brand": "Army Painter Warpaints",
-          "hex": "#b5b5bd",
-          "mask": "minis/marvel-united-colossus/mask-shining-silver.png",
-          "coverage": 13.5
-        },
-        {
-          "name": "Ashen Stone",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#b3b9b9",
-          "mask": "minis/marvel-united-colossus/mask-ashen-stone.png",
-          "coverage": 25.5
-        },
-        {
-          "name": "Grim Black",
-          "brand": "Army Painter Speedpaint",
-          "hex": "#161511",
-          "mask": "minis/marvel-united-colossus/mask-grim-black.png",
-          "coverage": 14.9
-        },
-        {
-          "name": "Dead White",
-          "brand": "Vallejo Model Color",
-          "hex": "#ffffff",
-          "mask": "minis/marvel-united-colossus/mask-dead-white.png",
-          "coverage": 0.2
-        },
-        {
-          "name": "Black",
-          "brand": "Army Painter",
-          "role": "Base rim",
-          "hex": "#1e1e1f",
-          "mask": "minis/marvel-united-colossus/mask-black.png",
-          "coverage": 5.2
-        }
-      ]
-    },
-    {
-      "id": "marvel-united-rocket",
-      "name": "Rocket",
-      "game": "Marvel United",
-      "date": "2026-10-27",
-      "photo": "minis/marvel-united-rocket/photo.jpg",
-      "updated": "20261027214512",
-      "width": 1116,
-      "height": 1600,
-      "paints": []
-    },
-    {
       "id": "6-siege-tachanka",
       "name": "Tachanka",
       "game": "6 Siege",
@@ -1164,6 +1091,79 @@
           "coverage": 12.7
         }
       ]
+    },
+    {
+      "id": "marvel-united-colossus",
+      "name": "Colossus",
+      "game": "Marvel United",
+      "date": "2026-10-27",
+      "photo": "minis/marvel-united-colossus/photo.jpg",
+      "updated": "20261106000814",
+      "width": 1002,
+      "height": 1296,
+      "paints": [
+        {
+          "name": "Bright Red",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#e15a3d",
+          "mask": "minis/marvel-united-colossus/mask-bright-red.png",
+          "coverage": 30.4
+        },
+        {
+          "name": "Maize Yellow",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#f6d31f",
+          "mask": "minis/marvel-united-colossus/mask-maize-yellow.png",
+          "coverage": 11.1
+        },
+        {
+          "name": "Shining Silver",
+          "brand": "Army Painter Warpaints",
+          "hex": "#b5b5bd",
+          "mask": "minis/marvel-united-colossus/mask-shining-silver.png",
+          "coverage": 19.7
+        },
+        {
+          "name": "Ashen Stone",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#b3b9b9",
+          "mask": "minis/marvel-united-colossus/mask-ashen-stone.png",
+          "coverage": 23.9
+        },
+        {
+          "name": "Grim Black",
+          "brand": "Army Painter Speedpaint",
+          "hex": "#161511",
+          "mask": "minis/marvel-united-colossus/mask-grim-black.png",
+          "coverage": 2.7
+        },
+        {
+          "name": "Dead White",
+          "brand": "Vallejo Model Color",
+          "hex": "#ffffff",
+          "mask": "minis/marvel-united-colossus/mask-dead-white.png",
+          "coverage": 0.4
+        },
+        {
+          "name": "Black",
+          "brand": "Army Painter",
+          "role": "Base rim",
+          "hex": "#1e1e1f",
+          "mask": "minis/marvel-united-colossus/mask-black.png",
+          "coverage": 8.3
+        }
+      ]
+    },
+    {
+      "id": "marvel-united-rocket",
+      "name": "Rocket",
+      "game": "Marvel United",
+      "date": "2026-10-27",
+      "photo": "minis/marvel-united-rocket/photo.jpg",
+      "updated": "20261106000823",
+      "width": 818,
+      "height": 1047,
+      "paints": []
     }
   ]
 }

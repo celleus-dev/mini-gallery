@@ -1,12 +1,15 @@
 Inputs used to build Colossus (kept so it can be re-run).
 
+python3 tools/inputs/marvel-united-colossus/make_mask.py <padded photo> tools/inputs/marvel-united-colossus/fg_mask.png
 python3 tools/process_mini.py --photo tools/inputs/marvel-united-colossus/original.jpg \
   --paints tools/inputs/marvel-united-colossus/paints.json \
-  --name "Colossus" --game "Marvel United" --date 2026-10-27 --crop 300,430,1440,1980 --pad 0.15 \
+  --name "Colossus" --game "Marvel United" --id marvel-united-colossus \
+  --date 2026-10-27 --crop 670,530,1440,1600 --pad 0.15 \
   --fg-mask tools/inputs/marvel-united-colossus/fg_mask.png
 
+Photo replaced Nov 5 2026 (new black-backdrop photo set); paint areas redrawn for it.
 Paint colours: Speedpaint 2.0 values from the library; Shining Silver #b5b5bd (MiniMatch);
 Dead White #ffffff (Scalemates, Vallejo Model Color 70.951 White).
-fg_mask.png: hint-based GrabCut outline (busy dark fabric background).
-
-Re-cropped Oct 27 2026 with --pad 0.15 (Dan: photos looked too zoomed in); paint areas shifted with tools/recrop.py.
+fg mask: the backdrop and deep shadows are both near-black, so inside the body outline only
+pixels above near-black count (else Shining Silver leaks onto the backdrop). Hair added by polygon.
+Grim Black is limited to the hair; yellow is kept off the face (pale eye).
