@@ -1190,6 +1190,17 @@
       "width": 578,
       "height": 730,
       "paints": []
+    },
+    {
+      "id": "townsfolk-tussle-yancy-plover",
+      "name": "Yancy Plover",
+      "game": "Townsfolk Tussle",
+      "date": "2026-11-06",
+      "photo": "minis/townsfolk-tussle-yancy-plover/photo.jpg",
+      "updated": "20261106174027",
+      "width": 594,
+      "height": 791,
+      "paints": []
     }
   ]
 }
